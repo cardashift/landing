@@ -19,7 +19,7 @@ function Hero() {
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="orange" />
         </Button>
-        <Button className="shadow font-medium text-base ml-6 h-14 tracking-wide">
+        <Button className="shadow font-medium text-base ml-6 h-14 tracking-wide text-gray ">
           Submit your project
           <ArrowIcon color="gray" className="mx-2 " />
         </Button>
