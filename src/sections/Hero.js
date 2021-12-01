@@ -15,16 +15,16 @@ function Hero() {
       />
       <PublicICO />
       <div className="flex justify-center">
-        <Button className="shadow bg-gradient-to-r from-orangeBlack to-orange font-medium text-base text-white ">
+        <Button className="shadow bg-gradient-to-r from-orangeBlack to-orange font-medium text-base text-white h-14 tracking-wide">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="orange" />
         </Button>
-        <Button className=" shadow font-medium text-base ml-6 ">
+        <Button className="shadow font-medium text-base ml-6 h-14 tracking-wide">
           Submit your project
           <ArrowIcon color="gray" className="mx-2 " />
         </Button>
       </div>
-      <span className="flex  items-center text-gray-600 text-xs mt-24 font-Inter font-bold text-gray">
+      <span className="flex items-center text-gray-600 text-xs mt-24 font-Inter font-bold text-gray ">
         POWERED BY <img className="ml-2" src="../images/powered-by.svg" />
       </span>
     </div>

@@ -36,7 +36,7 @@ function App() {
         description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
         Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
         button={
-          <Button className="bg-blue text-white font-Inter font-medium text-xs">
+          <Button className="bg-blue text-white font-Inter font-medium text-xs h-12">
             Discover the products
             <ArrowIcon className="ml-2 rotate-90" color="blue" />
           </Button>
