@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Nizzoli';
+  src: url('./Nizzoli/Nizzoli-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nizzoli';
+  src: url('./Nizzoli/Nizzoli-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nizzoli';
+  src: url('./Nizzoli/NizzoliAlt-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter/Inter-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter/Inter-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter/Inter-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
