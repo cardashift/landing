@@ -28,6 +28,7 @@ module.exports = {
       boxShadow: {
         none: 'none',
         DEFAULT: '-10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD',
+        sm: 'inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD',
         md: '-10px -10px 20px rgba(250, 251, 255, 0.5), 10px 10px 20px rgba(166, 171, 189, 0.5)',
         // btn: 'inset 5px 5px 10px #f7f7f7,inset -5px -5px 5px #FF7A00;;',
       },
@@ -53,6 +54,7 @@ module.exports = {
       },
       borderRadius: {
         40: '40px',
+        20: '20px',
       },
     },
 

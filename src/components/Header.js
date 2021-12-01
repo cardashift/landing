@@ -1,15 +1,15 @@
 import React from 'react'
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
-
+import classnames from 'classnames'
 function Header() {
   const navigationItems = [
     { name: 'Home', selected: true },
-    { name: '$CLAP', selected: true },
-    { name: 'Roadmap', selected: true },
-    { name: 'Team', selected: true },
-    { name: 'Community', selected: true },
-    { name: 'Wiki', selected: true },
+    { name: '$CLAP', selected: false },
+    { name: 'Roadmap', selected: false },
+    { name: 'Team', selected: false },
+    { name: 'Community', selected: false },
+    { name: 'Wiki', selected: false },
   ]
   return (
     <nav className="flex flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40">
@@ -19,7 +19,12 @@ function Header() {
       <ul className="flex items-center flex-row self-ends">
         {navigationItems.map((item, index) => (
           <li
-            className="text-gray bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-40"
+            className={classnames(
+              item.selected
+                ? 'bg-gray-900 text-black py-3 px-5 bg-blend-soft-light shadow-sm rounded-20'
+                : 'text-gray hover:bg-gray-700',
+              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-40'
+            )}
             key={index}
             // onClick={() => setCurrentRoute(item)}
           >
