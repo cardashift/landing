@@ -11,19 +11,20 @@ function Hero() {
         paragraphe={
           'Cardashift, the launchpad in service of social and environmental impact'
         }
+        classname="mt-6"
       />
       <PublicICO />
-      <div className="flex justify-between">
-        <Button className="bg-orange font-Inter font-medium text-xs text-white">
+      <div className="flex justify-center">
+        <Button className="shadow bg-gradient-to-r from-orangeBlack to-orange font-medium text-base text-white ">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="orange" />
         </Button>
-        <Button className="font-Inter font-medium text-xs">
+        <Button className=" shadow font-medium text-base ml-6 ">
           Submit your project
-          <ArrowIcon className="ml-2" color="gray" />
+          <ArrowIcon color="gray" className="mx-2 " />
         </Button>
       </div>
-      <span className="w-28 flex text-gray-600 text-xs">
+      <span className="flex  items-center text-gray-600 text-xs mt-24 font-Inter font-bold text-gray">
         POWERED BY <img className="ml-2" src="../images/powered-by.svg" />
       </span>
     </div>

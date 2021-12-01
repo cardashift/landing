@@ -8,7 +8,7 @@ import Button from './components/Button'
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-20">
       <Header />
       <Hero />
       {/* <Card
