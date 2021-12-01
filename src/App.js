@@ -1,7 +1,7 @@
 import './App.css'
 import Hero from './sections/Hero'
 import Header from './components/Header'
-// import Card from './components/Card'
+import Card from './components/Card'
 import GlassCard from './components/GlassCard'
 import ArrowIcon from './components/ArrowIcon'
 import Button from './components/Button'
@@ -11,11 +11,11 @@ function App() {
     <div className="container mx-auto px-20">
       <Header />
       <Hero />
-      {/* <Card
-        urlPicture="../img/img-card.png"
+      <Card
+        urlPicture="../images/random.png"
         tittle="Real world impact"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-      /> */}
+      />
       <GlassCard
         className="bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
         topTittle="Impact or profit?"
