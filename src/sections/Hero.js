@@ -15,7 +15,7 @@ function Hero() {
       />
       <PublicICO />
       <div className="flex justify-center">
-        <Button className="shadow bg-gradient-to-r from-orangeBlack to-orange font-medium text-base text-white ">
+        <Button className="shadow bg-gradient-to-br from-orangeBlack via-orange to-orange font-medium text-base text-white ">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="orange" />
         </Button>

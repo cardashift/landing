@@ -45,8 +45,8 @@ module.exports = {
         paraColor: '#4D515C',
         // Configure your color palette here
         grayPublicICO: '#4D515C',
-        orange: '#FF7A00',
-        orangeBlack: '#eb7100',
+        orange: '#ff830f',
+        orangeBlack: '#e06c00',
         BtnBorderColor: 'rgba(255, 255, 255, 0.4)',
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
