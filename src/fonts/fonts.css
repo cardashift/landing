@@ -21,6 +21,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: 'Nizzoli';
+  src: url('./Nizzoli/Nizzoli-Black.ttf');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Regular.ttf');
   font-style: normal;
@@ -34,10 +41,18 @@
   font-weight: 500;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Bold.ttf');
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter/Inter-Black.ttf');
+  font-style: normal;
+  font-weight: 900;
   font-display: swap;
 }

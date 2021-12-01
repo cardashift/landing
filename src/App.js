@@ -1,8 +1,8 @@
 import './App.css'
 import Hero from './sections/Hero'
 import Header from './components/Header'
-import Card from './components/Card'
-import InfoCard from './components/InfoCard'
+// import Card from './components/Card'
+import GlassCard from './components/GlassCard'
 import ArrowIcon from './components/ArrowIcon'
 import Button from './components/Button'
 
@@ -11,12 +11,13 @@ function App() {
     <div className="container mx-auto">
       <Header />
       <Hero />
-      <Card
+      {/* <Card
         urlPicture="../img/img-card.png"
         tittle="Real world impact"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-      />
-      <InfoCard
+      /> */}
+      <GlassCard
+        className="bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
         topTittle="Impact or profit?"
         tittle="Reaching sustainability while being profitable is a big hurdle for
         change makers"
@@ -25,6 +26,15 @@ function App() {
         appropriate support to increase their success rate. Technologies - tools
         - relationships are needed to tokenize and accelerate these impact
         ventures"
+      />
+      <br />
+      <GlassCard
+        className="bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+        topTittle="About Cardashift?"
+        tittle="Empowering the visionary ventures that will create 
+        a sustainable future"
+        description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
+        Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
         button={
           <Button className="bg-blue text-white font-Inter font-medium text-xs">
             Discover the products
