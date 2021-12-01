@@ -5,7 +5,9 @@ function GlassCard({ className, topTittle, tittle, description, button }) {
       <span className="text-blue uppercase font-Inter font-black text-xs tracking-wider">
         {topTittle}
       </span>
-      <h3 className="font-Nizzoli text-5xl my-4 font-black">{tittle}</h3>
+      <h3 className="font-Nizzoli text-5xl my-4 font-black leading-62">
+        {tittle}
+      </h3>
       <p className="text-gray font-Inter mb-0 text-base">{description}</p>
       {button && <div className="w-18 pt-4">{button}</div>}
     </div>

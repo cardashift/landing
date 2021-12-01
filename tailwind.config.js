@@ -63,6 +63,9 @@ module.exports = {
       backdropBlur: {
         20: '20px',
       },
+      lineHeight: {
+        62: '62px',
+      },
     },
 
     fontFamily: {
