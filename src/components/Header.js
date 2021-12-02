@@ -3,6 +3,7 @@ import ArrowIcon from './ArrowIcon'
 import Button from './Button'
 import classnames from 'classnames'
 function Header() {
+  const [selected, setSelected] = React.useState('Home')
   const navigationItems = [
     { name: 'Home', selected: true },
     { name: '$CLAP', selected: false },
@@ -20,13 +21,13 @@ function Header() {
         {navigationItems.map((item, index) => (
           <li
             className={classnames(
-              item.selected
-                ? 'bg-gray-900 text-black py-3 px-5 bg-blend-soft-light shadow-sm rounded-20'
+              item.name == selected
+                ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
                 : 'text-gray hover:bg-gray-700',
-              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-40'
+              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
             )}
             key={index}
-            // onClick={() => setCurrentRoute(item)}
+            onClick={() => setSelected(item.name)}
           >
             {item.name}
           </li>

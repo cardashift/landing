@@ -65,6 +65,9 @@ module.exports = {
       Inter: 'Inter',
       Nizzoli: 'Nizzoli',
     },
+    zIndex: {
+      '-1': '-1',
+    },
   },
   variants: {
     extend: {},
