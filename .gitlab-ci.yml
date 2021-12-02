@@ -9,7 +9,7 @@ variables:
   CI: 'false'
 
 beta_build:
-  image: node:10
+  image: node:12
   stage: build
   script:
     - npm i
