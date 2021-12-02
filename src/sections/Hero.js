@@ -2,7 +2,7 @@ import React from 'react'
 import ArrowIcon from '../components/ArrowIcon'
 import Button from '../components/Button'
 import PublicICO from '../components/PublicICO'
-import { TitleContainer } from '../components/TitleContainer'
+import TitleContainer from '../components/TitleContainer'
 function Hero() {
   return (
     <div style={{ width: 519, marginTop: 91 }}>
@@ -24,7 +24,7 @@ function Hero() {
           <ArrowIcon color="gray" className="mx-2 " />
         </Button>
       </div>
-      <span className="flex items-center text-gray-600 text-xs mt-24 font-Inter font-bold text-gray ">
+      <span className="flex items-center text-gray-600 text-xs my-24 font-Inter font-bold text-gray ">
         POWERED BY <img className="ml-2" src="../images/powered-by.svg" />
       </span>
     </div>

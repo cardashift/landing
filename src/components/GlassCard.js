@@ -1,7 +1,7 @@
 import React from 'react'
 function GlassCard({ className, topTittle, tittle, description, button }) {
   return (
-    <div className={`${className} w-50 h-auto flex flex-col rounded-3xl p-10`}>
+    <div className={`${className} w-50 h-auto flex flex-col rounded-3xl p-16`}>
       <span className="text-blue uppercase font-Inter font-black text-xs tracking-wider">
         {topTittle}
       </span>

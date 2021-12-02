@@ -18,19 +18,12 @@ module.exports = {
         96: '96px',
       },
     },
-    // gradientColorStops: (theme) => ({
-    //   ...theme('colors'),
-    //   primary: '#3490dc',
-    //   secondary: '#ffed4a',
-    //   danger: '#e3342f',
-    // }),
     extend: {
       boxShadow: {
         none: 'none',
         DEFAULT: '-10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD',
         sm: 'inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD',
         md: '-10px -10px 20px rgba(250, 251, 255, 0.5), 10px 10px 20px rgba(166, 171, 189, 0.5)',
-        // btn: 'inset 5px 5px 10px #f7f7f7,inset -5px -5px 5px #FF7A00;;',
       },
       spacing: {
         40: '40px',
@@ -67,7 +60,6 @@ module.exports = {
         62: '62px',
       },
     },
-
     fontFamily: {
       NizzoliAlt: 'NizzoliAlt',
       Inter: 'Inter',

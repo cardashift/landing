@@ -1,7 +1,8 @@
 import React from 'react'
 import classnames from 'classnames'
 
-export const TitleContainer = ({ title, paragraphe, classname }) => {
+
+function TitleContainer({ title, paragraphe, classname }) {
   return (
     <div>
       <h2 className="text-8xl text-black font-bold font-Nizzoli">{title}</h2>
@@ -15,3 +16,5 @@ export const TitleContainer = ({ title, paragraphe, classname }) => {
     </div>
   )
 }
+
+export default TitleContainer
