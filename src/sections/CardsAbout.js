@@ -5,7 +5,11 @@ import GlassCard from '../components/GlassCard'
 
 function CardsAbout() {
   return (
-    <div className="flex flex-col items-start justify-evenly">
+    <div className="flex flex-col items-start justify-evenly relative">
+      <img
+        src="../images/left-cloud.svg"
+        className="absolute -left-24 top-52"
+      />
       <GlassCard
         className="my-48 bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
         topTittle="Impact or profit?"
