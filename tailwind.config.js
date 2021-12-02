@@ -34,6 +34,9 @@ module.exports = {
       width: {
         50: '50rem',
       },
+      height: {
+        80: '80px',
+      },
       colors: {
         paraColor: '#4D515C',
         // Configure your color palette here

@@ -14,13 +14,15 @@ function App() {
       <Header />
       <Hero />
       <CardsAbout />
-      <DefiProgress />
+      {/* <DefiProgress />
       <FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
         fullName="Harold Cunnigham"
         fonction="Fonction"
       />
+      /> */}
+      
       <TokenCard />
     </div>
   )
