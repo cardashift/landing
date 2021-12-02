@@ -11,6 +11,7 @@ function Hero() {
         paragraphe={
           'Cardashift, the launchpad in service of social and environmental impact'
         }
+        classnametitle=" text-8xl "
         classname="mt-6"
       />
       <PublicICO />

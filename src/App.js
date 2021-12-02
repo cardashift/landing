@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
 import FeaturedMedia from './sections/FeaturedMedia'
+import DefiProgress from './sections/DefiProgress'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <CardsAbout />
+      <DefiProgress />
       <FeaturedMedia />
     </div>
   )
