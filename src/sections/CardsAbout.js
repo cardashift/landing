@@ -5,22 +5,29 @@ import GlassCard from '../components/GlassCard'
 
 function CardsAbout() {
   return (
-    <div className="flex flex-col items-start justify-evenly relative">
-      <img
+    <div className="flex flex-col items-start justify-evenly relative ">
+      {/* <img
         src="../images/left-cloud.svg"
-        className="absolute -left-24 top-52"
-      />
-      <GlassCard
-        className="my-48 bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
-        topTittle="Impact or profit?"
-        tittle="Reaching sustainability while being profitable is a big hurdle for
+        className="absolute -left-200 top-52 -z-1"
+      /> */}
+      <div className="relative">
+        <GlassCard
+          className="my-48 bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+          topTittle="Impact or profit?"
+          tittle="Reaching sustainability while being profitable is a big hurdle for
         change makers"
-        description="Environmental and social transition stakes are increasingly prevalent.
+          description="Environmental and social transition stakes are increasingly prevalent.
         Change makers are working hard but they still lack th             e funding and the
         appropriate support to increase their success rate. Technologies - tools
         - relationships are needed to tokenize and accelerate these impact
         ventures"
-      />
+        />
+        <img
+          src="../images/big-bubble.png"
+          className="absolute right-10 bottom-1/4 -z-1"
+        />
+      </div>
+
       <br />
       <GlassCard
         className="mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
