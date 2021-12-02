@@ -7,6 +7,7 @@ import CardsAbout from './sections/CardsAbout'
 // import Profile from './components/Profile'
 // import TokenCard from './components/TokenCard'
 import PartnerCard from './components/PartnerCard'
+import CompanyCard from './components/CompanyCard'
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
       {/* <TokenCard /> */}
       <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
+      <CompanyCard
+        tittle="Matters"
+        description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+      />
     </div>
   )
 }
