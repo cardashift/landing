@@ -24,7 +24,7 @@ function Hero() {
           </Button>
           <Button className="shadow font-medium text-base ml-6 h-14 tracking-wide text-gray ">
             Submit your project
-            <ArrowIcon color="gray" className="mx-2 " />
+            <ArrowIcon color="gray" className="mx-2" />
           </Button>
         </div>
         <span className="flex items-center text-gray-600 text-xs my-24 font-Inter font-bold text-gray ">
@@ -33,7 +33,7 @@ function Hero() {
       </div>
       <img
         src="../images/bubble-purple.png"
-        class="absolute top-0 right-0 -z-1"
+        className="absolute top-0 right-0 -z-1"
       />
     </div>
   )

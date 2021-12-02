@@ -23,7 +23,7 @@ function TitleContainer({
       </h2>
       <p
         className={classnames(
-          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor `
+          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor`
         )}
       >
         {paragraphe}
