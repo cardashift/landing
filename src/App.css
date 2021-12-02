@@ -67,6 +67,23 @@
   color: white;
 }
 
+.partner-card {
+  width: 300px;
+  height: 115px;
+  background: linear-gradient(
+      135.37deg,
+      rgba(0, 0, 0, 0.4) 4.29%,
+      rgba(255, 255, 255, 0.4) 95.6%
+    ),
+    #ebecf0;
+    padding: 25px;
+  background-blend-mode: soft-light, normal;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
+  border-radius: 8px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
