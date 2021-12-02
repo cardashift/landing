@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
 import FeaturedMedia from './sections/FeaturedMedia'
+import Profile from './components/Profile'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <CardsAbout />
       <FeaturedMedia />
+      <Profile urlPicture="/images/profile-2.png" fullName="Harold Cunnigham" fonction="Fonction" />
     </div>
   )
 }
