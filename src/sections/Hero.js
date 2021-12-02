@@ -7,13 +7,12 @@ function Hero() {
   return (
     <div style={{ width: 519, marginTop: 91 }}>
       <div>
-        {' '}
         <TitleContainer
           title={'Debug the world'}
           paragraphe={
             'Cardashift, the launchpad in service of social and environmental impact'
           }
-          classnametitle=" text-8xl "
+          classnametitle=" text-8xl font-bold"
           classname="mt-6"
         />
         <PublicICO />

@@ -50,15 +50,15 @@ module.exports = {
         grayLight: '#EBECF0',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
-        primaire : "#000B2D",
-        },
+        primaire: '#000B2D',
+      },
       borderRadius: {
         40: '40px',
         20: '20px',
       },
       backgroundImage: {
         'button-orange-gradien':
-          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
       },
@@ -73,7 +73,7 @@ module.exports = {
       NizzoliAlt: 'NizzoliAlt',
       Inter: 'Inter',
       Nizzoli: 'Nizzoli',
-      Gilroy : 'Gilroy'
+      Gilroy: 'Gilroy',
     },
     zIndex: {
       '-1': '-1',
