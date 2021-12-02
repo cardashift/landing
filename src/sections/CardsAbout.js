@@ -6,13 +6,13 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <div className="flex flex-col items-start justify-evenly relative ">
-      {/* <img
+      <img
         src="../images/left-cloud.svg"
-        className="absolute -left-200 top-52 -z-1"
-      /> */}
+        className="absolute -left-20 top-52 -z-1"
+      />
       <div className="relative">
         <GlassCard
-          className="my-48 bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+          className="my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
           topTittle="Impact or profit?"
           tittle="Reaching sustainability while being profitable is a big hurdle for
         change makers"

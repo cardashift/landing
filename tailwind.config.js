@@ -45,6 +45,8 @@ module.exports = {
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
         grayLight: '#EBECF0',
+        'impact-gradient':
+          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
       },
       borderRadius: {
         40: '40px',
@@ -54,7 +56,7 @@ module.exports = {
         'button-orange-gradien':
           'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
         'impact-gradient':
-          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%);',
+          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
       },
       backdropBlur: {
         20: '20px',
