@@ -47,6 +47,26 @@
   border-radius: 40px;
 }
 
+.tokenCard {
+  width: 411px;
+  height: 325px;
+  background: linear-gradient(0deg, #e9eaee, #e9eaee), #ebecf0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  padding: 35px;
+  box-shadow: -10px -10px 20px #fafbff, 10px 10px 20px #a6abbd;
+  border-radius: 16px;
+}
+
+.line {
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 20px 0px;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -5,6 +5,8 @@ import CardsAbout from './sections/CardsAbout'
 import FeaturedMedia from './sections/FeaturedMedia'
 import DefiProgress from './sections/DefiProgress'
 import Profile from './components/Profile'
+import TokenCard from './components/TokenCard'
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         fullName="Harold Cunnigham"
         fonction="Fonction"
       />
+      <TokenCard />
     </div>
   )
 }
