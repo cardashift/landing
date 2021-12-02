@@ -5,7 +5,7 @@ function PartnerCard({ name, partnerType }) {
     <div className="partner-card">
       <div>
         <h1 className="font-Nizzoli text-3xl">{name}</h1>
-        <span className="font-Gilroy text-base text-partner_text">
+        <span className="font-Gilroy text-base text-paraColor">
           {partnerType}
         </span>
       </div>

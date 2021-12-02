@@ -67,6 +67,22 @@
   color: white;
 }
 
+.company_card {
+  width: 550px;
+  height: 170px;
+  background: linear-gradient(
+      135.37deg,
+      rgba(0, 0, 0, 0.4) 4.29%,
+      rgba(255, 255, 255, 0.4) 95.6%
+    ),
+    #ebecf0;
+  background-blend-mode: soft-light, normal;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
 .partner-card {
   width: 300px;
   height: 115px;
@@ -76,7 +92,7 @@
       rgba(255, 255, 255, 0.4) 95.6%
     ),
     #ebecf0;
-    padding: 25px;
+  padding: 25px;
   background-blend-mode: soft-light, normal;
   border: 2px solid rgba(255, 255, 255, 0.4);
   box-sizing: border-box;
