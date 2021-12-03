@@ -10,6 +10,8 @@ import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
+import { Helmet } from 'react-helmet'
+
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
 // import CompanyCard from './components/CompanyCard'
@@ -17,6 +19,10 @@ import FeaturedMedia from './sections/FeaturedMedia'
 function App() {
   return (
     <div className="container mx-auto ">
+      <Helmet>
+        <title>Cardashift</title>
+      </Helmet>
+
       <Header />
       <Hero />
       <CardsAbout />

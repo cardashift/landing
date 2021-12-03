@@ -1,13 +1,13 @@
 import React from 'react'
 
-function PartnerCard({ name, partnerType }) {
+function PartnerCard({ logo, partnerType }) {
   return (
     <div className="partner-card">
       <div>
-        <h1 className="font-Nizzoli text-3xl">{name}</h1>
-        <span className="font-Gilroy text-base text-paraColor">
+        <img src={logo} className="mb-4" />
+        <p className="font-Gilroy text-base text-paraColor mb-0">
           {partnerType}
-        </span>
+        </p>
       </div>
     </div>
   )
