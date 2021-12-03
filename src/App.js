@@ -11,10 +11,13 @@ import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
+import EcoSysteme from './sections/EcoSysteme'
+import JoinCommunity from './sections/JoinCommunity'
+
+import Team from './sections/Team'
 
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
-// import CompanyCard from './components/CompanyCard'
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
       <InitialToken />
       <FundingStages />
       <Roadmap />
+      <JoinCommunity />
+      <Team />
+      <EcoSysteme />
       <Partners />
       <FeaturedMedia
         topTittle="PRESS"
@@ -48,6 +54,7 @@ function App() {
         thirdImg="../images/secondFromBlog.svg"
         forthImg="../images/thirdFromBlog.svg"
       />
+
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"

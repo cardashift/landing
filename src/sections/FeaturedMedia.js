@@ -13,10 +13,10 @@ function FeaturedMedia({
   forthImg,
 }) {
   return (
-    <div>
+    <div className="mt-72">
       <div className="flex justify-between items-center">
         <TitleContainer
-          topTittle={topTittle}
+          topTitle={topTittle}
           title={title}
           classnametitle="font-black text-5xl mt-3"
         />
