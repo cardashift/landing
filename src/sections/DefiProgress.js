@@ -33,7 +33,7 @@ function DefiProgress() {
             subTitle="soon"
           />
         </div>
-        <div class="my-16">
+        <div className="my-16">
           <ProgressCards
             title="Accelerating change by making real world impact a smart investment"
             paragraphe="The world is not a zero-sum game, social/environmental progress and profit can and must coexist. Cardashift creates the technologies, tools and relationships to tokenize impact ventures and make them financially viable investments."

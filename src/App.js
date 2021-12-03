@@ -9,7 +9,7 @@ import FundingStages from './sections/FundingStages'
 import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
-// import FeaturedMedia from './sections/FeaturedMedia'
+import FeaturedMedia from './sections/FeaturedMedia'
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
 // import CompanyCard from './components/CompanyCard'
@@ -26,6 +26,22 @@ function App() {
       <FundingStages />
       <Roadmap />
       <Partners />
+      <FeaturedMedia
+        topTittle="PRESS"
+        title="Featured media"
+        firstImg="../images/random.svg"
+        secondImg="../images/random1.svg"
+        thirdImg="../images/random2.svg"
+        forthImg="../images/random3.svg"
+      />
+      <FeaturedMedia
+        topTittle="Latest articles"
+        title="From the blog"
+        firstImg="../images/accelerating-change.svg"
+        secondImg="../images/firstFromBlog.svg"
+        thirdImg="../images/secondFromBlog.svg"
+        forthImg="../images/thirdFromBlog.svg"
+      />
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
