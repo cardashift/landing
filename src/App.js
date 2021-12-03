@@ -11,9 +11,7 @@ import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
 import EcoSysteme from './sections/EcoSysteme'
-// import Profile from './components/Profile'
-// import PartnerCard from './components/PartnerCard'
-
+import CardaShiftCommunity from './sections/CardaShiftCommunity'
 function App() {
   return (
     <div className="container mx-auto ">
@@ -38,12 +36,12 @@ function App() {
       <FeaturedMedia
         topTittle="Latest articles"
         title="From the blog"
-        firstImg="../images/accelerating-change.svg"
+        firstImg="../images/fromBlog.svg"
         secondImg="../images/firstFromBlog.svg"
         thirdImg="../images/secondFromBlog.svg"
         forthImg="../images/thirdFromBlog.svg"
       />
-
+      <CardaShiftCommunity />
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
