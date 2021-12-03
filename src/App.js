@@ -1,9 +1,11 @@
 import './App.css'
+import './styles.css'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
 import DefiProgress from './sections/DefiProgress'
 import ClapToken from './sections/ClapToken'
+import InitialToken from './sections/InititalToken'
 // import FeaturedMedia from './sections/FeaturedMedia'
 // import DefiProgress from './sections/DefiProgress'
 // import Profile from './components/Profile'
@@ -19,6 +21,7 @@ function App() {
       <CardsAbout />
       <DefiProgress />
       <ClapToken />
+      <InitialToken />
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
