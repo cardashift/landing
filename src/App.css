@@ -28,6 +28,78 @@
   color: #61dafb;
 }
 
+.profile {
+  background: linear-gradient(
+      317.7deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 105.18%
+    ),
+    #ebecf0;
+  width: 12rem;
+  height: 16rem;
+  padding: 15px;
+  background-blend-mode: soft-light, normal;
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  /* Neumorphic / Inner / White */
+
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
+  border-radius: 40px;
+}
+
+.tokenCard {
+  width: 411px;
+  height: 325px;
+  background: linear-gradient(0deg, #e9eaee, #e9eaee), #ebecf0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  padding: 35px;
+  box-shadow: -10px -10px 20px #fafbff, 10px 10px 20px #a6abbd;
+  border-radius: 16px;
+}
+
+.line {
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 20px 0px;
+  color: white;
+}
+
+.company_card {
+  width: 550px;
+  height: 170px;
+  background: linear-gradient(
+      135.37deg,
+      rgba(0, 0, 0, 0.4) 4.29%,
+      rgba(255, 255, 255, 0.4) 95.6%
+    ),
+    #ebecf0;
+  background-blend-mode: soft-light, normal;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.partner-card {
+  width: 300px;
+  height: 115px;
+  background: linear-gradient(
+      135.37deg,
+      rgba(0, 0, 0, 0.4) 4.29%,
+      rgba(255, 255, 255, 0.4) 95.6%
+    ),
+    #ebecf0;
+  padding: 25px;
+  background-blend-mode: soft-light, normal;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
+  border-radius: 8px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

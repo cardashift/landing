@@ -34,6 +34,9 @@ module.exports = {
       width: {
         50: '50rem',
       },
+      height: {
+        80: '80px',
+      },
       colors: {
         paraColor: '#4D515C',
         // Configure your color palette here
@@ -44,14 +47,20 @@ module.exports = {
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
+        grayLight: '#EBECF0',
+        'impact-gradient':
+          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
+        primaire: '#000B2D',
       },
       borderRadius: {
         40: '40px',
         20: '20px',
       },
       backgroundImage: {
+        'button-orange-gradien':
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
         'impact-gradient':
-          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%);',
+          'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
       },
       backdropBlur: {
         20: '20px',
@@ -64,6 +73,10 @@ module.exports = {
       NizzoliAlt: 'NizzoliAlt',
       Inter: 'Inter',
       Nizzoli: 'Nizzoli',
+      Gilroy: 'Gilroy',
+    },
+    zIndex: {
+      '-1': '-1',
     },
   },
   variants: {

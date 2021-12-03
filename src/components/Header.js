@@ -3,6 +3,7 @@ import ArrowIcon from './ArrowIcon'
 import Button from './Button'
 import classnames from 'classnames'
 function Header() {
+  const [selected, setSelected] = React.useState('Home')
   const navigationItems = [
     { name: 'Home', selected: true },
     { name: '$CLAP', selected: false },
@@ -12,7 +13,13 @@ function Header() {
     { name: 'Wiki', selected: false },
   ]
   return (
-    <nav className="flex flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40">
+    <nav
+      className="h-80 bg-header-gradient flex flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40"
+      style={{
+        background:
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0',
+      }}
+    >
       <div>
         <img src="/images/logo.svg" alt="" />
       </div>
@@ -20,13 +27,13 @@ function Header() {
         {navigationItems.map((item, index) => (
           <li
             className={classnames(
-              item.selected
-                ? 'bg-gray-900 text-black py-3 px-5 bg-blend-soft-light shadow-sm rounded-20'
+              item.name == selected
+                ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
                 : 'text-gray hover:bg-gray-700',
-              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-40'
+              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
             )}
             key={index}
-            // onClick={() => setCurrentRoute(item)}
+            onClick={() => setSelected(item.name)}
           >
             {item.name}
           </li>

@@ -1,12 +1,75 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
-- test
-sast:
-  stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+  - build
+  - deploy
+variables:
+  AWS_DEFAULT_REGION: eu-west-3 # The region of our S3 bucket
+  BUCKET_NAME_DEV: dev-csp.smala.co # Your bucket name
+  # BUCKET_NAME_PROD: fafaporte.com # Your bucket name
+  CDN_DISTRIBUTION_ID_PROD: ESY2UVRWFO1QH
+  CI: 'false'
+
+beta_build:
+  image: node:10
+  stage: build
+  script:
+    - npm i
+    - npm run build
+    - rm -rf ${BUCKET_NAME_DEV}; mv build ${BUCKET_NAME_DEV}
+  artifacts:
+    paths:
+      - ${BUCKET_NAME_DEV}
+    expire_in: 1 day
+  cache:
+    key: '$CI_PROJECT_ID'
+    paths:
+      - node_modules
+  only:
+    - beta
+  environment: beta
+  allow_failure: false
+
+beta_deploy:
+  image: 'python:latest'
+  stage: deploy
+  before_script:
+    - pip install awscli # Install the SDK
+  script:
+    - aws s3 sync ${BUCKET_NAME_DEV} s3://${BUCKET_NAME_DEV}/ # Replace example-bucket with your bucket
+  environment:
+    name: beta
+  only:
+    - beta
+### -------------------------------------------- PROD  -----------------------------------------------------
+
+# prod_build:
+#   image: node:10
+#   stage: build
+#   script:
+#     - npm i
+#     - mv .env.prod .env && npm run build
+#     - rm -rf ${BUCKET_NAME_PROD}; mv build ${BUCKET_NAME_PROD}
+#   artifacts:
+#     paths:
+#       - ${BUCKET_NAME_PROD}
+#     expire_in: 1 day
+#   cache:
+#     key: "$CI_PROJECT_ID"
+#     paths:
+#       - node_modules
+#   only:
+#     - master
+#   environment: master
+#   allow_failure: false
+
+# prod_deploy:
+#   image: "python:latest"
+#   stage: deploy
+#   before_script:
+#     - pip install awscli # Install the SDK
+#   script:
+#     - aws s3 sync ${BUCKET_NAME_PROD} s3://${BUCKET_NAME_PROD}/ # Replace example-bucket with your bucket
+#     - aws cloudfront create-invalidation --distribution-id ${CDN_DISTRIBUTION_ID_PROD} --paths "/*"
+#   environment:
+#     name: master
+#   only:
+#     - master
