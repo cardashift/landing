@@ -6,14 +6,14 @@ function TitleContainer({
   title,
   paragraphe,
   classname,
-  topTittle,
+  topTitle,
   classnametitle,
   classnameContainer,
 }) {
   return (
     <div className={classnameContainer}>
       <span className="text-blue uppercase font-Inter font-black  text-xs tracking-wider">
-        {topTittle}
+        {topTitle}
       </span>
       <h2 className={classnames(`${classnametitle} text-black font-Nizzoli`)}>
         {title}

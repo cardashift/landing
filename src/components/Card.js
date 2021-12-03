@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({ urlPicture, tittle, description }) {
+function Card({ urlPicture, title, description }) {
   return (
     <div className="w-72 h-96 flex flex-col	 bg-background-light rounded-md p-3 shadow-lg">
       <img
@@ -9,7 +9,7 @@ function Card({ urlPicture, tittle, description }) {
         alt="img-card"
       />
       <h3 className="text-lg my-3 font-bold text-blueRetro font-Inter">
-        {tittle}
+        {title}
       </h3>
       <p className="text-base text-blueRetro font-Inter">{description}</p>
     </div>

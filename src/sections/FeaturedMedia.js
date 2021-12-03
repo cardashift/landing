@@ -7,7 +7,7 @@ function FeaturedMedia() {
       FeaturedMedia
       <Card
         urlPicture="../images/random.png"
-        tittle="Real world impact"
+        title="Real world impact"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
       />
     </div>
