@@ -5,19 +5,19 @@ import PartnerCard from '../components/PartnerCard'
 function Partners() {
   const partnersList = [
     {
-      name: 'Les Echos',
+      logo: '/images/les-echos.svg',
       partnerType: 'Project sourcing partner',
     },
     {
-      name: 'Les Echos',
+      logo: '/images/les-echos.svg',
       partnerType: 'Local communities partner',
     },
     {
-      name: 'Les Echos',
+      logo: '/images/les-echos.svg',
       partnerType: 'PR & Media partner',
     },
     {
-      name: 'Les Echos',
+      logo: '/images/les-echos.svg',
       partnerType: 'Project sourcing partner',
     },
   ]
@@ -31,7 +31,7 @@ function Partners() {
         {partnersList.map((item, index) => (
           <PartnerCard
             key={index}
-            name={item.name}
+            logo={item.logo}
             partnerType={item.partnerType}
           />
         ))}

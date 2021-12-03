@@ -10,11 +10,23 @@ import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
+import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
 import CardaShiftCommunity from './sections/CardaShiftCommunity'
+import JoinCommunity from './sections/JoinCommunity'
+
+import Team from './sections/Team'
+
+// import Profile from './components/Profile'
+// import PartnerCard from './components/PartnerCard'
+
 function App() {
   return (
     <div className="container mx-auto ">
+      <Helmet>
+        <title>Cardashift</title>
+      </Helmet>
+
       <Header />
       <Hero />
       <CardsAbout />
@@ -23,6 +35,8 @@ function App() {
       <InitialToken />
       <FundingStages />
       <Roadmap />
+      <JoinCommunity />
+      <Team />
       <EcoSysteme />
       <Partners />
       <FeaturedMedia

@@ -13,7 +13,7 @@ function DefiProgress() {
           title="Providing technological commons, Built for impact projects & investors"
         />
       </div>
-      <div className="flex flex-col rounded-40 border-red-700 border-2  my-16 w-full pt-10 px-10">
+      <div className="flex flex-col rounded-40 border-gray-500 border-2  my-16 w-full pt-10 px-10">
         <div className="flex justify-between">
           <CardSoon cardTitle="Launchpad & Acceleration" SoonDisplay={false} />
           <CardSoon SoonDisplay={true} cardTitle="DeX / AMM" subTitle="Soon" />
