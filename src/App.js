@@ -1,9 +1,10 @@
 import './App.css'
+import './styles.css'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
 import FeaturedMedia from './sections/FeaturedMedia'
-
+import InitialToken from './sections/InititalToken'
 function App() {
   return (
     <div className="container mx-auto px-20">
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <CardsAbout />
       <FeaturedMedia />
+      <InitialToken />
     </div>
   )
 }
