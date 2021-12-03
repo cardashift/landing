@@ -48,6 +48,9 @@ module.exports = {
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
         grayLight: '#EBECF0',
+        blueLight: '#647DFE',
+        blueCiel: '#7589F7',
+        orangeLight: '#FF7A00',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         primaire: '#000B2D',
