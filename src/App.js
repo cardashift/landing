@@ -11,6 +11,10 @@ import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
 import EcoSysteme from './sections/EcoSysteme'
+import JoinCommunity from './sections/JoinCommunity'
+
+import Team from './sections/Team'
+
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
 
@@ -25,6 +29,8 @@ function App() {
       <InitialToken />
       <FundingStages />
       <Roadmap />
+      <JoinCommunity />
+      <Team />
       <EcoSysteme />
       <Partners />
       <FeaturedMedia
