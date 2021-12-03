@@ -1,4 +1,5 @@
 import './App.css'
+import './styles.css'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
@@ -6,6 +7,7 @@ import DefiProgress from './sections/DefiProgress'
 import ClapToken from './sections/ClapToken'
 import FundingStages from './sections/FundingStages'
 import Roadmap from './sections/Roadmap'
+import InitialToken from './sections/InititalToken'
 // import FeaturedMedia from './sections/FeaturedMedia'
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
@@ -19,9 +21,10 @@ function App() {
       <CardsAbout />
       <DefiProgress />
       <ClapToken />
+      <InitialToken />
       <FundingStages />
       <Roadmap />
-      {/* <FeaturedMedia />
+      {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
         fullName="Harold Cunnigham"

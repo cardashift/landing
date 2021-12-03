@@ -1,0 +1,190 @@
+/* use style in progress chart component */
+/* to refactor=> */
+.progress-bar {
+    width: 336px;
+    transform: rotate3d(0, -64, 0, 180deg);
+    position: absolute;
+    top: 0;
+}
+
+.CircularProgressbar-path {
+    stroke-linecap: round;
+}
+
+.public-sale {
+    z-index: 2;
+}
+
+.public-sale-indicator {
+    position: absolute;
+    top: -45px;
+    z-index: 3;
+    left: -85px;
+}
+
+.public-sale .CircularProgressbar-path {
+    stroke: url(#publicSale) !important;
+
+}
+
+.private-sale {
+    z-index: 1;
+}
+
+.private-sale-indicator {
+    position: absolute;
+    z-index: 3;
+    left: -180px;
+    top: 5px;
+}
+
+.private-sale .CircularProgressbar-path {
+    stroke: url(#privateSale) !important;
+}
+
+.marketing {
+    z-index: 0;
+}
+
+.marketing-indicator {
+    z-index: 3;
+    top: 122px;
+    left: -155px;
+    position: absolute;
+}
+
+.marketing .CircularProgressbar-path {
+    stroke: url(#marketing) !important;
+}
+
+.ambassadors {
+    z-index: -1;
+}
+
+.ambassadors-indicator {
+    z-index: 3;
+    left: -240px;
+    top: 170px;
+    align-items: baseline;
+    position: absolute;
+}
+
+.ambassadors .CircularProgressbar-path {
+    stroke: url(#ambassadors) !important;
+}
+
+.partnerships {
+    z-index: -2;
+}
+
+.partnerships-indicator {
+    z-index: 3;
+    left: -180px;
+    top: 230px;
+    align-items: baseline;
+    position: absolute;
+}
+
+.partnerships .CircularProgressbar-path {
+    stroke: url(#partnerships) !important;
+}
+
+.team {
+    z-index: -3;
+}
+
+.team-indicator {
+    z-index: 3;
+    top: 275px;
+    left: -190px;
+    position: absolute;
+    align-items: baseline;
+}
+
+.team .CircularProgressbar-path {
+    stroke: url(#team) !important;
+}
+
+.treasury {
+    z-index: -4;
+}
+
+.treasury-indicator {
+    z-index: 3;
+    right: -215px;
+    position: absolute;
+    flex-direction: row-reverse;
+}
+
+.treasury .CircularProgressbar-path {
+    stroke: url(#treasury) !important;
+}
+
+.circle-md {
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset -8.45916px -8.45916px 16.9183px #FAFBFF, inset 8.45916px 8.45916px 16.9183px #A6ABBD;
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-sm {
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-sizing: border-box;
+    box-shadow: -16.9183px -16.9183px 33.8366px #FAFBFF, 16.9183px 16.9183px 33.8366px #A6ABBD;
+    background-blend-mode: soft-light, normal;
+    width: 180px;
+    height: 180px;
+    border-radius: 110px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.circle-xs {
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-sizing: border-box;
+    box-shadow: inset -8.45916px -8.45916px 16.9183px #FAFBFF, inset 8.45916px 8.45916px 16.9183px #A6ABBD;
+    width: 85px;
+    height: 85px;
+    border-radius: 110px;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+
+.progress-circular-chart {
+    width: 412px;
+    height: 412px;
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 1.41724px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: -14.1724px -14.1724px 28.3448px #FAFBFF, 14.1724px 14.1724px 28.3448px #A6ABBD;
+    border-radius: 228px;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circular-chart__content {
+    height: 335px;
+    width: 335px;
+    border-radius: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: -16.9183px -16.9183px 33.8366px #FAFBFF, 16.9183px 16.9183px 33.8366px rgba(11, 46, 226, 0.4);
+}
