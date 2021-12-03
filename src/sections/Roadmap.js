@@ -6,7 +6,7 @@ function Roadmap() {
   return (
     <div>
       <TitleContainer
-        topTittle="Milestones"
+        topTitle="Milestones"
         title="Cardashift roadmap"
         classnametitle=" text-5xl font-black mt-3"
       />

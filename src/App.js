@@ -51,7 +51,7 @@ function App() {
 
       <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
       <CompanyCard
-        tittle="Matters"
+        title="Matters"
         description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
       /> */}
     </div>

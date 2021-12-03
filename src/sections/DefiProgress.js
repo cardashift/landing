@@ -9,7 +9,7 @@ function DefiProgress() {
       <div className="px-52">
         <TitleContainer
           classnametitle="text-5xl mt-4  leading-tight font-bold"
-          topTittle="DeFi for universal progress "
+          topTitle="DeFi for universal progress "
           title="Providing technological commons, Built for impact projects & investors"
         />
       </div>

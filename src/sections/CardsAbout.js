@@ -10,8 +10,8 @@ function CardsAbout() {
       <div className="relative">
         <GlassCard
           className="my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
-          topTittle="Impact or profit?"
-          tittle="Reaching sustainability while being profitable is a big hurdle for
+          topTitle="Impact or profit?"
+          title="Reaching sustainability while being profitable is a big hurdle for
         change makers"
           description="Environmental and social transition stakes are increasingly prevalent.
         Change makers are working hard but they still lack th             e funding and the
@@ -28,8 +28,8 @@ function CardsAbout() {
       <br />
       <GlassCard
         className="mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
-        topTittle="About Cardashift?"
-        tittle="Empowering the visionary ventures that will create 
+        topTitle="About Cardashift?"
+        title="Empowering the visionary ventures that will create 
         a sustainable future"
         description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
         Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."

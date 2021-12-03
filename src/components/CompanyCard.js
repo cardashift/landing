@@ -1,11 +1,11 @@
 import React from 'react'
 
-function CompanyCard({ tittle, description }) {
+function CompanyCard({ title, description }) {
   return (
     <div className="company_card">
       <div>
         <h1 className="font-Gilroy text-2xl tracking-wide text-paraColor font-bold">
-          {tittle}
+          {title}
         </h1>
         <div className="my-2 flex flex-row items-start justify-between">
           <h3 className="font-Gilroy text-base tracking-wide leading-6 text-paraColor opacity-70">

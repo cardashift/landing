@@ -6,7 +6,9 @@ function Header() {
   const [selected, setSelected] = React.useState('Home')
   const navigationItems = [
     { name: 'Home', selected: true },
+    { name: 'Product', selected: false },
     { name: '$CLAP', selected: false },
+
     { name: 'Roadmap', selected: false },
     { name: 'Team', selected: false },
     { name: 'Community', selected: false },
@@ -21,7 +23,7 @@ function Header() {
       }}
     >
       <div>
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" width="224px" alt="" />
       </div>
       <ul className="flex items-center flex-row self-ends">
         {navigationItems.map((item, index) => (
