@@ -2,7 +2,7 @@ import React from 'react'
 
 function PublicICO() {
   return (
-    <div className="h-36 my-10 rounded-3xl border-4 border-solid font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO backdrop-blur-md">
+    <div className="h-36 my-10 rounded-3xl font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO backdrop-blur-md">
       <p className="text-center mb-2">Public ICO coming soon</p>
       <div className="flex justify-center ">
         <span className="flex flex-col items-center justify-center font-Inter font-normal ml-2 text-5xl ">

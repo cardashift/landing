@@ -28,29 +28,20 @@
   color: #61dafb;
 }
 
-.profile {
-  background: linear-gradient(
-      317.7deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(255, 255, 255, 0.4) 105.18%
-    ),
-    #ebecf0;
-  width: 12rem;
-  height: 16rem;
-  padding: 15px;
-  background-blend-mode: soft-light, normal;
-  border: 2px solid rgba(255, 255, 255, 0.16);
-  box-sizing: border-box;
-  /* Neumorphic / Inner / White */
-
+.line {
   box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd;
-  border-radius: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 20px 0px;
+  color: white;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,29 +1,26 @@
 import React from 'react'
 import classnames from 'classnames'
 
-
 function TitleContainer({
   title,
   paragraphe,
   classname,
-  topTittle,
+  topTitle,
   classnametitle,
+  classnameContainer,
 }) {
   return (
-    <div>
+    <div className={classnameContainer}>
       <span className="text-blue uppercase font-Inter font-black  text-xs tracking-wider">
-        {topTittle}
+        {topTitle}
       </span>
       <h2
-        className={classnames(
-          `${classnametitle} text-black font-bold font-Nizzoli`
-        )}
-      >
-        {title}
-      </h2>
+        dangerouslySetInnerHTML={{ __html: title }}
+        className={classnames(`${classnametitle} text-black font-Nizzoli`)}
+      ></h2>
       <p
         className={classnames(
-          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor `
+          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor`
         )}
       >
         {paragraphe}
