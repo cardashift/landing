@@ -9,11 +9,11 @@ variables:
   CI: 'false'
 
 beta_build:
-  image: node:12
+  image: node:10
   stage: build
   script:
-    - npm i
-    - npm run build
+    - yarn
+    - yarn build
     - rm -rf ${BUCKET_NAME_DEV}; mv build ${BUCKET_NAME_DEV}
   artifacts:
     paths:
