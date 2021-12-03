@@ -1,7 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
 
-
 function TitleContainer({
   title,
   paragraphe,
@@ -15,9 +14,10 @@ function TitleContainer({
       <span className="text-blue uppercase font-Inter font-black  text-xs tracking-wider">
         {topTitle}
       </span>
-      <h2 className={classnames(`${classnametitle} text-black font-Nizzoli`)}>
-        {title}
-      </h2>
+      <h2
+        dangerouslySetInnerHTML={{ __html: title }}
+        className={classnames(`${classnametitle} text-black font-Nizzoli`)}
+      ></h2>
       <p
         className={classnames(
           `${classname} font-Inter font-normal text-base tracking-tight text-paraColor`
