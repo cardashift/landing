@@ -8,22 +8,19 @@ function TitleContainer({
   classname,
   topTittle,
   classnametitle,
+  classnameContainer,
 }) {
   return (
-    <div>
+    <div className={classnameContainer}>
       <span className="text-blue uppercase font-Inter font-black  text-xs tracking-wider">
         {topTittle}
       </span>
-      <h2
-        className={classnames(
-          `${classnametitle} text-black font-bold font-Nizzoli`
-        )}
-      >
+      <h2 className={classnames(`${classnametitle} text-black font-Nizzoli`)}>
         {title}
       </h2>
       <p
         className={classnames(
-          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor `
+          `${classname} font-Inter font-normal text-base tracking-tight text-paraColor`
         )}
       >
         {paragraphe}
