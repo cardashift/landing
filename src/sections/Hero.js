@@ -30,6 +30,7 @@ function Hero() {
           POWERED BY <img className="ml-2" src="../images/powered-by.svg  " />
         </span>
       </div>
+
       <img
         src="../images/bubble-purple.png"
         className="absolute top-0 right-0 -z-1"

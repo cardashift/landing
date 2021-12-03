@@ -12,6 +12,7 @@ import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
+import CardaShiftCommunity from './sections/CardaShiftCommunity'
 import JoinCommunity from './sections/JoinCommunity'
 
 import Team from './sections/Team'
@@ -49,12 +50,12 @@ function App() {
       <FeaturedMedia
         topTittle="Latest articles"
         title="From the blog"
-        firstImg="../images/accelerating-change.svg"
+        firstImg="../images/fromBlog.svg"
         secondImg="../images/firstFromBlog.svg"
         thirdImg="../images/secondFromBlog.svg"
         forthImg="../images/thirdFromBlog.svg"
       />
-
+      <CardaShiftCommunity />
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"

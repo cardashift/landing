@@ -2,9 +2,9 @@ import React from 'react'
 
 function CardFeatureMedia({ urlPicture, tittle, description }) {
   return (
-    <div className="w-72 h-96 flex flex-col	 bg-background-light rounded-md pb-8 shadow-lg">
+    <div className="flex flex-col bg-background-light rounded-md pb-8 shadow w-72">
       <img
-        className="w-72 h-52 px-3 rounded-md"
+        className="h-52 p-3 rounded-3xl"
         src={urlPicture ? urlPicture : '../img/default-img.jpg'}
         alt="img-card"
       />
