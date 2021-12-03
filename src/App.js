@@ -10,9 +10,9 @@ import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
+import EcoSysteme from './sections/EcoSysteme'
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
-// import CompanyCard from './components/CompanyCard'
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
       <InitialToken />
       <FundingStages />
       <Roadmap />
+      <EcoSysteme />
       <Partners />
       <FeaturedMedia
         topTittle="PRESS"
@@ -42,6 +43,7 @@ function App() {
         thirdImg="../images/secondFromBlog.svg"
         forthImg="../images/thirdFromBlog.svg"
       />
+
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
