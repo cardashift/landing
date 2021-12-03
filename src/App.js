@@ -9,6 +9,7 @@ import FundingStages from './sections/FundingStages'
 import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
 import Partners from './sections/Partners'
+import Ecosystem from './sections/Ecosystem'
 // import FeaturedMedia from './sections/FeaturedMedia'
 // import Profile from './components/Profile'
 // import PartnerCard from './components/PartnerCard'
@@ -26,6 +27,7 @@ function App() {
       <FundingStages />
       <Roadmap />
       <Partners />
+      <Ecosystem />
       {/*<FeaturedMedia />
       <Profile
         urlPicture="/images/profile-2.png"
