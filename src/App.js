@@ -4,10 +4,9 @@ import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
 import TokenCard from './components/TokenCard'
 
-
 function App() {
   return (
-    <div className="container mx-auto px-20">
+    <div className="container mx-auto ">
       <Header />
       <Hero />
       <CardsAbout />
@@ -18,7 +17,7 @@ function App() {
         fullName="Harold Cunnigham"
         fonction="Fonction"
       /> */}
-      
+
       <TokenCard />
     </div>
   )
