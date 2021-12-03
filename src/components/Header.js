@@ -23,7 +23,7 @@ function Header() {
       }}
     >
       <div>
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" width="224px" alt="" />
       </div>
       <ul className="flex items-center flex-row self-ends">
         {navigationItems.map((item, index) => (
