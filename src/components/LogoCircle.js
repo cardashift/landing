@@ -12,7 +12,7 @@ function LogoCircle() {
     },
     largeCircle = {
       ...circle,
-      right: '-680px',
+      right: -585,
       height: 1318,
       width: 1318,
       square: {
