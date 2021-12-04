@@ -13,7 +13,7 @@ function RoundSquare({ icon, style }) {
   }
   return (
     <div className="flex items-center justify-center" style={square}>
-      <img src={icon} />
+      {icon}
     </div>
   )
 }
