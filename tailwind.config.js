@@ -2,20 +2,29 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '768px',
+      md: '960px',
+      lg: '1440px',
+      // '2lg': '1600px',
+      xl: '2000px',
+      // 'lg-height': { raw: '(min-height: 960px)' },
+      // 'md-height': { raw: '(max-height: 785px)' },
+      // "2xl": "1600px"
+    },
     container: {
-      screens: {
-        sm: '100%',
-        md: '1240px',
-        lg: '1440px',
-        xl: '2000px',
-      },
+      // screens: {
+      //   // sm: '100%',
+      //   // md: '992px',
+      //   // lg: '1440px',
+      //   // xl: '2000px',
+      // },
       padding: {
-        20: '20px',
-        default: '24px',
-        md: '32px',
-        lg: '56px',
-        xl: '56px',
-        96: '96px',
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
     extend: {
@@ -34,6 +43,10 @@ module.exports = {
       },
       width: {
         50: '50rem',
+        519: '519px',
+      },
+      maxWidth: {
+        252: '252px',
       },
       height: {
         80: '80px',
