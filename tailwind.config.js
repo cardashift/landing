@@ -13,12 +13,12 @@ module.exports = {
       // "2xl": "1600px"
     },
     container: {
-      // screens: {
-      //   // sm: '100%',
-      //   // md: '992px',
-      //   // lg: '1440px',
-      //   // xl: '2000px',
-      // },
+      screens: {
+        sm: '100%',
+        md: '1330px',
+        lg: '1440px',
+        xl: '2000px',
+      },
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
