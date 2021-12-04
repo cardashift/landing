@@ -5,7 +5,7 @@ import TitleContainer from '../components/TitleContainer'
 
 function CardaShiftCommunity() {
   return (
-    <div className="mt-36">
+    <div className="mt-36 hidden md:flex">
       <img
         src="../images/left-bubble-cardashift.png"
         className="absolute left-0 "

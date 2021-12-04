@@ -22,7 +22,7 @@ function Partners() {
     },
   ]
   return (
-    <div>
+    <div className="hidden md:block">
       <TitleContainer
         title="Cardashift Partners"
         classnametitle="text-5xl font-black mt-3"

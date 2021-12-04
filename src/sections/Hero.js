@@ -36,7 +36,7 @@ function Hero() {
 
       <img
         src="../images/bubble-purple.png"
-        className="absolute top-0 right-0 -z-1"
+        className="absolute top-0 right-0 -z-1 hidden md:block"
       />
     </div>
   )

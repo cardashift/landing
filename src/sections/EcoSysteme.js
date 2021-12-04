@@ -5,7 +5,10 @@ import TitleContainer from '../components/TitleContainer'
 
 function EcoSysteme() {
   return (
-    <div className="flex items-center" style={{ width: 'calc(100% - 700px)' }}>
+    <div
+      className="hidden md:flex items-center "
+      style={{ width: 'calc(100% - 700px)' }}
+    >
       <div className="flex items-center">
         <div className="my-72">
           <TitleContainer

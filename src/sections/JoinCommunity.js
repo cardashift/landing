@@ -3,7 +3,7 @@ import TitleContainer from '../components/TitleContainer'
 
 function JoinCommunity() {
   return (
-    <div>
+    <div className="hidden md:block">
       <TitleContainer
         topTitle="Team"
         title="+XXX competencies <br /> joining the Cardano Community"

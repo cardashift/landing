@@ -5,7 +5,7 @@ import TitleContainer from '../components/TitleContainer'
 
 function DefiProgress() {
   return (
-    <div className="my-16">
+    <div className="my-16 hidden md:block">
       <div className="px-52">
         <TitleContainer
           classnametitle="text-5xl mt-4  leading-tight font-bold"
