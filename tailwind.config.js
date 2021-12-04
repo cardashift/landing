@@ -2,20 +2,29 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '768px',
+      md: '960px',
+      lg: '1440px',
+      // '2lg': '1600px',
+      xl: '2000px',
+      // 'lg-height': { raw: '(min-height: 960px)' },
+      // 'md-height': { raw: '(max-height: 785px)' },
+      // "2xl": "1600px"
+    },
     container: {
-      screens: {
-        sm: '100%',
-        md: '1240px',
-        lg: '1440px',
-        xl: '2000px',
-      },
+      // screens: {
+      //   // sm: '100%',
+      //   // md: '992px',
+      //   // lg: '1440px',
+      //   // xl: '2000px',
+      // },
       padding: {
-        20: '20px',
-        default: '24px',
-        md: '32px',
-        lg: '56px',
-        xl: '56px',
-        96: '96px',
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
     extend: {
@@ -26,6 +35,7 @@ module.exports = {
         md: '-10px -10px 20px rgba(250, 251, 255, 0.5), 10px 10px 20px rgba(166, 171, 189, 0.5)',
       },
       spacing: {
+        '2px': '2px',
         40: '40px',
       },
       fontFamily: {
@@ -33,6 +43,10 @@ module.exports = {
       },
       width: {
         50: '50rem',
+        519: '519px',
+      },
+      maxWidth: {
+        252: '252px',
       },
       height: {
         80: '80px',
@@ -47,10 +61,12 @@ module.exports = {
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
+        'gray-100': '#F3F4F5',
         grayLight: '#EBECF0',
         blueLight: '#647DFE',
         blueCiel: '#7589F7',
         orangeLight: '#FF7A00',
+        blueFooter: '#0C1A6C',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         primaire: '#000B2D',
@@ -64,6 +80,8 @@ module.exports = {
           'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
+        'glass-border':
+          'linear-gradient(120deg, rgba(255,255,255,1) 0%, rgb(142 143 146 / 27%) 100%)',
       },
       backdropBlur: {
         20: '20px',
