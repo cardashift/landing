@@ -26,6 +26,7 @@ module.exports = {
         md: '-10px -10px 20px rgba(250, 251, 255, 0.5), 10px 10px 20px rgba(166, 171, 189, 0.5)',
       },
       spacing: {
+        '2px': '2px',
         40: '40px',
       },
       fontFamily: {
@@ -47,6 +48,7 @@ module.exports = {
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
+        'gray-100': '#F3F4F5',
         grayLight: '#EBECF0',
         blueLight: '#647DFE',
         blueCiel: '#7589F7',
@@ -64,6 +66,8 @@ module.exports = {
           'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
+        'glass-border':
+          'linear-gradient(120deg, rgba(255,255,255,1) 0%, rgb(142 143 146 / 27%) 100%)',
       },
       backdropBlur: {
         20: '20px',
