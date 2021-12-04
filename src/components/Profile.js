@@ -12,7 +12,7 @@ function Profile({ urlPicture, fullName, fonction }) {
         }}
       >
         <div
-          className="profileImg rounded-3xl p-3 flex flex-col justify-end"
+          className="profileImg rounded-3xl p-3 flex flex-col justify-end hover:bg-white hover:bg-opacity-40"
           style={{ height: 238, width: 163 }}
         >
           <h3 className="text-white font-Inter font-medium text-xs">
