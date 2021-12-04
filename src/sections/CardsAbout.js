@@ -5,7 +5,7 @@ import GlassCard from '../components/GlassCard'
 
 function CardsAbout() {
   return (
-    <div className="flex flex-col items-start justify-evenly  ">
+    <div className="hidden md:flex flex-col items-start justify-evenly  ">
       <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
       <div className="relative">
         <GlassCard

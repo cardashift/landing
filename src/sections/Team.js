@@ -11,9 +11,10 @@ import {
 
 function Team() {
   return (
-    <div>
-      <div className="my-10">
-        <h3 className="font-Nizzoli font-black text-2xl text-black mb-6">
+    <div className="hidden md:block">
+      {' '}
+      <div className="mt-8">
+        <h3 className="font-Nizzoli text-base font-black">
           Founders & executive
         </h3>
         <div className=" flex gap-6 flex-wrap">

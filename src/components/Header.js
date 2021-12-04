@@ -16,7 +16,7 @@ function Header() {
   ]
   return (
     <nav
-      className="h-80 bg-header-gradient flex flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40"
+      className="hidden md:flex h-80 bg-header-gradient flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40"
       style={{
         background:
           'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0',
