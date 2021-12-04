@@ -4,7 +4,7 @@ import FooterCommunication from '../components/FooterCommunication'
 
 function Footer() {
   return (
-    <div className="flex justify-between bg-blueFooter p-20">
+    <div className="hidden md:flex justify-between bg-blueFooter p-20">
       <FooterCommunication />
       <CardsFooter
         title="Product"

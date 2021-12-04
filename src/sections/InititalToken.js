@@ -3,7 +3,7 @@ import CircularChart from '../components/CircularChart'
 // import TitleContainer from '../components/TitleContainer'
 function InitialToken() {
   return (
-    <div className="pt-50" style={{ height: 700 }}>
+    <div className="pt-50 hidden md:flex" style={{ height: 700 }}>
       <h3 className="text-4xl text-black font-bold font-Nizzoli">
         Initial Token Distribution
       </h3>

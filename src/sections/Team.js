@@ -10,7 +10,7 @@ import {
 
 function Team() {
   return (
-    <div>
+    <div className="hidden md:block">
       {' '}
       <div className="mt-8">
         <h3 className="font-Nizzoli text-base font-black">
