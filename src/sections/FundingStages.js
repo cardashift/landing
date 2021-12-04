@@ -16,7 +16,7 @@ function FundingStages() {
           <FundingCap topTitle={'HARD CAP'} pricing={'$9 100 000'} />
         </div>
       </div>
-      <div className="flex flex-row my-12 gap-6">
+      <div className="flex justify-between my-12">
         <FundingBlock
           firstPrice="55,000,000"
           secondPrice="$0.02"

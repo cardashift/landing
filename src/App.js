@@ -38,6 +38,7 @@ function App() {
         <Team />
         <EcoSysteme />
         <Partners />
+
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -54,7 +55,6 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-        <CardaShiftCommunity />
 
         {/*<FeaturedMedia />
       <Profile
@@ -70,6 +70,8 @@ function App() {
       /> */}
       </div>
       <div>
+        <CardaShiftCommunity />
+
         <Footer />
       </div>
     </div>
