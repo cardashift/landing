@@ -12,11 +12,11 @@ function FundingStages() {
           Funding Stages
         </p>
         <div className="flex justify-between" style={{ width: 411 }}>
-          <FundingCap topTitle={'kjeqfzef'} pricing={'$124242'} />
-          <FundingCap topTitle={'kjeqfzef'} pricing={'$124242'} />
+          <FundingCap topTitle={'SOFT CAP'} pricing={'$4 100 000'} />
+          <FundingCap topTitle={'HARD CAP'} pricing={'$9 100 000'} />
         </div>
       </div>
-      <div className="flex flex-row my-12 justify-between">
+      <div className="flex flex-row my-12 gap-6">
         <FundingBlock
           firstPrice="55,000,000"
           secondPrice="$0.02"

@@ -12,7 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.profileImg{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.8%, rgba(0, 0, 0, 0.7) 100%);
+}
+.profile{
+  filter: drop-shadow(-10px -10px 20px #FAFBFF) drop-shadow(10px 10px 20px #A6ABBD)
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

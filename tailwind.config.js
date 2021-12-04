@@ -19,6 +19,10 @@ module.exports = {
       },
     },
     extend: {
+      dropShadow: {
+        'first-shadow': '-10px -10px 20px #FAFBFF',
+        'second-shadow': '10px 10px 20px #A6ABBD',
+      },
       boxShadow: {
         none: 'none',
         DEFAULT: '-10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD',
