@@ -16,6 +16,7 @@ import CardaShiftCommunity from './sections/CardaShiftCommunity'
 import JoinCommunity from './sections/JoinCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
+import MobileHeader from './components/MobileHeader'
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
         </Helmet>
 
         <Header />
+        <MobileHeader />
         <Hero />
         <CardsAbout />
         <DefiProgress />

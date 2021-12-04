@@ -5,10 +5,7 @@ import PublicICO from '../components/PublicICO'
 import TitleContainer from '../components/TitleContainer'
 function Hero() {
   return (
-    <div
-      className="w-full text-center md:w-519 md:text-left"
-      style={{ marginTop: 91 }}
-    >
+    <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-91">
       <div>
         <TitleContainer
           title={'Debug the world'}
@@ -29,7 +26,7 @@ function Hero() {
             <ArrowIcon color="gray" className="mx-2" />
           </Button>
         </div>
-        <span className="flex items-center text-gray-600 text-xs my-24 font-Inter font-bold text-gray ">
+        <span className="flex items-center justify-center md:justify-start mt-9 mb-17 text-gray-600 text-xs md:my-24 font-Inter font-bold text-gray ">
           POWERED BY <img className="ml-2" src="../images/powered-by.svg  " />
         </span>
       </div>
