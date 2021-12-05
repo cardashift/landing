@@ -21,12 +21,12 @@ function EcoSysteme() {
             description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
           />
           <CompanyCard
-            title="Matters"
-            description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+            title="Smart-Chain"
+            description="Blockchain, Technology Specialists ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
           />
           <CompanyCard
-            title="Matters"
-            description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+            title="Stim"
+            description="Innovation strategy and new product development specialist ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
           />
         </div>
       </div>

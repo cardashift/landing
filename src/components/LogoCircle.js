@@ -16,7 +16,7 @@ function LogoCircle() {
       height: 1318,
       width: 1318,
       square: {
-        transform: 'rotate(-28deg)',
+        transform: 'rotate(-25deg)',
         bottom: 254,
         left: 10,
       },
@@ -46,7 +46,7 @@ function LogoCircle() {
       <RoundSquare
         style={largeCircle.square}
         icon={
-          <img src="/images/stim.svg" style={{ transform: 'rotate(15deg)' }} />
+          <img src="/images/stim.svg" style={{ transform: 'rotate(18deg)' }} />
         }
       />
       <span className="flex items-center justify-center" style={mediumCercle}>

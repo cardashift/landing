@@ -16,14 +16,14 @@ import CardaShiftCommunity from './sections/CardaShiftCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
+import TimeLine from './sections/TimeLine'
 function App() {
   return (
     <div>
-      <div className="container mx-auto ">
+      <div className="container mx-auto flex flex-col">
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
-
         <Header />
         <MobileHeader />
         <Hero />
@@ -33,10 +33,10 @@ function App() {
         <InitialToken />
         <FundingStages />
         <Roadmap />
+        <TimeLine />
         <Team />
         <EcoSysteme />
         <Partners />
-
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -53,19 +53,6 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-
-        {/*<FeaturedMedia />
-      <Profile
-        urlPicture="/images/profile-2.png"
-        fullName="Harold Cunnigham"
-        fonction="Fonction"
-      />
-
-      <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
-      <CompanyCard
-        title="Matters"
-        description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
-      /> */}
       </div>
       <div>
         <CardaShiftCommunity />

@@ -5,6 +5,7 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Nizzoli';
   src: url('./Nizzoli/Nizzoli-Bold.ttf');
@@ -20,6 +21,7 @@
   font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Nizzoli';
   src: url('./Nizzoli/Nizzoli-Black.ttf');
@@ -27,6 +29,7 @@
   font-weight: 900;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Regular.ttf');
@@ -34,6 +37,7 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Medium.ttf');
@@ -41,6 +45,7 @@
   font-weight: 500;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-SemiBold.ttf');
@@ -48,6 +53,7 @@
   font-weight: 600;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Bold.ttf');
@@ -55,10 +61,19 @@
   font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Black.ttf');
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins/Poppins-Regular.ttf');
+  font-style: normal;
+  font-weight: 600;
   font-display: swap;
 }

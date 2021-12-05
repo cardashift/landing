@@ -44,6 +44,7 @@ module.exports = {
         40: '40px',
         91: '91px',
         250: '250px',
+        171: '171px',
       },
       fontFamily: {
         body: ['Nizzoli'],
@@ -84,7 +85,7 @@ module.exports = {
       },
       backgroundImage: {
         'button-orange-gradien':
-          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         'glass-border':
@@ -102,9 +103,15 @@ module.exports = {
       Inter: 'Inter',
       Nizzoli: 'Nizzoli',
       Gilroy: 'Gilroy',
+      Poppins: 'Poppins',
     },
     zIndex: {
       '-1': '-1',
+    },
+    flexGrow: {
+      0: 0,
+      1: 1,
+      2: 2,
     },
   },
   variants: {

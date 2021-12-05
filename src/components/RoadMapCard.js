@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 function RoadMapCard({ classname }) {
   return (
-    <div className="relative p-5 w-1/6 m-6 rounded-lg h-52 border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-blend-normal">
+    <div className="relative p-5 w-1/6 m-6 rounded-lg h-52 border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-grayLight bg-blend-soft-light">
       <h3 className="font-Inter font-bold text-lg ">Q2</h3>
       <ul className="mt-4 px-2">
         <li className="font-Inter text-sm font-normal mb-1">
