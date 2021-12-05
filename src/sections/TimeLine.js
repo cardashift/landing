@@ -127,7 +127,7 @@ function TimeLine() {
         content: 'Insurance',
         border: 'borderOrange',
         style: {
-          height: 265,
+          height: 320,
         },
       },
     ],
@@ -136,7 +136,8 @@ function TimeLine() {
         content: 'Governance',
         border: 'borderOrange',
         style: {
-          height: 1210,
+          height: 465,
+          transform: 'translateY(750px)',
         },
       },
     ],
@@ -145,7 +146,8 @@ function TimeLine() {
         content: 'STO',
         border: 'borderOrange',
         style: {
-          height: 1000,
+          height: 320,
+          transform: 'translateY(750px)',
         },
       },
     ],
