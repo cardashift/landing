@@ -4,7 +4,7 @@ import TokenCard from '../components/TokenCard'
 
 function ClapToken() {
   return (
-    <div className="flex justify-between items-start my-44">
+    <div className="hidden md:flex justify-between items-start my-44">
       <TitleContainer
         classname="mt-9 w-50 pr-48 text-lg"
         classnametitle="w-50 text-5xl my-3 font-black py-2"

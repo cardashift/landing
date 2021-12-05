@@ -2,23 +2,36 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '768px',
+      md: '960px',
+      lg: '1440px',
+      // '2lg': '1600px',
+      xl: '2000px',
+      // 'lg-height': { raw: '(min-height: 960px)' },
+      // 'md-height': { raw: '(max-height: 785px)' },
+      // "2xl": "1600px"
+    },
     container: {
       screens: {
         sm: '100%',
-        md: '1240px',
+        md: '1330px',
         lg: '1440px',
         xl: '2000px',
       },
       padding: {
-        20: '20px',
-        default: '24px',
-        md: '32px',
+        DEFAULT: '1rem',
+        sm: '2rem',
         lg: '56px',
-        xl: '56px',
-        96: '96px',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
     extend: {
+      dropShadow: {
+        'first-shadow': '-10px -10px 20px #FAFBFF',
+        'second-shadow': '10px 10px 20px #A6ABBD',
+      },
       boxShadow: {
         none: 'none',
         DEFAULT: '-10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD',
@@ -27,13 +40,20 @@ module.exports = {
       },
       spacing: {
         '2px': '2px',
+        17: '70px',
         40: '40px',
+        91: '91px',
+        250: '250px',
       },
       fontFamily: {
         body: ['Nizzoli'],
       },
       width: {
         50: '50rem',
+        519: '519px',
+      },
+      maxWidth: {
+        252: '252px',
       },
       height: {
         80: '80px',
@@ -64,7 +84,7 @@ module.exports = {
       },
       backgroundImage: {
         'button-orange-gradien':
-          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%),#EBECF0',
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         'glass-border':

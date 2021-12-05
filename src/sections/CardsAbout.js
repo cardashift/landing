@@ -5,11 +5,11 @@ import GlassCard from '../components/GlassCard'
 
 function CardsAbout() {
   return (
-    <div className="flex flex-col items-start justify-evenly  ">
+    <div className="flex flex-col items-start justify-evenly">
       <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
       <div className="relative">
         <GlassCard
-          className="my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+          className="md:w-50 px-6 py-8 md:p-16 mt-0 md:my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
           topTitle="Impact or profit?"
           title="Reaching sustainability while being profitable is a big hurdle for
         change makers"
@@ -27,7 +27,7 @@ function CardsAbout() {
 
       <br />
       <GlassCard
-        className="mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+        className="md:w-50 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
         topTitle="About Cardashift?"
         title="Empowering the visionary ventures that will create 
         a sustainable future"
@@ -36,7 +36,7 @@ function CardsAbout() {
         button={
           <Button className="bg-blue text-white mt-10 font-Inter font-medium text-xs h-12">
             Discover the products
-            <ArrowIcon className="ml-2 rotate-90" color="blue" />
+            <ArrowIcon className="ml-2" rotate="rotate(90)" color="blue" />
           </Button>
         }
       />

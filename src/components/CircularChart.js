@@ -68,9 +68,13 @@ function CircularChart({
           <>
             <div className={`flex ${item.class}-indicator`}>
               <span className="text-right">
-                <label> {item.title} </label>
+                <label className=" font-Inter font-normal text-lg text-primaire">
+                  {item.title}{' '}
+                </label>
                 <br />
-                <label className="font-bold">{item.value}%</label>
+                <label className="font-Inter font-bold text-lg text-primaire">
+                  {item.value}%
+                </label>
               </span>
 
               <img className="mt-5 ml-2 mr-2" src={item.indicator} />

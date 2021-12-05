@@ -1,5 +1,6 @@
 import './App.css'
 import './styles.css'
+import { Element } from 'react-scroll'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
@@ -13,9 +14,9 @@ import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
 import CardaShiftCommunity from './sections/CardaShiftCommunity'
-import JoinCommunity from './sections/JoinCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
+import MobileHeader from './components/MobileHeader'
 import TimeLine from './sections/TimeLine'
 function App() {
   return (
@@ -24,21 +25,30 @@ function App() {
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
-
-        <Header />
+        <Element nam={'Home'}>
+          <Header />
+        </Element>
+        <MobileHeader />
         <Hero />
         <CardsAbout />
-        <DefiProgress />
-        <ClapToken />
+        <Element name={'Product'}>
+          <DefiProgress />
+        </Element>
+        <Element name={'$CLAP'}>
+          <ClapToken />
+        </Element>
         <InitialToken />
         <FundingStages />
-        <Roadmap />
-        <TimeLine />
-        <JoinCommunity />
-
-        <Team />
+        <Element name={'Roadmap'}>
+          <TimeLine />
+          <Roadmap />
+        </Element>
+        <Element name={'Team'}>
+          <Team />
+        </Element>
         <EcoSysteme />
         <Partners />
+
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -55,22 +65,12 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-        <CardaShiftCommunity />
-
-        {/*<FeaturedMedia />
-      <Profile
-        urlPicture="/images/profile-2.png"
-        fullName="Harold Cunnigham"
-        fonction="Fonction"
-      />
-
-      <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
-      <CompanyCard
-        title="Matters"
-        description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
-      /> */}
       </div>
       <div>
+        <Element name={'Community'}>
+          <CardaShiftCommunity />
+        </Element>
+
         <Footer />
       </div>
     </div>

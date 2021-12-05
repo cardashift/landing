@@ -11,8 +11,8 @@ function FundingBlock({
 }) {
   return (
     <div
-      style={{ width: 400, height: 288 }}
-      className=" h-44 p-5 rounded-lg border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-blend-normal"
+      style={{ width: 411, height: 288 }}
+      className=" h-44 p-5 rounded-lg border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-grayLight bg-blend-soft-light"
     >
       <table
         className="table-auto border-separate"

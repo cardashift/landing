@@ -2,36 +2,46 @@ import React from 'react'
 import CardSoon from '../components/CardSoon'
 import ProgressCards from '../components/ProgressCards'
 import TitleContainer from '../components/TitleContainer'
+import classnames from 'classnames'
 
 function DefiProgress() {
+  const [selected, setSelected] = React.useState('Launchpad & Acceleration')
+  const navigationItems = [
+    { name: 'Launchpad & Acceleration', selected: true },
+    { name: 'DeX / AMM', selected: false },
+    { name: 'Universal Wallet', selected: false },
+    { name: 'Tokenization & Governance Frameworks', selected: false },
+    { name: 'Money Management Platform', selected: false },
+  ]
   return (
-    <div className="my-16">
+    <div className="my-16 hidden md:block">
       <div className="px-52">
         <TitleContainer
-          classnametitle="text-5xl mt-4  leading-tight font-bold"
+          classnametitle="text-5xl mt-4 pr-8 leading-tight font-black"
           topTitle="DeFi for universal progress "
           title="Providing technological commons, Built for impact projects & investors"
         />
       </div>
-      <div className="flex flex-col rounded-40 border-gray-500 border-2  my-16 w-full pt-10 px-10">
+      <div className="flex flex-col rounded-40 border-white border-2  my-16 w-full pt-10 px-10">
         <div className="flex justify-between">
-          <CardSoon cardTitle="Launchpad & Acceleration" SoonDisplay={false} />
-          <CardSoon SoonDisplay={true} cardTitle="DeX / AMM" subTitle="Soon" />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Universal Wallet"
-            subTitle="soon"
-          />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Tokenization & Governance Frameworks"
-            subTitle="soon"
-          />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Money Management Platform "
-            subTitle="soon"
-          />
+          {navigationItems.map((item, index) => (
+            <CardSoon
+              cardTitle={item.name}
+              subTitle="Soon"
+              SoonDisplay={
+                item.name === 'Launchpad & Acceleration' ? false : true
+              }
+              classname={classnames(
+                item.name == selected
+                  ? 'text-black  shadow-sm  rounded-20'
+                  : 'text-gray hover:bg-gray-700'
+              )}
+              key={index}
+              onclick={() => {
+                setSelected(item.name)
+              }}
+            />
+          ))}
         </div>
         <div className="my-16">
           <ProgressCards

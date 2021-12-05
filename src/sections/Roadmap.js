@@ -4,11 +4,11 @@ import TitleContainer from '../components/TitleContainer'
 
 function Roadmap() {
   return (
-    <div>
+    <div className="hidden md:block">
       <TitleContainer
         topTitle="Milestones"
         title="Cardashift roadmap"
-        classnametitle=" text-5xl font-black mt-3"
+        classnametitle="text-5xl font-black mt-3"
       />
       <div className="flex">
         <RoadMapCard classname="border-blue" />
