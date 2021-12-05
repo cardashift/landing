@@ -1,7 +1,7 @@
 import React from 'react'
 import TimeLineCard from './TimeLineCard'
 
-function Union({ color, value, customClass }) {
+function Union({ color, value, customClass, year, isFirstYear }) {
   const style = {
     border: '4px solid rgba(255, 255, 255, 0.4)',
     boxShadow: 'inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD',
@@ -10,12 +10,18 @@ function Union({ color, value, customClass }) {
     <>
       <div className="flex items-start relative">
         <div className="flex items-center">
-          <div className="flex absolute items-center  right-1">
+          <div
+            className={`flex absolute items-center  right-1 ${
+              isFirstYear ? 'top-24' : null
+            }`}
+          >
             <label
-              className="text-5xl font-semibold font-Poppins "
+              className={`text-5xl mt-9 opacity-20 font-semibold font-Poppins ${
+                isFirstYear ? '-mt-10' : null
+              }`}
               style={{ transform: 'rotate(-90deg)' }}
             >
-              2022
+              {year}
             </label>
             <TimeLineCard>{value}</TimeLineCard>
             <span className="relative">
@@ -32,7 +38,7 @@ function Union({ color, value, customClass }) {
         </div>
         <div className={customClass} style={style}>
           <div
-            className={`h-36 w-3  ${customClass}`}
+            className={` w-3 ${isFirstYear ? 'h-72' : 'h-36'} ${customClass}`}
             style={{ background: color }}
           ></div>
         </div>

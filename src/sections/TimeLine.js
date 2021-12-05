@@ -8,11 +8,14 @@ function TimeLine() {
       value: '12/2021',
       color:
         'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #0029FF',
+      year: 2021,
     },
+
     {
       value: 'Q1 2022',
       color:
         'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #0029FF',
+      year: 2022,
     },
     {
       value: 'Q2 2022',
@@ -33,6 +36,7 @@ function TimeLine() {
       value: 'Q1 2023',
       color:
         'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #FF7A00',
+      year: 2023,
     },
     {
       value: 'Q1 2023',
@@ -41,6 +45,32 @@ function TimeLine() {
   ]
   const gridCols = {
     firstCol: [
+      {
+        content: '1st call for projects',
+      },
+      {
+        content: '2nd call for projects',
+      },
+      {
+        content: '3rd call for projects',
+      },
+      {
+        content: '4th call for projects',
+      },
+      {
+        content: '5th call for projects',
+      },
+      {
+        content: '6th call for projects',
+      },
+      {
+        content: '7th call for projects',
+      },
+      {
+        content: '8th call for projects',
+      },
+    ],
+    secondCol: [
       {
         content: 'Launchpad Beta for crypto enthusiasts',
         border: 'borderBlue',
@@ -64,14 +94,14 @@ function TimeLine() {
       },
       {
         content: 'Decentralized blockhain based carbon market',
-        border: 'borderOrange',
+        border: 'borderBlack',
         style: {
-          height: 323,
+          height: 450,
         },
       },
     ],
 
-    secondCol: [
+    thirdCol: [
       {
         content: 'Staking',
         border: 'borderBlue',
@@ -101,52 +131,51 @@ function TimeLine() {
         },
       },
     ],
-    thirdCol: [
+    fourthCol: [
       {
         content: 'Governance',
         border: 'borderOrange',
         style: {
-          height: 600,
+          height: 1210,
         },
       },
     ],
-    fourthCol: [
+    fiveCol: [
       {
         content: 'STO',
         border: 'borderOrange',
         style: {
-          height: 485,
+          height: 1000,
         },
       },
     ],
   }
 
   return (
-    <div className="flex items-center pl-80 ">
-      <div className="grid w-full grid-cols-5 gap-4">
-        <div className="flex flex-col ">
-          {unions.map((item, i) => (
-            <div className="flex">
-              <Union
-                value={item.value}
-                color={item.color}
-                customClass={
-                  i === 0
-                    ? 'rounded-md rounded-b-none'
-                    : i > unions.length - 2
-                    ? 'rounded-md rounded-t-none'
-                    : null
-                }
-              />
-              <TimeLineCard isSquare>1st call for projects</TimeLineCard>
-            </div>
-          ))}
-        </div>
-        <div>
+    <div className="flex items-center pl-80 mt-28 ">
+      <div className="flex flex-col  ">
+        {unions.map((item, i) => (
+          <div className="flex">
+            <Union
+              value={item.value}
+              color={item.color}
+              year={item.year}
+              isFirstYear={i === 0 ? true : false}
+              customClass={
+                i === 0
+                  ? 'rounded-md rounded-b-none'
+                  : i > unions.length - 2
+                  ? 'rounded-md rounded-t-none'
+                  : null
+              }
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-between flex-grow-2">
+        <div style={{ transform: 'translateY(240px)' }}>
           {gridCols.firstCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
-            </TimeLineCard>
+            <TimeLineCard isSquare>{item.content}</TimeLineCard>
           ))}
         </div>
         <div>
@@ -163,8 +192,16 @@ function TimeLine() {
             </TimeLineCard>
           ))}
         </div>
+
         <div>
           {gridCols.fourthCol.map((item) => (
+            <TimeLineCard isDefault border={item.border} style={item.style}>
+              {item.content}
+            </TimeLineCard>
+          ))}
+        </div>
+        <div>
+          {gridCols.fiveCol.map((item) => (
             <TimeLineCard isDefault border={item.border} style={item.style}>
               {item.content}
             </TimeLineCard>
