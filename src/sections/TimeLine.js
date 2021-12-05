@@ -154,7 +154,7 @@ function TimeLine() {
   }
 
   return (
-    <div className="flex items-center pl-80 mt-28 ">
+    <div className="hidden md:flex items-center pl-80 mt-28 ">
       <div className="flex flex-col  ">
         {unions.map((item, i) => (
           <div className="flex">
