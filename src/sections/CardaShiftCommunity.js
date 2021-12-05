@@ -6,11 +6,8 @@ import TitleContainer from '../components/TitleContainer'
 function CardaShiftCommunity() {
   return (
     <div className="mt-36 hidden md:flex">
-      <img
-        src="../images/left-bubble-cardashift.png"
-        className="absolute left-0 "
-      />
-      <div className="py-80 relative" style={{ marginLeft: 732 }}>
+      <img src="../images/left-bubble-cardashift.png" />
+      <div className="py-80">
         <TitleContainer
           classnametitle="font-black text-5xl mb-3"
           title="Eager to join the Cardashift community?"

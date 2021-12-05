@@ -13,7 +13,6 @@ import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
 import CardaShiftCommunity from './sections/CardaShiftCommunity'
-import JoinCommunity from './sections/JoinCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
@@ -34,10 +33,10 @@ function App() {
         <InitialToken />
         <FundingStages />
         <Roadmap />
-        <JoinCommunity />
         <Team />
         <EcoSysteme />
         <Partners />
+
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -54,7 +53,6 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-        <CardaShiftCommunity />
 
         {/*<FeaturedMedia />
       <Profile
@@ -70,6 +68,8 @@ function App() {
       /> */}
       </div>
       <div>
+        <CardaShiftCommunity />
+
         <Footer />
       </div>
     </div>
