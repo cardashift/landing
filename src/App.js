@@ -1,6 +1,5 @@
 import './App.css'
 import './styles.css'
-import { Element } from 'react-scroll'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
@@ -21,34 +20,23 @@ import TimeLine from './sections/TimeLine'
 function App() {
   return (
     <div>
-      <div className="container mx-auto ">
+      <div className="container mx-auto flex flex-col">
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
-        <Element nam={'Home'}>
-          <Header />
-        </Element>
+        <Header />
         <MobileHeader />
         <Hero />
         <CardsAbout />
-        <Element name={'Product'}>
-          <DefiProgress />
-        </Element>
-        <Element name={'$CLAP'}>
-          <ClapToken />
-        </Element>
+        <DefiProgress />
+        <ClapToken />
         <InitialToken />
         <FundingStages />
-        <Element name={'Roadmap'}>
-          <TimeLine />
-          <Roadmap />
-        </Element>
-        <Element name={'Team'}>
-          <Team />
-        </Element>
+        <Roadmap />
+        <TimeLine />
+        <Team />
         <EcoSysteme />
         <Partners />
-
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -67,9 +55,7 @@ function App() {
         />
       </div>
       <div>
-        <Element name={'Community'}>
-          <CardaShiftCommunity />
-        </Element>
+        <CardaShiftCommunity />
 
         <Footer />
       </div>
