@@ -16,8 +16,9 @@ function Header() {
   ]
   return (
     <nav
-      className="hidden md:flex h-80 bg-header-gradient flex-row items-center justify-between rounded-40 mt-5 bg-blend-soft-light shadow-md py-5 px-8 border-2 border-solid border-white border-opacity-40"
+      className="hidden md:flex h-80 fixed top-5 bg-header-gradient gap-10 justify-between items-center rounded-40  bg-blend-soft-light shadow-md  px-8 border-2 border-solid border-white border-opacity-40"
       style={{
+        zIndex: 10,
         background:
           'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0',
       }}
@@ -25,7 +26,7 @@ function Header() {
       <div>
         <img src="/images/logo.svg" width="224px" alt="logo" />
       </div>
-      <ul className="flex items-center flex-row self-end">
+      <ul className="flex items-center flex-row gap-0">
         {navigationItems.map((item, index) => (
           <Link
             to={item.name}
