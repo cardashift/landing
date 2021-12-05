@@ -1,11 +1,12 @@
 import React from 'react'
 import ArrowIcon from '../components/ArrowIcon'
+import Bubbles from '../components/Bubbles'
 import Button from '../components/Button'
 import PublicICO from '../components/PublicICO'
 import TitleContainer from '../components/TitleContainer'
 function Hero() {
   return (
-    <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-91">
+    <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-91 hero">
       <div>
         <TitleContainer
           title={'Debug the world'}
@@ -31,10 +32,11 @@ function Hero() {
         </span>
       </div>
 
-      <img
+      {/* <img
         src="../images/bubble-purple.png"
         className="absolute top-0 right-0 -z-1 hidden md:block"
-      />
+      /> */}
+      <Bubbles className="absolute w-50 -z-1 top-0 right-0  hidden md:block bubbles" />
     </div>
   )
 }
