@@ -16,6 +16,7 @@ import CardaShiftCommunity from './sections/CardaShiftCommunity'
 import JoinCommunity from './sections/JoinCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
+import TimeLine from './sections/TimeLine'
 function App() {
   return (
     <div>
@@ -32,7 +33,9 @@ function App() {
         <InitialToken />
         <FundingStages />
         <Roadmap />
+        <TimeLine />
         <JoinCommunity />
+
         <Team />
         <EcoSysteme />
         <Partners />

@@ -82,6 +82,7 @@ module.exports = {
       Inter: 'Inter',
       Nizzoli: 'Nizzoli',
       Gilroy: 'Gilroy',
+      Poppins: 'Poppins',
     },
     zIndex: {
       '-1': '-1',
