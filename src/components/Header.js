@@ -12,7 +12,6 @@ function Header() {
     { name: 'Roadmap', selected: false },
     { name: 'Team', selected: false },
     { name: 'Community', selected: false },
-    { name: 'Wiki', selected: false },
   ]
   return (
     <nav

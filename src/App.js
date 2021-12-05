@@ -19,7 +19,7 @@ import MobileHeader from './components/MobileHeader'
 function App() {
   return (
     <div>
-      <div className="container mx-auto ">
+      <div className="container mx-auto flex flex-col">
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
