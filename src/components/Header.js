@@ -15,7 +15,7 @@ function Header() {
   ]
   return (
     <nav
-      className="hidden md:flex h-80 fixed top-5 bg-header-gradient gap-10 justify-between items-center rounded-40  bg-blend-soft-light shadow-md  px-8 border-2 border-solid border-white border-opacity-40"
+      className="hidden md:flex h-80 sticky top-5 bg-header-gradient gap-10 justify-between items-center rounded-40  bg-blend-soft-light shadow-md  px-8 border-2 border-solid border-white border-opacity-40"
       style={{
         zIndex: 10,
         background:
