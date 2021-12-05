@@ -36,7 +36,7 @@ function CardsAbout() {
         button={
           <Button className="bg-blue text-white mt-10 font-Inter font-medium text-xs h-12">
             Discover the products
-            <ArrowIcon className="ml-2 rotate-90" color="blue" />
+            <ArrowIcon className="ml-2" rotate="rotate(90)" color="blue" />
           </Button>
         }
       />

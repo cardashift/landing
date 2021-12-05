@@ -7,7 +7,7 @@ import FundingCap from '../components/FundingCap'
 function FundingStages() {
   return (
     <div className="hidden md:flex flex-col">
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex justify-between items-center">
         <p className="font-Nizzoli font-black text-3xl text-black">
           Funding Stages
         </p>
@@ -16,7 +16,7 @@ function FundingStages() {
           <FundingCap topTitle={'HARD CAP'} pricing={'$9 100 000'} />
         </div>
       </div>
-      <div className="flex flex-row my-12 gap-6">
+      <div className="flex justify-between my-12">
         <FundingBlock
           firstPrice="55,000,000"
           secondPrice="$0.02"

@@ -12,7 +12,7 @@ function Profile({ urlPicture, fullName, fonction }) {
         }}
       >
         <div
-          className="profileImg rounded-3xl p-3 flex flex-col justify-end"
+          className="profileImg rounded-3xl p-3 flex flex-col justify-end hover:bg-white hover:bg-opacity-40"
           style={{ height: 238, width: 163 }}
         >
           <h3 className="text-white font-Inter font-medium text-xs">
@@ -22,12 +22,12 @@ function Profile({ urlPicture, fullName, fonction }) {
             {fonction}
           </h3>
           <div className="flex gap-2 my-1" style={{ width: 72 }}>
-            <div className="bg-white w-6 h-6 flex justify-center bg-button-orange-gradien items-center rounded-md	">
-              <img src="/images/twitter.svg" alt="twitter" />
-            </div>
-            <div className="bg-white w-6 h-6 flex justify-center items-center rounded-md bg-button-orange-gradien">
+            <button className="bg-white w-6 h-6 flex justify-center bg-button-orange-gradien items-center rounded-md	">
+              <img src="/images/mail.svg" alt="mail" />
+            </button>
+            <button className="bg-white w-6 h-6 flex justify-center items-center rounded-md bg-button-orange-gradien">
               <img src="/images/linkedin.svg" alt="linkedin" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
