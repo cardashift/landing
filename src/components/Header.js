@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
 import classnames from 'classnames'
@@ -8,7 +9,6 @@ function Header() {
     { name: 'Home', selected: true },
     { name: 'Product', selected: false },
     { name: '$CLAP', selected: false },
-
     { name: 'Roadmap', selected: false },
     { name: 'Team', selected: false },
     { name: 'Community', selected: false },
@@ -23,24 +23,33 @@ function Header() {
       }}
     >
       <div>
-        <img src="/images/logo.svg" width="224px" alt="" />
+        <img src="/images/logo.svg" width="224px" alt="logo" />
       </div>
-      <ul className="flex items-center flex-row self-ends">
+      <ul className="flex items-center flex-row self-end">
         {navigationItems.map((item, index) => (
-          <li
-            className={classnames(
-              item.name == selected
-                ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
-                : 'text-gray hover:bg-gray-700',
-              'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
-            )}
-            key={index}
-            onClick={() => setSelected(item.name)}
+          <Link
+            to={item.name}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
           >
-            {item.name}
-          </li>
+            <li
+              className={classnames(
+                item.name == selected
+                  ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
+                  : 'text-gray hover:bg-gray-700',
+                'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
+              )}
+              key={index}
+              onClick={() => setSelected(item.name)}
+            >
+              {item.name}
+            </li>{' '}
+          </Link>
         ))}
       </ul>
+
       <Button className="bg-blue text-white font-Inter font-medium text-xs">
         Pre-register to the ico
         <ArrowIcon className="ml-2" color="blue" />

@@ -42,23 +42,6 @@ function DefiProgress() {
               }}
             />
           ))}
-          {/* <CardSoon cardTitle="Launchpad & Acceleration" SoonDisplay={false} />
-          <CardSoon SoonDisplay={true} cardTitle="" subTitle="Soon" />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Universal Wallet"
-            subTitle="soon"
-          />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Tokenization & Governance Frameworks"
-            subTitle="soon"
-          />
-          <CardSoon
-            SoonDisplay={true}
-            cardTitle="Money Management Platform "
-            subTitle="soon"
-          /> */}
         </div>
         <div className="my-16">
           <ProgressCards

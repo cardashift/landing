@@ -1,5 +1,6 @@
 import './App.css'
 import './styles.css'
+import { Element } from 'react-scroll'
 import Hero from './sections/Hero'
 import Header from './components/Header'
 import CardsAbout from './sections/CardsAbout'
@@ -23,17 +24,27 @@ function App() {
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
-
-        <Header />
+        <Element nam={'Home'}>
+          <Header />
+        </Element>
         <MobileHeader />
         <Hero />
         <CardsAbout />
-        <DefiProgress />
-        <ClapToken />
+        <Element name={'Product'}>
+          <DefiProgress />
+        </Element>
+        <Element name={'$CLAP'}>
+          <ClapToken />
+        </Element>
         <InitialToken />
         <FundingStages />
-        <Roadmap />
-        <Team />
+        <Element name={'Roadmap'}>
+          {' '}
+          <Roadmap />
+        </Element>
+        <Element name={'Team'}>
+          <Team />
+        </Element>
         <EcoSysteme />
         <Partners />
 
@@ -53,22 +64,11 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-
-        {/*<FeaturedMedia />
-      <Profile
-        urlPicture="/images/profile-2.png"
-        fullName="Harold Cunnigham"
-        fonction="Fonction"
-      />
-
-      <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
-      <CompanyCard
-        title="Matters"
-        description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
-      /> */}
       </div>
       <div>
-        <CardaShiftCommunity />
+        <Element name={'Community'}>
+          <CardaShiftCommunity />
+        </Element>
 
         <Footer />
       </div>
