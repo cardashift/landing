@@ -13,7 +13,6 @@ import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
 import CardaShiftCommunity from './sections/CardaShiftCommunity'
-import JoinCommunity from './sections/JoinCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
@@ -34,7 +33,6 @@ function App() {
         <InitialToken />
         <FundingStages />
         <Roadmap />
-        <JoinCommunity />
         <Team />
         <EcoSysteme />
         <Partners />
