@@ -8,7 +8,7 @@ import { Element } from 'react-scroll'
 function Hero() {
   return (
     <Element name={'Home'}>
-      <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-91">
+      <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-171">
         <div>
           <TitleContainer
             title={'Debug the world'}

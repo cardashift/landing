@@ -44,6 +44,7 @@ module.exports = {
         40: '40px',
         91: '91px',
         250: '250px',
+        171: '171px',
       },
       fontFamily: {
         body: ['Nizzoli'],
