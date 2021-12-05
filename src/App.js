@@ -56,7 +56,6 @@ function App() {
       </div>
       <div>
         <CardaShiftCommunity />
-
         <Footer />
       </div>
     </div>
