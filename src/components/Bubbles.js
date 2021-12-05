@@ -76,7 +76,7 @@ function Bubbles({ className }) {
           <div className="absolute top-1/2">
             <img
               class="slide six ml-auto"
-              src="/images/bubbles/Big bubble 3.svg"
+              src="/images/bubbles/Big Bubble 3.svg"
             />
             <img
               class="slide two ml-auto"
