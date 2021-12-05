@@ -23,7 +23,6 @@ function App() {
         <Helmet>
           <title>Cardashift</title>
         </Helmet>
-
         <Header />
         <MobileHeader />
         <Hero />
@@ -36,7 +35,6 @@ function App() {
         <Team />
         <EcoSysteme />
         <Partners />
-
         <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
@@ -53,19 +51,6 @@ function App() {
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
         />
-
-        {/*<FeaturedMedia />
-      <Profile
-        urlPicture="/images/profile-2.png"
-        fullName="Harold Cunnigham"
-        fonction="Fonction"
-      />
-
-      <PartnerCard name="Les Echos" partnerType="Project sourcing partner" />
-      <CompanyCard
-        title="Matters"
-        description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
-      /> */}
       </div>
       <div>
         <CardaShiftCommunity />

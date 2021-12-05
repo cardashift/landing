@@ -4,7 +4,7 @@ import Button from './Button'
 
 function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
   return (
-    <div className="flex justify-around items-center mx-24 mb-8 border-2 border-white p-6 rounded-md shadow-md bg-button-orange-gradien ">
+    <div className="flex justify-around items-center mx-24 mb-8 border-2 border-white border-opacity-40 p-6 rounded-md  bg-button-orange-gradien bg-blend-soft-light bg-grayLight ">
       <img src={srcImg} className="mr-8" />
       <div className="flex flex-col justify-center items-start h-52">
         <h3 className=" font-bold font-Inter text-blueRetro text-lg mb-4">
