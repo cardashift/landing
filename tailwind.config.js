@@ -107,6 +107,7 @@ module.exports = {
     },
     zIndex: {
       '-1': '-1',
+      3: '3',
     },
     flexGrow: {
       0: 0,
