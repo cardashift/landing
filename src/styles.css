@@ -34,8 +34,8 @@
 .private-sale-indicator {
     position: absolute;
     z-index: 3;
-    left: -180px;
-    top: 5px;
+    left: -195px;
+    top: 40px;
 }
 
 .private-sale .CircularProgressbar-path {
@@ -48,8 +48,8 @@
 
 .marketing-indicator {
     z-index: 3;
-    top: 122px;
-    left: -155px;
+    top: 130px;
+    left: -170px;
     position: absolute;
 }
 
@@ -64,7 +64,7 @@
 .ambassadors-indicator {
     z-index: 3;
     left: -240px;
-    top: 170px;
+    top: 190px;
     align-items: baseline;
     position: absolute;
 }
@@ -79,8 +79,8 @@
 
 .partnerships-indicator {
     z-index: 3;
-    left: -180px;
-    top: 230px;
+    left: -170px;
+    top: 250px;
     align-items: baseline;
     position: absolute;
 }
@@ -95,8 +95,8 @@
 
 .team-indicator {
     z-index: 3;
-    top: 275px;
-    left: -190px;
+    top: 290px;
+    left: -140px;
     position: absolute;
     align-items: baseline;
 }
