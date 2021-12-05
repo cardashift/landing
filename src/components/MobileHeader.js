@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
-
+import Logo from './Logo'
 function MobileHeader() {
   const [selected, setSelected] = React.useState('Home')
   const [overlayOpened, setOverlayOpened] = React.useState(false)
@@ -22,15 +22,10 @@ function MobileHeader() {
     <div className="block md:hidden">
       <img
         src="/images/mobile-bubble.png"
-        className="mx-auto absolute top-0 left-0 right-0 -z-1 block sm:hidden"
+        className="mx-auto absolute top-0 left-0 right-0 -z-1 block md:hidden"
       />
       <div className="flex items-start mt-8">
-        <img
-          src="/images/logo.svg"
-          className="mx-auto"
-          width="170px"
-          height="29px"
-        />
+        <Logo className="mx-auto" />
         <div onClick={() => setOverlayOpened(true)}>
           <img src="/images/hamburger-icon.svg" width="66px" height="66px" />
         </div>
@@ -40,17 +35,18 @@ function MobileHeader() {
           overlayOpened ? 'block' : 'hidden'
         } fixed bg-grayLight top-0 left-0 w-full h-full overflow-x-hidden`}
       >
-        <div className="flex md:hidden items-center mb-12 mt-8">
-          <img
-            src="/images/logo.svg"
-            className="mx-auto"
-            width="170px"
-            height="29px"
-          />
-          <div onClick={() => setOverlayOpened(false)}>
+        <div className="flex md:hidden items-center mb-3 mt-5">
+          <div onClick={() => setOverlayOpened(false)} className="ml-auto">
             <img src="/images/close-icon.svg" width="66px" height="66px" />
           </div>
         </div>
+        <img
+          src="/images/logo.svg"
+          className="mx-auto mb-14"
+          width="224px"
+          height="40px"
+        />
+
         <div>
           <ul className="flex items-center flex-col self-ends">
             {navigationItems.map((item, index) => (
@@ -68,7 +64,7 @@ function MobileHeader() {
               </li>
             ))}
           </ul>
-          <Button className="bg-blue text-white font-Inter font-medium text-xs mx-auto mt-16 mb-8">
+          <Button className="bg-blue text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
             Pre-register to the ico
             <ArrowIcon className="ml-2" color="blue" />
           </Button>
