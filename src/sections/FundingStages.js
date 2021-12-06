@@ -6,7 +6,7 @@ import FundingCap from '../components/FundingCap'
 
 function FundingStages() {
   return (
-    <div className="hidden md:flex flex-col">
+    <div className="hidden md:flex flex-col mb-52">
       <div className="flex justify-between items-center">
         <p className="font-Nizzoli font-black text-3xl text-black">
           Funding Stages
