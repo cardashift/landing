@@ -18,42 +18,49 @@ function CircularChart({
       title: 'Public Sale',
       class: 'public-sale',
       indicator: '/images/public-sale-arrow-icon.svg',
+      percent: 15,
     },
     {
       value: privateSale,
       title: 'Private sale',
       class: 'private-sale',
       indicator: '/images/private-sale-arrow-icon.svg',
+      percent: 20,
     },
     {
       value: marketing,
       title: 'Marketing',
       class: 'marketing',
       indicator: '/images/marketing-arrow-icon.svg',
+      percent: 25,
     },
     {
       value: ambassadors,
       title: 'Ambassadors',
       class: 'ambassadors',
       indicator: '/images/ambassadors-arrow-icon.svg',
+      percent: 30,
     },
     {
       value: partnerships,
       title: 'Partnerships',
       class: 'partnerships',
       indicator: '/images/partenerships-arrow-icon.svg',
+      percent: 40,
     },
     {
       value: team,
       title: 'Team (36m lock)',
       class: 'team',
       indicator: '/images/tem-arrow-icon.svg',
+      percent: 50,
     },
     {
       value: treasury,
       title: 'Treasury',
       class: 'treasury',
       indicator: '/images/treasury-arrow-icon.svg',
+      percent: 100,
     },
   ]
   return (
@@ -69,7 +76,7 @@ function CircularChart({
             <div className={`flex ${item.class}-indicator`}>
               <span className="text-right">
                 <label className=" font-Inter font-normal text-lg text-primaire">
-                  {item.title}{' '}
+                  {item.title}
                 </label>
                 <br />
                 <label className="font-Inter font-bold text-lg text-primaire">
@@ -80,7 +87,7 @@ function CircularChart({
               <img className="mt-5 ml-2 mr-2" src={item.indicator} />
             </div>
             <CircularProgressbar
-              value={item.value}
+              value={item.percent}
               strokeWidth={17}
               circleRatio={1}
               className={`progress-bar ${item.class}`}

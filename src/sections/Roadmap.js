@@ -6,7 +6,8 @@ import { Element } from 'react-scroll'
 function Roadmap() {
   return (
     <Element name={'Roadmap'}>
-      <div className="hidden md:block  my-32">
+      <img className="absolute right-0" src="/images/right-semiCloud.svg" />
+      <div className="hidden md:block h-full" style={{ paddingTop: 520 }}>
         <TitleContainer
           topTitle="Milestones"
           title="Cardashift roadmap"
