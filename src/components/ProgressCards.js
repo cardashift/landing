@@ -14,7 +14,7 @@ function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
           {paragraphe}
         </p>
         {btnDisplay && (
-          <Button className="bg-blue text-white font-Inter font-normal text-sm mt-6">
+          <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-normal text-sm mt-6">
             Submit your project <ArrowIcon color="blue" className="ml-2" />
           </Button>
         )}

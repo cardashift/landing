@@ -30,10 +30,10 @@ function Header() {
           {navigationItems.map((item, index) => (
             <Link
               to={item.name}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-50}
+              // spy={true}
+              // smooth={true}
+              // duration={500}
+              // offset={-50}
             >
               <li
                 className={classnames(
@@ -46,12 +46,12 @@ function Header() {
                 onClick={() => setSelected(item.name)}
               >
                 {item.name}
-              </li>{' '}
+              </li>
             </Link>
           ))}
         </ul>
 
-        <Button className="bg-blue text-white font-Inter font-medium text-xs">
+        <Button className="bg-blue hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="blue" />
         </Button>

@@ -20,12 +20,12 @@ function Hero() {
             classname="mt-6"
           />
           <PublicICO />
-          <div className="flex justify-center flex-col mx-auto max-w-252 md:max-w-none md:flex-row">
-            <Button className="mb-6 md:mb-auto shadow bg-gradient-to-br from-orangeBlack via-orange to-orange font-medium text-base text-white h-14 tracking-wide whitespace-pre md:whitespace-normal">
+          <div className="flex gap-3 mx-auto  md:max-w-none md:flex-row">
+            <Button className="mb-6 md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-14 tracking-wide whitespace-pre md:whitespace-normal">
               Pre-register to the ico
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
-            <Button className="shadow font-medium text-base md:ml-6 h-14 tracking-wide text-gray ">
+            <Button className="shadow font-medium text-base hover:bg-colorGrayHover h-14 tracking-wide text-gray ">
               Submit your project
               <ArrowIcon color="gray" className="mx-2" />
             </Button>
