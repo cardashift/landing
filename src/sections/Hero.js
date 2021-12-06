@@ -37,7 +37,7 @@ function Hero() {
 
         <img
           src="../images/bubble-purple.png"
-          className="absolute top-2  w-2/5 right-0 -z-1 hidden md:block"
+          className="absolute top-2  w-1/2 right-0 -z-1 hidden md:block"
           style={{ height: '67rem' }}
         />
         <div className="flex justify-center w-full absolute left-0">
