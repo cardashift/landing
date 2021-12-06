@@ -64,7 +64,7 @@ function MobileHeader() {
               </li>
             ))}
           </ul>
-          <Button className="bg-blue text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
+          <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
             Pre-register to the ico
             <ArrowIcon className="ml-2" color="blue" />
           </Button>

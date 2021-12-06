@@ -60,6 +60,9 @@ module.exports = {
         80: '80px',
       },
       colors: {
+        colorBlueHover: '#0622B7',
+        colorGrayHover: '#DCDEE8',
+        colorBtnHover: '#D26500',
         paraColor: '#4D515C',
         // Configure your color palette here
         grayPublicICO: '#4D515C',
@@ -69,7 +72,7 @@ module.exports = {
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
-        'gray-100': '#F3F4F5',
+        'gray-100': '#EBECF0',
         grayLight: '#EBECF0',
         blueLight: '#647DFE',
         blueCiel: '#7589F7',
@@ -117,7 +120,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: { borderWidth: ['hover'] },
   },
   plugins: [],
 }

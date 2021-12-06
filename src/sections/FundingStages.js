@@ -39,7 +39,7 @@ function FundingStages() {
           firstLeftTd="100% at TGE"
         />
       </div>
-      <Button className="shadow bg-gradient-to-br self-center mt-8 bg-blue text-white font-medium text-base h-14 tracking-wide">
+      <Button className="shadow bg-gradient-to-br self-center mt-8 bg-blue hover:bg-colorBlueHover text-white font-medium text-base h-14 tracking-wide">
         Pre-register to the ico
         <ArrowIcon className="ml-2" color="blue" />
       </Button>

@@ -9,23 +9,23 @@ function PublicICO() {
       return (
         <div className="bg-gray-100 h-36 rounded-3xl font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO backdrop-blur-md">
           <p className="text-center mb-2">Public ICO coming soon</p>
-          <div className="flex justify-center ">
-            <span className="flex flex-col items-center justify-center font-Inter font-normal text-5xl ">
+          <div className="flex justify-center gap-2">
+            <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal text-5xl ">
               {days}
               <span className="text-xs font-Inter font-bold">days</span>
             </span>
             <span className="font-Inter font-normal text-5xl mx-2">:</span>
-            <span className="flex flex-col items-center justify-center font-Inter font-normal text-5xl">
+            <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal text-5xl">
               {hours}
               <span className="text-xs font-Inter font-bold">hours</span>
             </span>
             <span className="font-Inter font-normal text-5xl mx-2">:</span>
-            <span className="flex flex-col items-center justify-center font-Inter font-normal text-5xl">
+            <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal text-5xl">
               {minutes}
               <span className="text-xs font-Inter font-bold">minutes</span>
             </span>
             <span className="font-Inter font-normal text-5xl mx-2">:</span>
-            <span className="flex flex-col items-center justify-center font-Inter font-normal text-5xl">
+            <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal text-5xl">
               {seconds}
               <span className="text-xs font-Inter font-bold">seconds</span>
             </span>

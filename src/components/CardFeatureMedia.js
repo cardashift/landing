@@ -17,5 +17,4 @@ function CardFeatureMedia({ urlPicture, tittle, description }) {
     </div>
   )
 }
-
 export default CardFeatureMedia

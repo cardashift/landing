@@ -20,7 +20,7 @@ function FeaturedMedia({
           title={title}
           classnametitle="font-black text-5xl mt-3"
         />
-        <Button className="bg-blue text-white ">
+        <Button className="bg-blue hover:bg-colorBlueHover text-white ">
           View more
           <ArrowIcon color="blue" className="ml-2" />
         </Button>
