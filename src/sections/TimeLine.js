@@ -137,7 +137,7 @@ function TimeLine() {
         border: 'borderOrange',
         style: {
           height: 465,
-          transform: 'translateY(750px)',
+          transform: 'translateY(485px)',
         },
       },
     ],
@@ -147,7 +147,7 @@ function TimeLine() {
         border: 'borderOrange',
         style: {
           height: 320,
-          transform: 'translateY(750px)',
+          transform: 'translateY(485px)',
         },
       },
     ],
@@ -187,7 +187,7 @@ function TimeLine() {
             </TimeLineCard>
           ))}
         </div>
-        <div>
+        <div style={{ transform: 'translateY(54px)' }}>
           {gridCols.thirdCol.map((item) => (
             <TimeLineCard isDefault border={item.border} style={item.style}>
               {item.content}
