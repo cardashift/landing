@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ArrowIcon({ className, color, rotate }) {
+function ArrowIcon({ className, color }) {
   const [fillColor, setFillColor] = React.useState('')
   React.useEffect(() => {
     if (color === 'blue') {
@@ -19,7 +19,6 @@ function ArrowIcon({ className, color, rotate }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      transform={rotate}
     >
       <circle
         cx="12"

@@ -10,7 +10,7 @@ function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
         <h3 className=" font-bold font-Inter text-blueRetro text-lg mb-4">
           {title}
         </h3>
-        <p className="font-Inter font-normal tracking-tight text-paraColor text-base">
+        <p className="font-Inter font-normal tracking-tight text-blueRetro text-opacity-70 text-base">
           {paragraphe}
         </p>
         {btnDisplay && (

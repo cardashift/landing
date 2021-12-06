@@ -24,40 +24,42 @@ function DefiProgress() {
             title="Providing technological commons, Built for impact projects & investors"
           />
         </div>
-        <div className="flex flex-col rounded-40 border-white border-2  my-16 w-full pt-10 px-10">
-          <div className="flex justify-between">
-            {navigationItems.map((item, index) => (
-              <CardSoon
-                cardTitle={item.name}
-                subTitle="Soon"
-                SoonDisplay={
-                  item.name === 'Launchpad & Acceleration' ? false : true
-                }
-                classname={classnames(
-                  item.name == selected
-                    ? 'text-black  shadow-sm  rounded-20'
-                    : 'text-gray hover:bg-gray-700'
-                )}
-                key={index}
-                onclick={() => {
-                  setSelected(item.name)
-                }}
+        <div className="rounded-40 my-16 p-2px bg-glass-border">
+          <div className="flex flex-col rounded-40 bg-gray-100  backdrop-blur-md w-full pt-10 px-10">
+            <div className="flex justify-between">
+              {navigationItems.map((item, index) => (
+                <CardSoon
+                  cardTitle={item.name}
+                  subTitle="Soon"
+                  SoonDisplay={
+                    item.name === 'Launchpad & Acceleration' ? false : true
+                  }
+                  classname={classnames(
+                    item.name == selected
+                      ? 'text-black  shadow-sm  rounded-20'
+                      : 'text-gray hover:bg-gray-700'
+                  )}
+                  key={index}
+                  onclick={() => {
+                    setSelected(item.name)
+                  }}
+                />
+              ))}
+            </div>
+            <div className="my-16">
+              <ProgressCards
+                title="Funding & accelerating the ideas to create a better world for tomorrow"
+                paragraphe="Cardashift aims to create the first launchpad for impactful projects on blockchain. We offer you to invest in promising ventures, backed by a best-in-class program to transform them into impactful businesses."
+                srcImg="../images/accelerating-change.svg"
+                btnDisplay={false}
               />
-            ))}
-          </div>
-          <div className="my-16">
-            <ProgressCards
-              title="Accelerating change by making real world impact a smart investment"
-              paragraphe="The world is not a zero-sum game, social/environmental progress and profit can and must coexist. Cardashift creates the technologies, tools and relationships to tokenize impact ventures and make them financially viable investments."
-              srcImg="../images/accelerating-change.svg"
-              btnDisplay={false}
-            />
-            <ProgressCards
-              title="Bringing rigor to dreams with dedicated scoring and acceleration frameworks"
-              paragraphe="Addressing 21st century challenges requires innovative thinking and executable solutions along with immense funding. Cardashift creates the environment to meticulously assess, derisk and track impact ventures."
-              srcImg="../images/bringing-rigor.svg"
-              btnDisplay={true}
-            />
+              <ProgressCards
+                title="Bringing rigor to dreams with dedicated scoring and acceleration frameworks"
+                paragraphe="Addressing 21st century challenges requires innovative thinking and executable solutions along with immense funding. Cardashift creates the environment to meticulously assess, derisk and track impact ventures."
+                srcImg="../images/bringing-rigor.svg"
+                btnDisplay={true}
+              />
+            </div>
           </div>
         </div>
       </div>
