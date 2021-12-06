@@ -27,7 +27,10 @@ function Union({ color, value, customClass, year, isFirstYear }) {
             <span className="relative">
               <div
                 className="absolute right-1 top-1  w-4 h-4 rounded-full"
-                style={{ background: color }}
+                style={{
+                  background: color,
+                  backgroundBlendMode: 'soft-light, normal',
+                }}
               ></div>
               <img
                 style={{ minHeight: 24, minWidth: 40 }}
@@ -39,7 +42,10 @@ function Union({ color, value, customClass, year, isFirstYear }) {
         <div className={customClass} style={style}>
           <div
             className={` w-3 ${isFirstYear ? 'h-72' : 'h-28'} ${customClass}`}
-            style={{ background: color }}
+            style={{
+              background: color,
+              backgroundBlendMode: 'soft-light, normal',
+            }}
           ></div>
         </div>
       </div>
