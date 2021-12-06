@@ -11,7 +11,6 @@ function ArrowIcon({ className, color, rotate }) {
       setFillColor('#F5F5F5')
     }
   }, [])
-
   return (
     <svg
       width="24"
