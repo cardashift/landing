@@ -40,7 +40,7 @@ export const devTeam = [
   {
     urlPicture: '/images/team/NicolasHenin.png',
     fullName: 'Nicolas Henin',
-    fonction: 'Cardano architecture',
+    fonction: 'Director of Cardano architecture',
   },
   {
     urlPicture: '/images/team/JeremyNicolas.png',
