@@ -38,7 +38,7 @@ function Union({ color, value, customClass, year, isFirstYear }) {
         </div>
         <div className={customClass} style={style}>
           <div
-            className={` w-3 ${isFirstYear ? 'h-72' : 'h-36'} ${customClass}`}
+            className={` w-3 ${isFirstYear ? 'h-72' : 'h-28'} ${customClass}`}
             style={{ background: color }}
           ></div>
         </div>

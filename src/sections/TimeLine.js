@@ -118,7 +118,7 @@ function TimeLine() {
       },
       {
         content: 'User Friendly Wallet',
-        border: 'borderOrange',
+        border: 'borderBlue',
         style: {
           height: 175,
         },
@@ -175,7 +175,7 @@ function TimeLine() {
         ))}
       </div>
       <div className="flex justify-between flex-grow-2">
-        <div style={{ transform: 'translateY(240px)' }}>
+        <div style={{ transform: 'translateY(370px)' }}>
           {gridCols.firstCol.map((item) => (
             <TimeLineCard isSquare>{item.content}</TimeLineCard>
           ))}
