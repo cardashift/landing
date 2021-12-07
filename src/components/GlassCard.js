@@ -6,13 +6,14 @@ function GlassCard({
   description,
   button,
   Background,
+  width,
 }) {
   return (
     <div
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url(${Background})`, width: width }}
       className={
         Background
-          ? `${className}  bg-auto bg-no-repeat bg-impact-gradient backdrop-filter backdrop-blur-20 
+          ? `${className} bg-auto bg-no-repeat bg-impact-gradient backdrop-filter backdrop-blur-20 
       bg-impact-gradient bg-impact-gradient`
           : `${className}  `
       }

@@ -16,7 +16,7 @@ function Union({ color, value, customClass, year, isFirstYear }) {
             }`}
           >
             <label
-              className={`text-5xl mt-9 opacity-20 font-semibold font-Poppins ${
+              className={`text-4xl sm:text-5xl mt-9 opacity-20 font-semibold font-Poppins  ${
                 isFirstYear ? '-mt-10' : null
               }`}
               style={{ transform: 'rotate(-90deg)' }}
@@ -44,7 +44,7 @@ function Union({ color, value, customClass, year, isFirstYear }) {
         <div className={customClass} style={style}>
           <div
             className={` w-3 ${
-              isFirstYear ? 'h-72' : 'h-36 sm:h-28'
+              isFirstYear ? 'h-72' : 'h-36 sm:h-36'
             } ${customClass}`}
             style={{
               background: color,

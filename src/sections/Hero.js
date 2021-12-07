@@ -16,17 +16,18 @@ function Hero() {
               'Cardashift, the launchpad in service of social and environmental impact'
             }
             classnametitle="text-5xl md:text-8xl font-black md:font-bold"
+            width={850}
             classname="mt-6"
           />
           <PublicICO />
           <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
-            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-56 tracking-wide whitespace-pre md:whitespace-normal">
+            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white  tracking-wide whitespace-pre md:whitespace-normal">
               Pre-register to the ico
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
-            <Button className="shadow font-medium text-base hover:bg-colorGrayHover h-56 tracking-wide text-gray ">
-              Submit your project
-              <ArrowIcon color="gray" className="mx-2" />
+            <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
+              Discover our whitepaper
+              {/* <ArrowIcon color="gray" className="md:mx-2 ml-7" /> */}
             </Button>
           </div>
           <span className="flex items-center justify-center md:justify-start mt-9 mb-17 text-gray-600 text-xs md:my-24 font-Inter font-bold text-gray ">

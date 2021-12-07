@@ -5,16 +5,13 @@ import TitleContainer from '../components/TitleContainer'
 
 function EcoSysteme() {
   return (
-    <div
-      className="md:flex items-center md:w-5/12 "
-      // style={{ width: 'calc(100% - 700px)' }}
-    >
+    <div className="md:flex items-center md:w-5/12">
       <div className="flex items-center">
         <div className="md:my-72 ">
           <TitleContainer
             topTitle="Ecosystem"
             title="Cardashift Core Companies"
-            classnametitle="font-black text-5xl my-4"
+            classnametitle="font-black text-2xl md:text-5xl my-4 pr-2"
           />
           <CompanyCard
             title="Matters"

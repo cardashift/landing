@@ -59,6 +59,7 @@ module.exports = {
         body: ['Nizzoli'],
       },
       fontSize: {
+        11: '11px',
         26: '26px',
       },
       width: {
@@ -70,6 +71,7 @@ module.exports = {
       },
       maxWidth: {
         252: '252px',
+        628: '628px',
       },
       height: {
         56: '56px',
@@ -115,6 +117,7 @@ module.exports = {
         20: '20px',
       },
       lineHeight: {
+        34: '34px',
         62: '62px',
       },
     },

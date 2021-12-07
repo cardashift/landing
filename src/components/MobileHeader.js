@@ -3,6 +3,8 @@ import classnames from 'classnames'
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
 import Logo from './Logo'
+import { Link } from 'react-scroll'
+
 function MobileHeader() {
   const [selected, setSelected] = React.useState('Home')
   const [overlayOpened, setOverlayOpened] = React.useState(false)
@@ -15,7 +17,6 @@ function MobileHeader() {
     { name: 'Roadmap', selected: false },
     { name: 'Team', selected: false },
     { name: 'Community', selected: false },
-    { name: 'Wiki', selected: false },
   ]
 
   return (
@@ -51,21 +52,23 @@ function MobileHeader() {
         <div>
           <ul className="flex items-center flex-col self-ends">
             {navigationItems.map((item, index) => (
-              <li
-                className={classnames(
-                  item.name == selected
-                    ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
-                    : 'text-gray hover:bg-gray-700',
-                  'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 mr-5 py-3 px-5'
-                )}
-                key={index}
-                onClick={() => {
-                  setSelected(item.name), setOverlayOpened(false)
-                }}
-                to={item.name}
-              >
-                {item.name}
-              </li>
+              <Link to={item.name}>
+                <li
+                  className={classnames(
+                    item.name == selected
+                      ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
+                      : 'text-gray hover:bg-gray-700',
+                    'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 mr-5 py-3 px-5'
+                  )}
+                  key={index}
+                  onClick={() => {
+                    setSelected(item.name), setOverlayOpened(false)
+                  }}
+                  to={item.name}
+                >
+                  {item.name}
+                </li>
+              </Link>
             ))}
           </ul>
           <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">

@@ -14,9 +14,9 @@ function Roadmap() {
         <TitleContainer
           topTitle="Milestones"
           title="Cardashift roadmap"
-          classnametitle="text-5xl font-black mt-3"
+          classnametitle="text-2xl md:text-5xl font-black mt-3"
         />
-        <div className="flex justify-between flex-wrap md:flex-nowrap gap-6 mt-20">
+        <div className="flex justify-between flex-wrap md:flex-nowrap gap-6 mt-8 md:mt-20">
           <RoadMapCard
             stateList={true}
             classnametitle="font-Inter font-normal text-lg"
