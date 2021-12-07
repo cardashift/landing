@@ -25,13 +25,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Founders & executive
           </h3>
-          <div className=" flex gap-3 md:gap-10  justify-start flex-wrap">
+          <div className=" flex gap-3 md:gap-6 justify-start flex-wrap">
             {foundersTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
@@ -40,13 +41,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Developement
           </h3>
-          <div className="flex flex-row gap-3 md:gap-10  justify-start flex-wrap">
+          <div className="flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {devTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
@@ -55,13 +57,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Product management
           </h3>
-          <div className="flex flex-row gap-3 md:gap-10  justify-start flex-wrap">
+          <div className="flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {ProductManagement.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
@@ -70,13 +73,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Project management
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-10  justify-start flex-wrap">
+          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {pmTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
@@ -85,13 +89,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Impact assessment
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-10  justify-start flex-wrap">
+          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {impactAssTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
@@ -100,13 +105,14 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Marketing & communication
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-10  justify-start flex-wrap">
+          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {marketingTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
-                fonction={profile.fonction}
+                role={profile.role}
                 key={index}
+                social={profile.social}
               />
             ))}
           </div>
