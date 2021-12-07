@@ -1,8 +1,16 @@
 import React from 'react'
 import TimeLineCard from '../components/TimeLineCard'
 import Union from '../components/Union'
-
+import { useWindowSize } from '../hooks/useWindowSize'
 function TimeLine() {
+  const windowSize = useWindowSize()
+  const mobileTextStyle = {
+    textOrientation: 'inherit',
+    writingMode: 'vertical-lr',
+    transform: 'rotate(180deg)',
+    textAlign: 'center',
+    height: '100%',
+  }
   const unions = [
     {
       value: '12/2021',
@@ -72,10 +80,11 @@ function TimeLine() {
     ],
     secondCol: [
       {
-        content: 'Launchpad Beta for crypto enthusiasts',
+        content: 'Launchpad',
         border: 'borderBlue',
         style: {
           height: 160,
+          marginTop: 20,
         },
       },
       {
@@ -96,7 +105,7 @@ function TimeLine() {
         content: 'Decentralized blockhain based carbon market',
         border: 'borderBlack',
         style: {
-          height: 450,
+          height: 440,
         },
       },
     ],
@@ -127,7 +136,7 @@ function TimeLine() {
         content: 'Insurance',
         border: 'borderOrange',
         style: {
-          height: 320,
+          height: windowSize < 768 ? 700 : 320,
         },
       },
     ],
@@ -154,8 +163,11 @@ function TimeLine() {
   }
 
   return (
-    <div className="hidden md:flex items-center pl-80 mt-28 ">
-      <div className="flex flex-col  ">
+    <div className=" flex items-center pl-52 sm:pl-80 mt-28 ">
+      <div
+        className="flex flex-col  "
+        // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
+      >
         {unions.map((item, i) => (
           <div className="flex">
             <Union
@@ -182,30 +194,63 @@ function TimeLine() {
         </div>
         <div>
           {gridCols.secondCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 px-6 w-14 sm:w-auto "
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
-        <div style={{ transform: 'translateY(54px)' }}>
+        <div
+          style={{
+            transform:
+              windowSize < 768 ? 'translateY(90px)' : 'translateY(54px)',
+          }}
+        >
           {gridCols.thirdCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 px-6 w-14 sm:w-auto"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
 
-        <div>
+        <div className="hidden sm:block">
           {gridCols.fourthCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 px-6 w-14 sm:w-auto"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
         <div>
           {gridCols.fiveCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 px-6 w-14 sm:w-auto"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>

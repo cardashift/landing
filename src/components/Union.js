@@ -23,7 +23,9 @@ function Union({ color, value, customClass, year, isFirstYear }) {
             >
               {year}
             </label>
-            <TimeLineCard>{value}</TimeLineCard>
+            <TimeLineCard className="-ml-5 sm:ml-0 w-24 px-2 py-2 sm:px-6 sm:py-4  sm:w-48">
+              {value}
+            </TimeLineCard>
             <span className="relative">
               <div
                 className="absolute right-1 top-1  w-4 h-4 rounded-full"
@@ -41,7 +43,9 @@ function Union({ color, value, customClass, year, isFirstYear }) {
         </div>
         <div className={customClass} style={style}>
           <div
-            className={` w-3 ${isFirstYear ? 'h-72' : 'h-28'} ${customClass}`}
+            className={` w-3 ${
+              isFirstYear ? 'h-72' : 'h-36 sm:h-28'
+            } ${customClass}`}
             style={{
               background: color,
               backgroundBlendMode: 'soft-light, normal',
