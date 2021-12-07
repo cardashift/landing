@@ -116,6 +116,9 @@ function TimeLine() {
         border: 'borderBlue',
         style: {
           height: 75,
+          paddingLeft: windowSize < 768 ? 20 : null,
+          width: windowSize < 768 ? 52 : null,
+          paddingTop: windowSize < 768 ? 37 : null,
         },
       },
       {
