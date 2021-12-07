@@ -5,11 +5,12 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-      <div className="md:flex hidden md:flex-col py-52 gap-14 justify-evenly">
+      <div className="md:flex hidden md:flex-col gap-14 justify-evenly">
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
         <div className="flex">
           <div className="relative">
             <GlassCard
+              width={850}
               Background={'images/leftRectangle.svg'}
               topTitle="Impact or profit?"
               title="Reaching sustainability while being profitable is a big hurdle for change makers"
@@ -49,13 +50,12 @@ function CardsAbout() {
 
           <br />
           <GlassCard
+            width={850}
             className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
-            title="Empowering the visionary ventures that will create 
-        a sustainable future"
-            description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
-        Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
+            title="Empowering the visionary ventures that will create a sustainable future"
+            description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
             button={
               <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
                 Discover the products
@@ -64,9 +64,12 @@ function CardsAbout() {
           />
         </div>
       </div>
-
-      <div className="sm:hidden flex flex-col py-52 gap-14 justify-evenly">
-        <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
+      <div className="md:hidden  flex flex-col md:py-52 justify-evenly">
+        <img
+          src="../images/left-cloud.svg"
+          style={{ marginTop: 480, width: 250 }}
+          className="absolute left-0 -z-1"
+        />
         <div className="flex" style={{ height: 565 }}>
           <div className="relative">
             <div>
@@ -94,12 +97,10 @@ function CardsAbout() {
               <img src="images/first-rec-mobile.png" />
               <div style={{ transform: 'translateY(-36rem)' }}>
                 <GlassCard
-                  className="md:w-5/7 px-6 py-8 md:p-16 mb-52   "
-                  topTitle="About Cardashift"
-                  title="Empowering the visionary ventures that will create 
-      a sustainable future"
-                  description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
-      Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
+                  className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10 "
+                  topTitle="Impact or profit?"
+                  title="Reaching sustainability while being profitable is a big hurdle for change makers "
+                  description="Environmental and social transition stakes are increasingly prevalent. Change makers are working hard but they still lack the funding and the appropriate support to increase their success rate. Technologies - tools - relationships are needed to tokenize and accelerate these impact ventures to make them financially viable investments."
                 />
               </div>
             </div>
@@ -134,18 +135,17 @@ function CardsAbout() {
             className="w-28 h-28 absolute right-0 sm:hidden"
             style={{ top: -40, right: 48, width: 120, height: 120, zIndex: -1 }}
           />
-
           <br />
           <div>
             <img src="images/rec-mobile-bg.png" />
-            <div style={{ transform: 'translateY(-40rem)' }}>
+            <div
+              style={{ transform: 'translateY(-40rem)', marginBottom: -750 }}
+            >
               <GlassCard
-                className="md:w-5/7 px-6 py-8 md:p-16 mb-52   "
+                className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
                 topTitle="About Cardashift"
-                title="Empowering the visionary ventures that will create 
-        a sustainable future"
-                description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
-        Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
+                title="Empowering the visionary ventures that will create a sustainable future"
+                description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
                 button={
                   <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
                     Discover the products

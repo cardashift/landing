@@ -6,7 +6,7 @@ import { Element } from 'react-scroll'
 function ClapToken() {
   return (
     <Element name={'$CLAP'}>
-      <div className="md:flex flex-col  items-center md:flex-row justify-between md:items-start my-44">
+      <div className="md:flex flex-col  items-center md:flex-row justify-between md:items-start mb-16 md:my-44">
         <TitleContainer
           classname="mt-9 md:w-50 md:pr-48 text-lg"
           classnametitle="md:w-50 md:text-5xl text-2xl  my-3 font-black md:py-2"
