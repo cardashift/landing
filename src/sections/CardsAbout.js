@@ -17,11 +17,11 @@ function CardsAbout() {
             />
             <img
               src="/images/big-bubble.png"
-              className="absolute right-48 bottom-16 -z-1"
+              className="absolute right-48 bottom-28 -z-1"
             />
             <img
               src="/images/big-bubble.png"
-              className="absolute w-12 h-12 right-36 bottom-12 -z-1"
+              className="absolute w-12 h-12 right-36 bottom-24 -z-1"
             />
           </div>
           <img
