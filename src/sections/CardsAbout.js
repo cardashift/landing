@@ -5,7 +5,7 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-      <div className="md:flex md:flex-col py-52 gap-14 justify-evenly hidden ">
+      <div className="md:flex hidden md:flex-col py-52 gap-14 justify-evenly">
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
         <div className="flex">
           <div className="relative">
@@ -34,7 +34,7 @@ function CardsAbout() {
             style={{ transform: 'translate(-20px, 500px)' }}
           />
         </div>
-        {/* use bulles in movileversion */}
+
         <div className="relative w-full flex justify-end">
           <img
             src="/images/Bigest bubble 3.png"

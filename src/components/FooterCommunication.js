@@ -30,12 +30,12 @@ function FooterCommunication() {
         Empower the visionary ventures that will create a sustainable and
         prosperous future.
       </p>
-      <div className="flex flex-row gap-10 md:gap-2 mb-10">
+      <div className="flex flex-row md:gap-2 mb-10">
         {socialNetworks.map(({ icon, link }) => {
           return (
             <span>
               <a href={link} target="_blank">
-                <img src={icon} />
+                <img src={icon} className="mr-10" />
               </a>
             </span>
           )

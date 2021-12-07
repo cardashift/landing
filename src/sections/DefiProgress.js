@@ -16,17 +16,17 @@ function DefiProgress() {
   ]
   return (
     <Element name={'Product'}>
-      <div className="my-16  hidden sm:block  md:block">
-        <div className="pr-52">
+      <div className="my-16   sm:block  md:block">
+        <div className="md:pr-52">
           <TitleContainer
-            classnametitle="text-5xl mt-4 pr-8 leading-tight font-black"
+            classnametitle="text-2xl md:text-5xl mt-4 md:pr-8 leading-tight font-black"
             topTitle="DeFi for universal progress "
             title="Providing technological commons, Built for impact projects & investors"
           />
         </div>
-        <div className="rounded-40 my-16 p-2px bg-glass-border">
-          <div className="flex flex-col rounded-40 bg-gray-100  backdrop-blur-md w-full pt-10 px-10">
-            <div className="flex justify-between">
+        <div className="rounded-40 my-16 md:p-2px bg-glass-border">
+          <div className="flex flex-col rounded-40 bg-gray-100  backdrop-blur-md w-full md:pt-10 md:px-10">
+            <div className="flex flex-col md:flex-row justify-between">
               {navigationItems.map((item, index) => (
                 <CardSoon
                   cardTitle={item.name}
@@ -46,6 +46,7 @@ function DefiProgress() {
                 />
               ))}
             </div>
+
             <div className="my-16">
               <ProgressCards
                 title="Funding & accelerating the ideas to create a better world for tomorrow"
