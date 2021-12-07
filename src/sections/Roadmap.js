@@ -7,10 +7,21 @@ function Roadmap() {
   return (
     <Element name={'Roadmap'}>
       <img
+<<<<<<< HEAD
         className="absolute -right-44 sm:right-0 -z-1 hidden -translate-y-28 sm:transform-none sm:z-1"
         src="/images/right-semiCloud.svg"
       />
       <div className=" md:block h-full mt-28 sm:mt-0 sm:pt-5xl ">
+=======
+        className="absolute -right-44 sm:right-0 -z-1 -translate-y-28 sm:transform-none sm:z-1 hidden sm:block"
+        src="/images/right-semiCloud.svg"
+      />
+      <img
+        className="absolute right-0 -z-1 -translate-y-28 sm:transform-none sm:z-1 sm:hidden"
+        src="/images/mobile-right-cloud.png"
+      />
+      <div className=" md:block h-full mt-28 sm:mt-0 sm:pt-5xl">
+>>>>>>> d14ca257c2355f1a72168d15ec49e99cfff53d7e
         <TitleContainer
           topTitle="Milestones"
           title="Cardashift roadmap"

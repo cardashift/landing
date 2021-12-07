@@ -9,13 +9,15 @@ function GlassCard({
 }) {
   return (
     <div
-      style={{
-        backgroundImage: `url(${Background})`,
-      }}
-      className={`${className} bg-contain bg-no-repeat bg-impact-gradient backdrop-filter backdrop-blur-20 
-      bg-impact-gradient bg-impact-gradient p-10 md:p-0`}
+      style={{ backgroundImage: `url(${Background})` }}
+      className={
+        Background
+          ? `${className}  bg-auto bg-no-repeat bg-impact-gradient backdrop-filter backdrop-blur-20 
+      bg-impact-gradient bg-impact-gradient`
+          : `${className}  `
+      }
     >
-      <div className="md:py-24 md:px-10">
+      <div className="md:py-24 md:px-10" style={{ maxWidth: 815 }}>
         <span className="text-blue uppercase font-Inter font-black text-xs tracking-wider">
           {topTitle}
         </span>

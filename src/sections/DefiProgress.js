@@ -16,8 +16,8 @@ function DefiProgress() {
   ]
   return (
     <Element name={'Product'}>
-      <div className="my-16 hidden md:block">
-        <div className="px-52">
+      <div className="my-16  hidden sm:block  md:block">
+        <div className="pr-52">
           <TitleContainer
             classnametitle="text-5xl mt-4 pr-8 leading-tight font-black"
             topTitle="DeFi for universal progress "
