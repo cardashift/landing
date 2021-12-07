@@ -4,7 +4,7 @@ function FooterCommunication() {
   const socialNetworks = [
     {
       icon: '../images/icon1.svg',
-      link: 'https://discord.com/invite/MZTtk9tV',
+      link: 'https://discord.gg/hTSWWButZR',
     },
     {
       icon: '../images/icon2.svg',
