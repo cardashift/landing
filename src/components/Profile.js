@@ -23,17 +23,18 @@ function Profile({ urlPicture, fullName, role, social }) {
           </h3>
           <h4 className=" text-white font-Inter font-bold text-11">{role}</h4>
           <div className=" flex gap-2 my-1" style={{ width: 72 }}>
-            {social.map((item) => (
-              <>
-                <a
-                  href={item.link ? item.link : '#!'}
-                  className="w-6 h-6 flex justify-center bg-button-orange-gradien bg-blend-soft-light bg-grayLight items-center rounded-md	"
-                  target={item.link ? '_blank' : ''}
-                >
-                  <img src={`/images/${item.icon}`} alt={item.name} />
-                </a>
-              </>
-            ))}{' '}
+            {social &&
+              social.map((item) => (
+                <>
+                  <a
+                    href={item.link ? item.link : '#!'}
+                    className="w-6 h-6 flex justify-center bg-button-orange-gradien bg-blend-soft-light bg-grayLight items-center rounded-md	"
+                    target={item.link ? '_blank' : ''}
+                  >
+                    <img src={`/images/${item.icon}`} alt={item.name} />
+                  </a>
+                </>
+              ))}{' '}
           </div>
         </div>
       </div>
