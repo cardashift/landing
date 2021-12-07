@@ -5,7 +5,7 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-      <div className="md:flex md:flex-col py-52 gap-14 justify-evenly">
+      <div className="md:flex md:flex-col py-52 gap-14 justify-evenly hidden ">
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
         <div className="flex">
           <div className="relative">
