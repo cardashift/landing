@@ -10,7 +10,7 @@ function Roadmap() {
         className="hidden md:block absolute -right-44 sm:right-0 -z-1  -translate-y-28 sm:transform-none sm:z-1"
         src="/images/right-semiCloud.svg"
       />
-      <div className=" md:block h-full mt-28 sm:mt-0 sm:pt-5xl ">
+      <div className=" md:block h-full mt-28 sm:mt-0 pt-60 sm:pt-5xl ">
         <TitleContainer
           topTitle="Milestones"
           title="Cardashift roadmap"

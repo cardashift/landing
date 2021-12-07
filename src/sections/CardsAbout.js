@@ -138,7 +138,9 @@ function CardsAbout() {
           <br />
           <div>
             <img src="images/rec-mobile-bg.png" />
-            <div style={{ transform: 'translateY(-40rem)' }}>
+            <div
+              style={{ transform: 'translateY(-40rem)', marginBottom: -750 }}
+            >
               <GlassCard
                 className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
                 topTitle="About Cardashift"
