@@ -41,7 +41,10 @@ function Hero() {
           style={{ height: '67rem' }}
         />
         <div className="flex justify-center w-full absolute left-0">
-          <img src="../images/Bigest bubble 3.png" className="w-44 h-44" />
+          <img
+            src="../images/Bigest bubble 3.png"
+            className="w-44 h-44 hidden sm:block"
+          />
         </div>
         {/* <Bubbles className="absolute w-50 -z-1 top-0 right-0  hidden md:block bubbles" /> */}
         {/* </div> */}
