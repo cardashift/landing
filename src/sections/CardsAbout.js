@@ -124,7 +124,7 @@ function CardsAbout() {
           />
         </div>
 
-        <div className="relative w-full">
+        <div className="relative w-full mt-17 md:mt-0">
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
