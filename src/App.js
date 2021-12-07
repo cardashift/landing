@@ -44,6 +44,7 @@ function App() {
           secondImg="../images/random1.svg"
           thirdImg="../images/random2.svg"
           forthImg="../images/random3.svg"
+          href="https://cardashift.medium.com/cardashift-the-launchpad-to-accelerate-environmental-and-social-transition-b51183b6434d"
         />
         <FeaturedMedia
           topTittle="Latest articles"
@@ -52,6 +53,7 @@ function App() {
           secondImg="../images/firstFromBlog.svg"
           thirdImg="../images/secondFromBlog.svg"
           forthImg="../images/thirdFromBlog.svg"
+          href="https://cardashift.medium.com/the-founding-story-from-purpose-oriented-ceos-to-an-impact-creating-coalition-a21792b78b71"
         />
       </div>
       <div>

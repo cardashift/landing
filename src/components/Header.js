@@ -28,13 +28,7 @@ function Header() {
         </div>
         <ul className="flex items-center flex-row gap-0">
           {navigationItems.map((item, index) => (
-            <Link
-              to={item.name}
-              // spy={true}
-              // smooth={true}
-              // duration={500}
-              // offset={-50}
-            >
+            <Link to={item.name}>
               <li
                 className={classnames(
                   item.name == selected
