@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
+      xs: '375px',
       sm: '768px',
       md: '960px',
       lg: '1440px',
@@ -25,9 +26,16 @@ module.exports = {
         lg: '56px',
         xl: '5rem',
         '2xl': '6rem',
+        '5xl': '32rem',
       },
     },
     extend: {
+      inset: {
+        11: '11rem',
+      },
+      translate: {
+        '4/7': '57.1428571%',
+      },
       dropShadow: {
         'first-shadow': '-10px -10px 20px #FAFBFF',
         'second-shadow': '10px 10px 20px #A6ABBD',
@@ -52,6 +60,9 @@ module.exports = {
       width: {
         50: '50rem',
         519: '519px',
+        '5/7': '70%',
+        410: '410px',
+        160: '160px',
       },
       maxWidth: {
         252: '252px',
@@ -102,6 +113,7 @@ module.exports = {
         62: '62px',
       },
     },
+
     fontFamily: {
       NizzoliAlt: 'NizzoliAlt',
       Inter: 'Inter',
@@ -119,6 +131,7 @@ module.exports = {
       2: 2,
     },
   },
+
   variants: {
     extend: { borderWidth: ['hover'] },
   },

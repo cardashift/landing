@@ -11,7 +11,7 @@ function CardsAbout() {
         <div className="flex items-center ">
           <div className="relative">
             <GlassCard
-              className="md:w-50 px-6 py-8 md:p-16 mt-0 md:my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+              className="md:w-5/7 px-6 py-8 md:p-16 mt-0 md:my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
               topTitle="Impact or profit?"
               title="Reaching sustainability while being profitable is a big hurdle for
         change makers"
@@ -28,18 +28,18 @@ function CardsAbout() {
           </div>
           <img
             src="/images/Big Bubble 2.png"
-            className="absolute right-2 w-28 h-28"
+            className="absolute hidden sm:block right-2 w-28 h-28"
           />
           <img
-            src="/images/Bigest bubble 1.png"
-            className="w-28 h-28"
+            src="/images/Bigest  bubble 1.png"
+            className="w-28 h-28 hidden sm:block"
             style={{ transform: 'translate(-20px, 300px)' }}
           />
         </div>
 
         <br />
         <GlassCard
-          className="md:w-50 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+          className="md:w-5/7 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
           topTitle="About Cardashift"
           title="Empowering the visionary ventures that will create 
         a sustainable future"

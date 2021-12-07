@@ -6,14 +6,17 @@ import { Element } from 'react-scroll'
 function Roadmap() {
   return (
     <Element name={'Roadmap'}>
-      <img className="absolute right-0" src="/images/right-semiCloud.svg" />
-      <div className="hidden md:block h-full" style={{ paddingTop: 520 }}>
+      <img
+        className="absolute -right-44 sm:right-0 -z-1 -translate-y-28 sm:transform-none sm:z-1"
+        src="/images/right-semiCloud.svg"
+      />
+      <div className=" md:block h-full mt-28 sm:mt-0 sm:pt-5xl">
         <TitleContainer
           topTitle="Milestones"
           title="Cardashift roadmap"
           classnametitle="text-5xl font-black mt-3"
         />
-        <div className="flex justify-between gap-6 mt-20">
+        <div className="flex justify-between flex-wrap md:flex-nowrap gap-6 mt-20">
           <RoadMapCard
             stateList={true}
             classnametitle="font-Inter font-normal text-lg"
