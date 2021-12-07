@@ -31,9 +31,15 @@ function CardaShiftCommunity() {
               Pre-register to $CLAP ICO
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
-            <Button className="shadow font-medium md:w-8/12  text-base md:ml-6 tracking-wide text-gray hover:bg-colorGrayHover ">
-              Discover our whitepaper
-              <ArrowIcon color="gray" className="ml-6" />
+            <Button className="shadow font-medium md:w-8/12  text-base md:ml-6 tracking-wide text-gray hover:bg-colorGrayHover">
+              <a
+                href="whitepaper.pdf"
+                className="flex justify-between w-full"
+                target="_blank"
+              >
+                Discover our whitepaper
+                <ArrowIcon color="gray" className="ml-6" />
+              </a>
             </Button>
           </div>
         </div>
