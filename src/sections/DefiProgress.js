@@ -41,7 +41,8 @@ function DefiProgress() {
                   )}
                   key={index}
                   onclick={() => {
-                    setSelected(item.name)
+                    item.name === 'Launchpad & Acceleration' &&
+                      setSelected(item.name)
                   }}
                 />
               ))}

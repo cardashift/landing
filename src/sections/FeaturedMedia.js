@@ -4,18 +4,9 @@ import Button from '../components/Button'
 import CardFeatureMedia from '../components/CardFeatureMedia'
 import TitleContainer from '../components/TitleContainer'
 
-function FeaturedMedia({
-  topTittle,
-  title,
-  CardList,
-  // firstImg,
-  // secondImg,
-  // thirdImg,
-  // forthImg,
-  href,
-}) {
+function FeaturedMedia({ topTittle, title, CardList, href }) {
   return (
-    <div className="mt-72  md:block">
+    <div className="mt-20 md:mt-72 md:block">
       <div className="flex justify-between ">
         <TitleContainer
           topTitle={topTittle}

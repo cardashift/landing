@@ -16,7 +16,7 @@ import CardaShiftCommunity from './sections/CardaShiftCommunity'
 import Team from './sections/Team'
 import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
-import TimeLine from './sections/TimeLine'
+// import TimeLine from './sections/TimeLine'
 function App() {
   const CardList = [
     {
@@ -87,7 +87,7 @@ function App() {
         <InitialToken />
         <FundingStages />
         <Roadmap />
-        <TimeLine />
+        {/* <TimeLine /> */}
         <Team />
         <EcoSysteme />
         <Partners />

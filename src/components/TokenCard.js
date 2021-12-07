@@ -2,7 +2,7 @@ import React from 'react'
 
 function TokenCard() {
   return (
-    <div className="w-full md:w-96 rounded-lg bg-button-orange-gradien mt-8 bg-grayLight bg-blend-soft-light border-white border-opacity-40 border p-6 shadow ">
+    <div className="md:w-96 rounded-lg bg-button-orange-gradien mt-8 bg-grayLight bg-blend-soft-light border-white border-opacity-40 border p-6 shadow ">
       <div className="flex justify-between">
         <span className="font-Inter font-normal  text-sm text-primaire opacity-70 leading-4">
           Token Standard

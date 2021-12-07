@@ -27,13 +27,13 @@ function CardaShiftCommunity() {
             paragraphe="Choose your preferred channels to begin your Cardashift journey, learn more about the project, talk to the team and contribute to the ecosystem"
           />
           <div className="flex justify-center flex-col md:flex-row gap-5 items-center mt-10 md:pr-24">
-            <Button className="shadow bg-gradient-to-br w-8/12 md:w-full  bg-orangeLight hover:bg-colorBtnHover font-medium text-base text-white h-56 tracking-wide">
+            <Button className="shadow bg-gradient-to-br md:w-8/12   bg-orangeLight hover:bg-colorBtnHover font-medium text-base text-white tracking-wide">
               Pre-register to $CLAP ICO
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
-            <Button className="shadow font-medium w-8/12 md:w-full text-base md:ml-6 h-56 tracking-wide text-gray hover:bg-colorGrayHover ">
-              Submit your project
-              <ArrowIcon color="gray" className="mx-2" />
+            <Button className="shadow font-medium md:w-8/12  text-base md:ml-6 tracking-wide text-gray hover:bg-colorGrayHover ">
+              Discover our whitepaper
+              <ArrowIcon color="gray" className="ml-6" />
             </Button>
           </div>
         </div>

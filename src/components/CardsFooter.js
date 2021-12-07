@@ -10,8 +10,8 @@ function CardsFooter({
   return (
     <div className="py-4">
       <h4 className="font-Inter font-bold text-lg text-white mb-2">{title}</h4>
-      <div className="flex md:block gap-28">
-        <div className="w-28">
+      <div className="flex md:block">
+        <div className="w-44">
           <p className="font-Inter font-normal text-base text-white text-opacity-70 mt-6">
             {firstSubTitle}
           </p>
