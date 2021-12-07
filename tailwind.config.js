@@ -48,6 +48,7 @@ module.exports = {
       },
       spacing: {
         '2px': '2px',
+        14: '14px',
         17: '70px',
         40: '40px',
         91: '91px',
@@ -56,6 +57,9 @@ module.exports = {
       },
       fontFamily: {
         body: ['Nizzoli'],
+      },
+      fontSize: {
+        26: '26px',
       },
       width: {
         50: '50rem',

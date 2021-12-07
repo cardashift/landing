@@ -13,13 +13,13 @@ function TimeLineCard({
       style={style}
       className={`flex relative border-2 rounded-lg border-white shadow-sm  mb-3
       border-opacity-40 bg-blend-soft-light ${className} ${
-        isSquare ? 'w-24 h-24 py-5 px-3' : 'w-48 py-4 px-6'
+        isSquare ? 'w-24 hidden sm:block h-24 py-5 px-3' : null
       }`}
     >
       {border && (
         <span
           style={{ height: 'calc(100% - 15px)' }}
-          className={`  w-1 absolute  border-2 left-2 top-2 rounded-md  ${
+          className={`w-1 absolute  border-2 left-2 top-2 rounded-md  ${
             border === 'borderBlue'
               ? 'border-blueCiel'
               : border === 'borderOrange'
