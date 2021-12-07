@@ -5,20 +5,36 @@ import PartnerCard from '../components/PartnerCard'
 function Partners() {
   const partnersList = [
     {
-      logo: '/images/les-echos.svg',
-      partnerType: 'Project sourcing partner',
+      logo: '/images/partners/logo-blockchain-for-good-1.svg',
+      partnerType: 'Impact Project Sourcing Partner',
     },
     {
-      logo: '/images/les-echos.svg',
-      partnerType: 'Local communities partner',
+      logo: '/images/partners/pb.svg',
+      partnerType: 'Impact Project Sourcing Partner',
     },
     {
-      logo: '/images/les-echos.svg',
-      partnerType: 'PR & Media partner',
+      logo: '/images/partners/io.svg',
+      partnerType: 'Technical Partner ',
     },
     {
-      logo: '/images/les-echos.svg',
-      partnerType: 'Project sourcing partner',
+      logo: '/images/partners/poa.svg',
+      partnerType: 'Cardano Stake Pool Operator',
+    },
+    {
+      logo: '/images/partners/exaion.svg',
+      partnerType: 'Technical Infrastructure Partner',
+    },
+    {
+      logo: '/images/partners/eic-1.svg',
+      partnerType: 'Technical Infrastructure Partner',
+    },
+    {
+      logo: '/images/partners/bc-1.svg',
+      partnerType: 'Impact Project Sourcing Partner',
+    },
+    {
+      logo: '/images/partners/smart-chain.svg',
+      partnerType: 'Strategic Partner of IOHK',
     },
   ]
   return (
@@ -27,13 +43,15 @@ function Partners() {
         title="Cardashift Partners"
         classnametitle="text-5xl font-black mt-3"
       />
-      <div className="flex flex-row my-8 justify-between">
+      <div className="flex flex-row flex-wrap my-8 justify-between">
         {partnersList.map((item, index) => (
-          <PartnerCard
-            key={index}
-            logo={item.logo}
-            partnerType={item.partnerType}
-          />
+          <div className="w-full md:w-1/4">
+            <PartnerCard
+              key={index}
+              logo={item.logo}
+              partnerType={item.partnerType}
+            />
+          </div>
         ))}
       </div>
     </div>
