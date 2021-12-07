@@ -1,7 +1,10 @@
 import React from 'react'
-function GlassCard({ className, topTitle, title, description, button }) {
+function GlassCard({ className, topTitle, title, description, button, img }) {
   return (
-    <div className={`${className} h-auto flex flex-col rounded-3xl`}>
+    // <div className="rounded-3xl p-2px bg-glass-border ">
+    <div
+      className={`${className} relative flex flex-col rounded-3xl backdrop-filter bg-impact-gradient backdrop-blur-md`}
+    >
       <span className="text-blue uppercase font-Inter font-black text-xs tracking-wider">
         {topTitle}
       </span>
@@ -10,7 +13,10 @@ function GlassCard({ className, topTitle, title, description, button }) {
       </h3>
       <p className="text-gray font-Inter mb-0 text-base">{description}</p>
       {button && <div className="w-18 pt-4">{button}</div>}
+      <img src={img} className="absolute top-0 left-0" />
     </div>
+
+    // </div>
   )
 }
 export default GlassCard

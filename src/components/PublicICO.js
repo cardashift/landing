@@ -7,7 +7,7 @@ function PublicICO() {
       return <span>You are good to go!</span>
     } else {
       return (
-        <div className="bg-gray-100 h-36 rounded-3xl font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO backdrop-blur-md">
+        <div className="bg-gray-100  backdrop-blur-md h-36 rounded-3xl font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO">
           <p className="text-center mb-2">Public ICO coming soon</p>
           <div className="flex justify-center gap-2">
             <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal text-5xl ">

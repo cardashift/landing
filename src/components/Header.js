@@ -40,7 +40,7 @@ function Header() {
                   item.name == selected
                     ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
                     : 'text-gray hover:bg-gray-700',
-                  'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
+                  'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center py-3 px-5'
                 )}
                 key={index}
                 onClick={() => setSelected(item.name)}
@@ -51,7 +51,7 @@ function Header() {
           ))}
         </ul>
 
-        <Button className="bg-blue hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
+        <Button className="bg-blue h-10 hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="blue" />
         </Button>
