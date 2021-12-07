@@ -2,6 +2,8 @@ import React from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar'
 // import 'react-circular-progressbar/dist/styles.css'
 // import Logo from '../../components/Logo'
+import { useWindowSize } from '../hooks/useWindowSize'
+
 import LinearSVG from './LinearSVG'
 function CircularChart({
   publicSale,
@@ -12,54 +14,77 @@ function CircularChart({
   team,
   treasury,
 }) {
+  const windowSize = useWindowSize()
   const statistics = [
     {
       value: publicSale,
       title: 'Public Sale',
       class: 'public-sale',
-      indicator: '/images/public-sale-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/public-mobile-arrow.png'
+          : '/images/public-sale-arrow-icon.svg',
       percent: 15,
     },
     {
       value: privateSale,
       title: 'Private sale',
       class: 'private-sale',
-      indicator: '/images/private-sale-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/private-mobile-arrow.png'
+          : '/images/private-sale-arrow-icon.svg',
       percent: 20,
     },
     {
       value: marketing,
       title: 'Marketing',
       class: 'marketing',
-      indicator: '/images/marketing-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/marketing-mobile-arrow.png'
+          : '/images/marketing-arrow-icon.svg',
       percent: 25,
     },
     {
       value: ambassadors,
       title: 'Ambassadors',
       class: 'ambassadors',
-      indicator: '/images/ambassadors-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/ambassador-mobile-arrow.png'
+          : '/images/ambassadors-arrow-icon.svg',
       percent: 30,
     },
     {
       value: partnerships,
       title: 'Partnerships',
       class: 'partnerships',
-      indicator: '/images/partenerships-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/partenarships-mobile-arrow.png'
+          : '/images/partenerships-arrow-icon.svg',
       percent: 40,
     },
     {
       value: team,
       title: 'Team (36m lock)',
       class: 'team',
-      indicator: '/images/tem-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/Team (36m lock)-mobile-icon.png'
+          : '/images/tem-arrow-icon.svg',
       percent: 50,
     },
     {
       value: treasury,
       title: 'Treasury',
       class: 'treasury',
-      indicator: '/images/treasury-arrow-icon.svg',
+      indicator:
+        windowSize < 768
+          ? '/images/Treasury-mobile-icon.png'
+          : '/images/treasury-arrow-icon.svg',
+
       percent: 100,
     },
   ]

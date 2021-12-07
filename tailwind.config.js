@@ -72,6 +72,7 @@ module.exports = {
         252: '252px',
       },
       height: {
+        56: '56px',
         80: '80px',
       },
       colors: {

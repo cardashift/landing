@@ -105,7 +105,7 @@ function TimeLine() {
         content: 'Decentralized blockhain based carbon market',
         border: 'borderBlack',
         style: {
-          height: 440,
+          height: 444,
         },
       },
     ],
@@ -132,14 +132,14 @@ function TimeLine() {
         content: 'User Friendly Wallet',
         border: 'borderBlue',
         style: {
-          height: 175,
+          height: 228,
         },
       },
       {
         content: 'Insurance',
         border: 'borderOrange',
         style: {
-          height: windowSize < 768 ? 700 : 320,
+          height: windowSize < 768 ? 652 : 265,
         },
       },
     ],
@@ -148,8 +148,8 @@ function TimeLine() {
         content: 'Governance',
         border: 'borderOrange',
         style: {
-          height: 465,
-          transform: 'translateY(485px)',
+          height: 725,
+          transform: 'translateY(503px)',
         },
       },
     ],
@@ -158,15 +158,15 @@ function TimeLine() {
         content: 'STO',
         border: 'borderOrange',
         style: {
-          height: 320,
-          transform: 'translateY(485px)',
+          height: 540,
+          transform: 'translateY(503px)',
         },
       },
     ],
   }
 
   return (
-    <div className=" flex items-center pl-52 sm:pl-80 mt-28 ">
+    <div className=" flex items-center pl-2.5 sm:pl-80 mt-28 ">
       <div
         className="flex flex-col  "
         // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
@@ -190,15 +190,17 @@ function TimeLine() {
         ))}
       </div>
       <div className="flex justify-between flex-grow-2">
-        <div style={{ transform: 'translateY(370px)' }}>
+        <div style={{ transform: 'translateY(260px)' }}>
           {gridCols.firstCol.map((item) => (
-            <TimeLineCard isSquare>{item.content}</TimeLineCard>
+            <TimeLineCard className="mb-4" isSquare>
+              {item.content}
+            </TimeLineCard>
           ))}
         </div>
         <div>
           {gridCols.secondCol.map((item) => (
             <TimeLineCard
-              className="py-4 px-6 w-14 sm:w-auto "
+              className="py-4  mb-3 px-6 w-14 sm:w-48 "
               isDefault
               border={item.border}
               style={item.style}
@@ -212,12 +214,12 @@ function TimeLine() {
         <div
           style={{
             transform:
-              windowSize < 768 ? 'translateY(90px)' : 'translateY(54px)',
+              windowSize < 768 ? 'translateY(90px)' : 'translateY(20px)',
           }}
         >
           {gridCols.thirdCol.map((item) => (
             <TimeLineCard
-              className="py-4 px-6 w-14 sm:w-auto"
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
               isDefault
               border={item.border}
               style={item.style}
@@ -232,7 +234,7 @@ function TimeLine() {
         <div className="hidden sm:block">
           {gridCols.fourthCol.map((item) => (
             <TimeLineCard
-              className="py-4 px-6 w-14 sm:w-auto"
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
               isDefault
               border={item.border}
               style={item.style}
@@ -246,7 +248,7 @@ function TimeLine() {
         <div>
           {gridCols.fiveCol.map((item) => (
             <TimeLineCard
-              className="py-4 px-6 w-14 sm:w-auto"
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
               isDefault
               border={item.border}
               style={item.style}

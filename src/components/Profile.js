@@ -2,17 +2,20 @@ import React from 'react'
 
 function Profile({ urlPicture, fullName, fonction }) {
   return (
-    <div className="w-44 rounded-40 border-2 border-white border-opacity-20 bg-button-orange-gradien bg-blend-soft-light bg-grayLight shadow-sm p-4 ">
+    <div
+      style={{ width: 165 }}
+      className="rounded-40 border-2 border-white border-opacity-20 bg-button-orange-gradien bg-blend-soft-light bg-grayLight shadow-sm p-4 "
+    >
       <div
-        className="flex bg-contain bg-no-repeat bg-center flex-col justify-end  profile "
+        className="flex bg-contain bg-no-repeat bg-center flex-col justify-end  profile"
         style={{
           backgroundImage: `url(${urlPicture})`,
-          height: 200,
-          // width: 103,
+          height: 190,
+          width: 130,
         }}
       >
         <div
-          className=" profileImg  rounded-3xl p-3 flex flex-col justify-end hover:bg-white hover:bg-opacity-40"
+          className="profileImg rounded-3xl p-3 flex flex-col justify-end hover:bg-white hover:bg-opacity-40"
           style={{ height: 238 }}
         >
           <h3 className=" text-white font-Inter font-medium text-xs">
