@@ -7,10 +7,11 @@ import TitleContainer from '../components/TitleContainer'
 function FeaturedMedia({
   topTittle,
   title,
-  firstImg,
-  secondImg,
-  thirdImg,
-  forthImg,
+  CardList,
+  // firstImg,
+  // secondImg,
+  // thirdImg,
+  // forthImg,
   href,
 }) {
   return (
@@ -29,26 +30,14 @@ function FeaturedMedia({
         </a>
       </div>
       <div className="flex flex-col items-center gap-6 md:flex-row justify-between my-8">
-        <CardFeatureMedia
-          urlPicture={firstImg}
-          tittle="Real world impact"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-        />
-        <CardFeatureMedia
-          urlPicture={secondImg}
-          tittle="Real world impact"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-        />
-        <CardFeatureMedia
-          urlPicture={thirdImg}
-          tittle="Real world impact"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-        />
-        <CardFeatureMedia
-          urlPicture={forthImg}
-          tittle="Real world impact"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
-        />
+        {CardList.map((item, index) => (
+          <CardFeatureMedia
+            key={index}
+            urlPicture={item.img}
+            tittle={item.title}
+            description={item.description}
+          />
+        ))}
       </div>
       <a href={href} target="_blank" className="md:hidden">
         <Button className="bg-blue hover:bg-colorBlueHover text-white m-auto">
