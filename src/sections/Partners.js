@@ -43,9 +43,9 @@ function Partners() {
         title="Cardashift Partners"
         classnametitle="text-26 md:text-5xl font-black mt-3"
       />
-      <div className="flex flex-row flex-wrap my-8 justify-between ">
+      <div className="flex flex-row flex-wrap my-8 justify-between md:-mr-14 md:-ml-14">
         {partnersList.map((item, index) => (
-          <div className="w-full md:w-1/4 px-0 pb-3 md:p-3">
+          <div className="w-full md:w-1/4 px-0 pb-3 md:p-3 ">
             <PartnerCard
               key={index}
               logo={item.logo}
