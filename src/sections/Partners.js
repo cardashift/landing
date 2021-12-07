@@ -38,14 +38,14 @@ function Partners() {
     },
   ]
   return (
-    <div className="hidden md:block">
+    <div className="">
       <TitleContainer
         title="Cardashift Partners"
-        classnametitle="text-5xl font-black mt-3"
+        classnametitle="text-26 md:text-5xl font-black mt-3"
       />
-      <div className="flex flex-row flex-wrap my-8 justify-between">
+      <div className="flex flex-row flex-wrap my-8 justify-between ">
         {partnersList.map((item, index) => (
-          <div className="w-full md:w-1/4">
+          <div className="w-full md:w-1/4 px-0 pb-3 md:p-3">
             <PartnerCard
               key={index}
               logo={item.logo}

@@ -57,6 +57,9 @@ module.exports = {
       fontFamily: {
         body: ['Nizzoli'],
       },
+      fontSize: {
+        26: '26px',
+      },
       width: {
         50: '50rem',
         519: '519px',
