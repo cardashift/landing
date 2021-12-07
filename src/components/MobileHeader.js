@@ -59,7 +59,10 @@ function MobileHeader() {
                   'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 mr-5 py-3 px-5'
                 )}
                 key={index}
-                onClick={() => setSelected(item.name)}
+                onClick={() => {
+                  setSelected(item.name), setOverlayOpened(false)
+                }}
+                to={item.name}
               >
                 {item.name}
               </li>

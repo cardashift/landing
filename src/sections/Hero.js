@@ -16,6 +16,7 @@ function Hero() {
               'Cardashift, the launchpad in service of social and environmental impact'
             }
             classnametitle="text-5xl md:text-8xl font-black md:font-bold"
+            width={850}
             classname="mt-6"
           />
           <PublicICO />
