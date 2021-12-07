@@ -5,11 +5,7 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-<<<<<<< HEAD
       <div className="md:flex md:flex-col py-52 gap-14 justify-evenly">
-=======
-      <div className="hidden sm:flex flex-col py-52 gap-14 justify-evenly">
->>>>>>> d14ca257c2355f1a72168d15ec49e99cfff53d7e
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
         <div className="flex">
           <div className="relative">
@@ -51,21 +47,12 @@ function CardsAbout() {
             style={{ top: -35, right: 30, width: 110, height: 110 }}
           />
 
-<<<<<<< HEAD
-        <br />
-        <GlassCard
-          className="md:self-end"
-          Background={'images/rightRectangle.svg'}
-          topTitle="About Cardashift"
-          title="Empowering the visionary ventures that will create 
-=======
           <br />
           <GlassCard
-            className="self-end"
+            className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
             title="Empowering the visionary ventures that will create 
->>>>>>> d14ca257c2355f1a72168d15ec49e99cfff53d7e
         a sustainable future"
             description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
         Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
