@@ -166,7 +166,7 @@ function TimeLine() {
   }
 
   return (
-    <div className=" flex items-center pl-2.5 sm:pl-80 mt-28 ">
+    <div className=" flex items-center pl-44 sm:pl-80 mt-28 ">
       <div
         className="flex flex-col  "
         // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
