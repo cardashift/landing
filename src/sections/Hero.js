@@ -20,11 +20,11 @@ function Hero() {
           />
           <PublicICO />
           <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
-            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-14 tracking-wide whitespace-pre md:whitespace-normal">
+            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-56 tracking-wide whitespace-pre md:whitespace-normal">
               Pre-register to the ico
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
-            <Button className="shadow font-medium text-base hover:bg-colorGrayHover h-14 tracking-wide text-gray ">
+            <Button className="shadow font-medium text-base hover:bg-colorGrayHover h-56 tracking-wide text-gray ">
               Submit your project
               <ArrowIcon color="gray" className="mx-2" />
             </Button>
