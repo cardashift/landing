@@ -5,13 +5,12 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-      <div className="flex flex-col gap-20 py-52 items-start justify-evenly">
+      <div className="flex flex-col py-52 gap-14 justify-evenly">
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
-        <div className="flex items-center">
+        <div className="flex">
           <div className="relative">
             <GlassCard
-              img="images/leftRectangle.svg"
-              className="md:w-5/7 px-6 py-8 md:p-16 mt-0 md:my-48 bg-impact-gradient  backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+              Background={'images/leftRectangle.svg'}
               topTitle="Impact or profit?"
               title="Reaching sustainability while being profitable is a big hurdle for change makers"
               description="Environmental and social transition stakes are increasingly prevalent. Change makers are working hard but they still lack the funding and the appropriate support to increase their success rate. Technologies - tools - relationships are needed to tokenize and accelerate these impact ventures to make them financially viable investments."
@@ -27,20 +26,20 @@ function CardsAbout() {
           </div>
           <img
             src="/images/Big Bubble 2.png"
-            className="absolute hidden sm:block right-2 w-28 h-28"
+            className="absolute hidden sm:block mt-60 right-2 w-28 h-28"
           />
           <img
-            src="/images/Bigest  bubble 1.png"
+            src="/images/Bigest bubble 1.png"
             className="w-28 h-28 hidden sm:block"
-            style={{ transform: 'translate(-20px, 300px)' }}
+            style={{ transform: 'translate(-20px, 500px)' }}
           />
         </div>
 
         <br />
         <GlassCard
-          className="md:w-5/7 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+          className="self-end"
+          Background={'images/rightRectangle.svg'}
           topTitle="About Cardashift"
-          img="images/rightRectangle.svg"
           title="Empowering the visionary ventures that will create 
         a sustainable future"
           description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
