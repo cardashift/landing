@@ -24,13 +24,13 @@ function FooterCommunication() {
     },
   ]
   return (
-    <div className="w-4/12 pr-6">
+    <div className="md:w-4/12 md:pr-6">
       <img src="../images/footer-cardashift.svg" className="w-56" />
       <p className="my-6 font-Inter font-normal text-white text-base text-opacity-70">
         Empower the visionary ventures that will create a sustainable and
         prosperous future.
       </p>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-10 md:gap-2 mb-10">
         {socialNetworks.map(({ icon, link }) => {
           return (
             <span>

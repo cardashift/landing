@@ -11,21 +11,24 @@ function FeaturedMedia({
   secondImg,
   thirdImg,
   forthImg,
+  href,
 }) {
   return (
-    <div className="mt-72 hidden md:block">
-      <div className="flex justify-between items-center">
+    <div className="mt-72  md:block">
+      <div className="flex justify-between ">
         <TitleContainer
           topTitle={topTittle}
           title={title}
-          classnametitle="font-black text-5xl mt-3"
+          classnametitle="font-black text-3xl md:text-5xl mt-3"
         />
-        <Button className="bg-blue hover:bg-colorBlueHover text-white ">
-          View more
-          <ArrowIcon color="blue" className="ml-2" />
-        </Button>
+        <a href={href} target="_blank" className="hidden md:block">
+          <Button className="bg-blue hover:bg-colorBlueHover text-white ">
+            View more
+            <ArrowIcon color="blue" className="ml-2" />
+          </Button>
+        </a>
       </div>
-      <div className="flex justify-between my-8">
+      <div className="flex flex-col items-center gap-6 md:flex-row justify-between my-8">
         <CardFeatureMedia
           urlPicture={firstImg}
           tittle="Real world impact"
@@ -47,6 +50,12 @@ function FeaturedMedia({
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac sagittis turpis. Ut aliquet ipsum sit amet ante consectetur consequat."
         />
       </div>
+      <a href={href} target="_blank" className="md:hidden">
+        <Button className="bg-blue hover:bg-colorBlueHover text-white m-auto">
+          View more
+          <ArrowIcon color="blue" className="ml-2" />
+        </Button>
+      </a>
     </div>
   )
 }

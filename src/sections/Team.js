@@ -14,9 +14,9 @@ import {
 function Team() {
   return (
     <Element name={'Team'}>
-      <div className="hidden md:block my-32">
+      <div className="md:block my-32">
         <TitleContainer
-          classnameContainer="ml-28 mb-24"
+          classnameContainer="md:ml-28 mb-24"
           topTitle="Team"
           title="+XXX competencies <br /> joining the Cardano Community"
           classnametitle="text-5xl font-black mt-3"

@@ -1,6 +1,5 @@
 import React from 'react'
 import ArrowIcon from '../components/ArrowIcon'
-// import Bubbles from '../components/Bubbles'
 import Button from '../components/Button'
 import PublicICO from '../components/PublicICO'
 import TitleContainer from '../components/TitleContainer'
@@ -20,8 +19,8 @@ function Hero() {
             classname="mt-6"
           />
           <PublicICO />
-          <div className="flex gap-3 mx-auto  md:max-w-none md:flex-row">
-            <Button className="mb-6 md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-14 tracking-wide whitespace-pre md:whitespace-normal">
+          <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
+            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white h-14 tracking-wide whitespace-pre md:whitespace-normal">
               Pre-register to the ico
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
@@ -46,12 +45,6 @@ function Hero() {
             className="w-44 h-44 hidden sm:block"
           />
         </div>
-        {/* <Bubbles className="absolute w-50 -z-1 top-0 right-0  hidden md:block bubbles" /> */}
-        {/* </div> */}
-        {/* <img
-          src="../images/bubble-purple.png"
-          className="absolute top-0 right-0 -z-1 hidden md:block"
-        /> */}
       </div>
     </Element>
   )

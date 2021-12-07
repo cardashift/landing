@@ -5,7 +5,7 @@ import GlassCard from '../components/GlassCard'
 function CardsAbout() {
   return (
     <>
-      <div className="hidden sm:flex flex-col py-52 gap-14 justify-evenly">
+      <div className="md:flex md:flex-col py-52 gap-14 justify-evenly">
         <img src="../images/left-cloud.svg" className="absolute left-0 -z-1" />
         <div className="flex">
           <div className="relative">
@@ -49,7 +49,7 @@ function CardsAbout() {
 
           <br />
           <GlassCard
-            className="self-end"
+            className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
             title="Empowering the visionary ventures that will create 
