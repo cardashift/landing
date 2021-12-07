@@ -11,9 +11,9 @@ function TimeLineCard({
   return (
     <div
       style={style}
-      className={`flex relative border-2 rounded-lg border-white shadow-sm  mb-3
+      className={`flex relative border-2 rounded-lg border-white shadow-sm  
       border-opacity-40 bg-blend-soft-light ${className} ${
-        isSquare ? 'w-24 hidden sm:block h-24 py-5 px-3' : null
+        isSquare ? 'w-24 hidden sm:block h-24 py-3 px-3' : null
       }`}
     >
       {border && (
