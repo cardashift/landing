@@ -26,7 +26,9 @@ function Hero() {
               <ArrowIcon className="ml-2" color="orange" />
             </Button>
             <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
-              Discover our whitepaper
+              <a href="whitepaper.pdf" target="_blank">
+                Discover our whitepaper
+              </a>
               {/* <ArrowIcon color="gray" className="md:mx-2 ml-7" /> */}
             </Button>
           </div>
