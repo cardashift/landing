@@ -12,9 +12,9 @@ function LogoCircle() {
     },
     largeCircle = {
       ...circle,
-      right: '-660px',
-      height: 1318,
-      width: 1318,
+      right: '-370px',
+      height: 700,
+      width: 700,
       square: {
         transform: 'rotate(-25deg)',
         bottom: 254,
@@ -23,8 +23,8 @@ function LogoCircle() {
     }
   const mediumCercle = {
     ...circle,
-    width: 830,
-    height: 830,
+    width: 450,
+    height: 450,
     square: {
       transform: 'rotate(33deg)',
       top: 0,
@@ -33,8 +33,8 @@ function LogoCircle() {
   }
   const smallCircle = {
     ...circle,
-    width: 410,
-    height: 410,
+    width: 200,
+    height: 200,
     square: {
       top: 115,
       left: -60,
@@ -43,7 +43,7 @@ function LogoCircle() {
 
   return (
     <div
-      className="flex items-center hidden justify-center"
+      className="md:flex hidden items-center justify-center"
       style={largeCircle}
     >
       <RoundSquare

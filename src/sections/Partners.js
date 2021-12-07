@@ -22,12 +22,12 @@ function Partners() {
     },
   ]
   return (
-    <div className="hidden md:block">
+    <div className="md:block">
       <TitleContainer
         title="Cardashift Partners"
-        classnametitle="text-5xl font-black mt-3"
+        classnametitle="text-2xl md:text-5xl font-black mt-3"
       />
-      <div className="flex flex-row my-8 justify-between">
+      <div className="flex flex-col gap-7 md:flex-row my-8 justify-between">
         {partnersList.map((item, index) => (
           <PartnerCard
             key={index}

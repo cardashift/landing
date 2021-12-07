@@ -7,7 +7,7 @@ function Roadmap() {
   return (
     <Element name={'Roadmap'}>
       <img
-        className="absolute -right-44 sm:right-0 -z-1 hidden -translate-y-28 sm:transform-none sm:z-1"
+        className="absolute -right-44 sm:right-0 -z-1  -translate-y-28 sm:transform-none sm:z-1"
         src="/images/right-semiCloud.svg"
       />
       <div className=" md:block h-full mt-28 sm:mt-0 sm:pt-5xl ">

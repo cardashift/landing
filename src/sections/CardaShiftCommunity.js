@@ -7,12 +7,20 @@ import { Element } from 'react-scroll'
 function CardaShiftCommunity() {
   return (
     <Element name={'Community'}>
-      <div className="mt-36 text-center md:flex ">
+      <div className="md:mt-36 text-center md:flex relative">
+        <img
+          src="images/bubble-footer.svg"
+          className="absolute top-20 md:hidden"
+        />
+        <img
+          src="images/bulle-footer-right.svg"
+          className="absolute bottom-10 right-0 md:hidden"
+        />
         <img
           src="../images/left-bubble-cardashift.png"
           className="hidden md:block"
         />
-        <div className="py-80 md:text-left">
+        <div className="pb-36 pt-80 md:py-80 md:text-left">
           <TitleContainer
             classnametitle="font-black text-5xl mb-3"
             title="Eager to join the Cardashift community?"
