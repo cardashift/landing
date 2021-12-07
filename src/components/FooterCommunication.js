@@ -34,7 +34,7 @@ function FooterCommunication() {
         {socialNetworks.map(({ icon, link }) => {
           return (
             <span>
-              <a href={link}>
+              <a href={link} target="_blank">
                 <img src={icon} />
               </a>
             </span>

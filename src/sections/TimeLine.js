@@ -118,7 +118,7 @@ function TimeLine() {
       },
       {
         content: 'User Friendly Wallet',
-        border: 'borderOrange',
+        border: 'borderBlue',
         style: {
           height: 175,
         },
@@ -137,7 +137,7 @@ function TimeLine() {
         border: 'borderOrange',
         style: {
           height: 465,
-          transform: 'translateY(750px)',
+          transform: 'translateY(485px)',
         },
       },
     ],
@@ -147,7 +147,7 @@ function TimeLine() {
         border: 'borderOrange',
         style: {
           height: 320,
-          transform: 'translateY(750px)',
+          transform: 'translateY(485px)',
         },
       },
     ],
@@ -175,7 +175,7 @@ function TimeLine() {
         ))}
       </div>
       <div className="flex justify-between flex-grow-2">
-        <div style={{ transform: 'translateY(240px)' }}>
+        <div style={{ transform: 'translateY(370px)' }}>
           {gridCols.firstCol.map((item) => (
             <TimeLineCard isSquare>{item.content}</TimeLineCard>
           ))}
@@ -187,7 +187,7 @@ function TimeLine() {
             </TimeLineCard>
           ))}
         </div>
-        <div>
+        <div style={{ transform: 'translateY(54px)' }}>
           {gridCols.thirdCol.map((item) => (
             <TimeLineCard isDefault border={item.border} style={item.style}>
               {item.content}
