@@ -20,9 +20,9 @@ function CardaShiftCommunity() {
           src="../images/left-bubble-cardashift.png"
           className="hidden md:block"
         />
-        <div className="pb-36 pt-80 md:py-80 md:text-left max-w-628">
+        <div className="pb-36 pt-80 md:py-80 md:text-left max-w-628 ">
           <TitleContainer
-            classnametitle="font-black text-5xl mb-3"
+            classnametitle="font-black text-26 md:text-5xl mb-3 leading-34 md:leading-62"
             title="Eager to join the Cardashift community?"
             paragraphe="Choose your preferred channels to begin your Cardashift journey, learn more about the project, talk to the team and contribute to the ecosystem"
           />
