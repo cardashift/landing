@@ -42,7 +42,10 @@ function LogoCircle() {
   }
 
   return (
-    <div className="flex items-center justify-center" style={largeCircle}>
+    <div
+      className="flex items-center hidden justify-center"
+      style={largeCircle}
+    >
       <RoundSquare
         style={largeCircle.square}
         icon={

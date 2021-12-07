@@ -3,7 +3,7 @@ import React from 'react'
 function CompanyCard({ title, description }) {
   return (
     <div className="rounded-lg bg-button-orange-gradien bg-grayLight bg-blend-soft-light border-white  border-opacity-40 border  p-6 shadow my-8">
-      <div className="flex mb-4">
+      <div className="flex justify-between md:justify-start mb-4">
         <h1 className="font-Inter text-xl tracking-wide text-paraColor font-bold">
           {title}
         </h1>
