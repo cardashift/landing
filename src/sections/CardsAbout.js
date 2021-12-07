@@ -18,11 +18,11 @@ function CardsAbout() {
             />
             <img
               src="/images/big-bubble.png"
-              className="absolute right-48 bottom-16 -z-1"
+              className="absolute hidden right-48 bottom-16 -z-1  sm:block"
             />
             <img
               src="/images/big-bubble.png"
-              className="absolute w-12 h-12 right-36 bottom-12 -z-1"
+              className="absolute w-12 h-12 right-36 bottom-12 -z-1 hidden sm:block"
             />
           </div>
           <img
@@ -35,22 +35,35 @@ function CardsAbout() {
             style={{ transform: 'translate(-20px, 300px)' }}
           />
         </div>
+        {/* use bulles in movileversion */}
+        <div className="relative w-full">
+          <img
+            src="/images/Bigest bubble 3.png"
+            className="w-28 h-28 absolute right-0 sm:hidden"
+            style={{ top: 50, right: -20, width: 50, height: 50 }}
+          />
+          <img
+            src="/images/Bigest bubble 3.png"
+            className="w-28 h-28 absolute right-0 sm:hidden"
+            style={{ top: -35, right: 30, width: 110, height: 110 }}
+          />
 
-        <br />
-        <GlassCard
-          className="md:w-5/7 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
-          topTitle="About Cardashift"
-          img="images/rightRectangle.svg"
-          title="Empowering the visionary ventures that will create 
+          <br />
+          <GlassCard
+            className="md:w-5/7 px-6 py-8 md:p-16 mb-52 self-end bg-impact-gradient backdrop-filter backdrop-blur-20 border-2 border-solid border-white"
+            topTitle="About Cardashift"
+            img="images/rightRectangle.svg"
+            title="Empowering the visionary ventures that will create 
         a sustainable future"
-          description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
+            description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.
         Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
-          button={
-            <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
-              Discover the products
-            </Button>
-          }
-        />
+            button={
+              <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
+                Discover the products
+              </Button>
+            }
+          />
+        </div>
       </div>
     </>
   )
