@@ -9,7 +9,7 @@ function DefiProgress() {
   const [isOpen, setIsOpen] = React.useState(false)
   //  const [cardname, setCardname] = React.useState('Launchpad & Acceleration')
   React.useEffect(() => {
-    if (window.innerWidth > 400) setIsOpen(true)
+    if (window.innerWidth > 500) setIsOpen(true)
   }, [])
   const [selected, setSelected] = React.useState('Launchpad & Acceleration')
   const navigationItems = [
@@ -31,7 +31,7 @@ function DefiProgress() {
         </div>
         <div className="rounded-40 my-16 md:p-2px bg-glass-border">
           <div className="flex flex-col items-stretch  rounded-40 bg-gray-100  backdrop-blur-md  md:pt-10 md:px-10">
-            {window.innerWidth < 400 && (
+            {window.innerWidth < 500 && (
               <div className="relative">
                 <CardSoon
                   ondoubleclick={() => setIsOpen(!isOpen)}
@@ -69,7 +69,7 @@ function DefiProgress() {
                         setSelected(item.name)
                       //  setCardname(item.name)
                       {
-                        window.innerWidth < 400 && setIsOpen(false)
+                        window.innerWidth < 500 && setIsOpen(false)
                       }
                     }}
                   />

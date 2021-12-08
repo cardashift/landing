@@ -50,7 +50,7 @@ function MobileHeader() {
         />
 
         <div>
-          <ul className="flex items-center flex-col self-ends">
+          <ul className="flex items-center flex-col self-ends mt-12">
             {navigationItems.map((item, index) => (
               <Link to={item.name}>
                 <li

@@ -105,7 +105,7 @@ function TimeLine() {
         content: 'Decentralized blockhain based carbon market',
         border: 'borderBlack',
         style: {
-          height: 444,
+          height: 439,
         },
       },
     ],
@@ -148,8 +148,8 @@ function TimeLine() {
         content: 'Governance',
         border: 'borderOrange',
         style: {
-          height: 725,
-          transform: 'translateY(503px)',
+          height: 717,
+          transform: 'translateY(504px)',
         },
       },
     ],
