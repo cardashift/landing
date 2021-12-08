@@ -21,7 +21,7 @@ function DefiProgress() {
   ]
   return (
     <Element name={'Product'}>
-      <div className="my-16 sm:block  md:block">
+      <div className="my-16">
         <div className="md:pr-52">
           <TitleContainer
             classnametitle="text-2xl md:text-5xl mt-4 md:pr-8 leading-tight font-black"
@@ -77,7 +77,7 @@ function DefiProgress() {
               </div>
             )}
 
-            <div className="my-16">
+            <div className="md:my-16">
               <ProgressCards
                 title="Funding & accelerating the ideas to create a better world for tomorrow"
                 paragraphe="Cardashift aims to create the first launchpad for impactful projects on blockchain. We offer you to invest in promising ventures, backed by a best-in-class program to transform them into impactful businesses."
