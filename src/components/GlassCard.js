@@ -1,4 +1,5 @@
 import React from 'react'
+
 function GlassCard({
   className,
   topTitle,
@@ -7,10 +8,17 @@ function GlassCard({
   button,
   Background,
   width,
+  mt,
+  padding,
 }) {
   return (
     <div
-      style={{ backgroundImage: `url(${Background})`, width: width }}
+      style={{
+        backgroundImage: `url(${Background})`,
+        width: width,
+        marginTop: mt,
+        padding: padding,
+      }}
       className={
         Background
           ? `${className} bg-auto bg-no-repeat bg-impact-gradient backdrop-filter backdrop-blur-20 

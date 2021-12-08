@@ -10,6 +10,7 @@ function CardsAbout() {
         <div className="flex">
           <div className="relative">
             <GlassCard
+              mt={200}
               width={850}
               Background={'images/leftRectangle.svg'}
               topTitle="Impact or profit?"
@@ -32,7 +33,7 @@ function CardsAbout() {
           <img
             src="/images/Bigest bubble 1.png"
             className="w-28 h-28 hidden sm:block"
-            style={{ transform: 'translate(-20px, 500px)' }}
+            style={{ transform: 'translate(-20px, 700px)' }}
           />
         </div>
 
@@ -50,8 +51,8 @@ function CardsAbout() {
 
           <br />
           <GlassCard
+            mt={100}
             width={850}
-            className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
             title="Empowering the visionary ventures that will create a sustainable future"
@@ -137,12 +138,12 @@ function CardsAbout() {
           />
           <br />
           <div>
-            <img src="images/rec-mobile-bg.png" />
+            {/* <img src="images/rec-mobile-bg.png" /> */}
             <div
-              style={{
-                transform: 'translateY(-40rem)',
-                marginBottom: -550,
-              }}
+            // style={{
+            //   transform: 'translateY(-40rem)',
+            //   marginBottom: -550,
+            // }}
             >
               <GlassCard
                 className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
