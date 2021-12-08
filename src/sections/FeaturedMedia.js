@@ -14,7 +14,7 @@ function FeaturedMedia({ topTittle, title, CardList, href }) {
           classnametitle="font-black text-3xl md:text-5xl mt-3"
         />
         <a href={href} target="_blank" className="hidden md:block">
-          <Button className="bg-blue hover:bg-colorBlueHover text-white ">
+          <Button className="bg-blue hover:bg-colorBlueHover text-white shadow">
             View more
             <ArrowIcon color="blue" className="ml-2" />
           </Button>

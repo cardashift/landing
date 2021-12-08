@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import Button from '../components/Button'
 import GlassCard from '../components/GlassCard'
 
@@ -58,9 +59,11 @@ function CardsAbout() {
             title="Empowering the visionary ventures that will create a sustainable future"
             description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
             button={
-              <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
-                Discover the products
-              </Button>
+              <Link to="Product">
+                <Button className="shadow bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
+                  Discover the products
+                </Button>
+              </Link>
             }
           />
         </div>
@@ -146,14 +149,16 @@ function CardsAbout() {
             // }}
             >
               <GlassCard
-                className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
+                className="md:w-5/7 px-6 py-8 md:p-16 mb-24 md:mb-52 mt-10"
                 topTitle="About Cardashift"
                 title="Empowering the visionary ventures that will create a sustainable future"
                 description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
                 button={
-                  <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
-                    Discover the products
-                  </Button>
+                  <Link to="Product">
+                    <Button className="shadow bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
+                      Discover the products
+                    </Button>
+                  </Link>
                 }
               />
             </div>
