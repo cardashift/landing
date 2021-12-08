@@ -8,7 +8,7 @@ function Union({ color, value, customClass, year, isFirstYear }) {
   }
   return (
     <>
-      <div className="flex items-start relative">
+      <div className="flex items-start relative" style={{ height: 110 }}>
         <div className="flex items-center">
           <div
             className={`flex absolute items-center  right-1 ${
