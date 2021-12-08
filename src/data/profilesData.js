@@ -133,7 +133,7 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Adina Cazalens',
     role: 'Cardano Software engineer',
     social: [
@@ -159,7 +159,7 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymBoy.png',
     fullName: 'Frank Hillard',
     role: 'Technical BlockChain Engineer',
     social: [
@@ -294,7 +294,7 @@ export const pmTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Trishala Suresh',
     role: 'Strategic impact leader',
     social: [
@@ -374,7 +374,7 @@ export const impactAssTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Colette Menard',
     role: 'StimShift Co-Founder Scientific Impact assessement Expert',
     social: [
