@@ -407,7 +407,7 @@ export const impactAssTeam = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/marius-campos/',
+        link: 'https://www.linkedin.com/in/v-pensalfini/',
         icon: 'linkedin.svg',
       },
     ],
