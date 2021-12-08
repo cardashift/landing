@@ -56,7 +56,7 @@ function MobileHeader() {
                 <li
                   className={classnames(
                     item.name == selected
-                      ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
+                      ? 'bg-gray-900 text-black blend shadow-sm rounded-20'
                       : 'text-gray hover:bg-gray-700',
                     'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 mr-5 py-3 px-5'
                   )}

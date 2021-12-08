@@ -18,7 +18,7 @@ function LogoCircle() {
       square: {
         transform: 'rotate(-25deg)',
         bottom: 254,
-        left: 10,
+        left: 100,
       },
     }
   const mediumCercle = {

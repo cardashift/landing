@@ -4,7 +4,7 @@ function Profile({ urlPicture, fullName, role, social }) {
   return (
     <div
       style={{ width: 165 }}
-      className="rounded-40 border-2 border-white border-opacity-20 bg-button-orange-gradien bg-blend-soft-light bg-grayLight shadow-sm p-4 "
+      className="rounded-40 border-2 border-white border-opacity-20 bg-button-orange-gradien blend bg-grayLight shadow-sm p-4 "
     >
       <div
         className="flex bg-contain bg-no-repeat bg-center flex-col justify-end  profile rounded-3xl"
@@ -28,7 +28,7 @@ function Profile({ urlPicture, fullName, role, social }) {
                 <>
                   <a
                     href={item.link ? item.link : '#!'}
-                    className="w-6 h-6 flex justify-center bg-button-orange-gradien bg-blend-soft-light bg-grayLight items-center rounded-md	"
+                    className="w-6 h-6 flex justify-center bg-button-orange-gradien blend bg-grayLight items-center rounded-md	"
                     target={item.link ? '_blank' : ''}
                   >
                     <img src={`/images/${item.icon}`} alt={item.name} />
