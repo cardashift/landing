@@ -12,7 +12,7 @@ function CardSoon({
     <div
       onMouseDown={ondoubleclick}
       onClick={onclick}
-      className={`${classname}  flex cursor-pointer justify-between items-center rounded-lg border-2 border-white  px-4 py-6 h-16 border-opacity-40 bg-button-orange-gradien bg-grayLight blend`}
+      className={`${classname}  flex cursor-pointer justify-between items-center rounded-lg border-2 border-white  px-4 py-6 h-16 border-opacity-40 md:bg-button-orange-gradien bg-grayLight blend`}
     >
       <div className="font-Inter font-bold text-sm text-gray mr-2 text-left">
         {cardTitle}

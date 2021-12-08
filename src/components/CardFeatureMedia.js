@@ -4,7 +4,7 @@ function CardFeatureMedia({ urlPicture, tittle, description }) {
   return (
     <div
       style={{ height: 463 }}
-      className="flex flex-col bg-button-orange-gradien bg-grayLight blend rounded-md pb-8 shadow"
+      className="flex flex-col md:bg-button-orange-gradien bg-grayLight blend rounded-md pb-8 shadow"
     >
       <img
         className="h-52 p-3 rounded-3xl"
