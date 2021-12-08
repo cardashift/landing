@@ -23,7 +23,7 @@ function MobileHeader() {
     <div className="block md:hidden">
       <img
         src="/images/mobile-bubble.png"
-        className="mx-auto absolute top-0 left-0 right-0 -z-1 block md:hidden  "
+        className="mx-auto w-full absolute top-0 left-0 right-0 -z-1 block md:hidden  "
       />
       <div className="flex items-start mt-8">
         <Logo className="mx-auto" />
@@ -50,7 +50,7 @@ function MobileHeader() {
         />
 
         <div>
-          <ul className="flex items-center flex-col self-ends mt-12">
+          <ul className="flex items-center flex-col  mt-12">
             {navigationItems.map((item, index) => (
               <Link to={item.name}>
                 <li
