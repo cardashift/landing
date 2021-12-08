@@ -5,7 +5,7 @@ function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
   return (
     <div className="flex flex-col md:flex-row justify-around md:shadow-none items-center shadow-md md:mx-24 py-5 mb-8 border-2 border-white border-opacity-40 md:p-6 rounded-md  md:bg-button-orange-gradien blend bg-grayLight ">
       <img src={srcImg} className="md:mr-8" />
-      <div className="flex flex-col justify-center items-start md:h-52 px-6 mt-5">
+      <div className="flex flex-col justify-center items-start md:h-52 px-6 mt-5 md:mt-0">
         <h3 className=" font-bold font-Inter text-blueRetro text-lg mb-4">
           {title}
         </h3>
