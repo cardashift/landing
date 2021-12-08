@@ -2,11 +2,10 @@ import React from 'react'
 import CompanyCard from '../components/CompanyCard'
 import LogoCircle from '../components/LogoCircle'
 import TitleContainer from '../components/TitleContainer'
-
 function EcoSysteme() {
   return (
-    <div className="md:flex items-center md:w-5/12">
-      <div className="flex items-center">
+    <div className="flex relative sm:static flex-wrap sm:flex-nowrap items-center md:w-5/12">
+      <div className="flex items-center  relative">
         <div className="md:my-72 ">
           <TitleContainer
             topTitle="Ecosystem"

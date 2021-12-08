@@ -100,11 +100,11 @@ function CircularChart({
           <>
             <div className={`flex ${item.class}-indicator`}>
               <span className="text-right">
-                <label className=" font-Inter font-normal text-lg text-primaire">
+                <label className=" font-Inter font-normal text-sm sm:text-lg text-primaire">
                   {item.title}
                 </label>
                 <br />
-                <label className="font-Inter font-bold text-lg text-primaire">
+                <label className="font-Inter font-bold text-sm sm:text-lg text-primaire">
                   {item.value}%
                 </label>
               </span>

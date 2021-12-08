@@ -1,7 +1,8 @@
 import React from 'react'
 import RoundSquare from './RoundSquare'
-
+// import { useWindowSize } from '../hooks/useWindowSize'
 function LogoCircle() {
+  // const windowSize = useWindowSize()
   const circle = {
       background: 'transparent',
       border: '1.39619px solid rgba(255, 255, 255, 0.4)',
@@ -12,9 +13,9 @@ function LogoCircle() {
     },
     largeCircle = {
       ...circle,
-      right: '-370px',
-      height: 700,
-      width: 700,
+      right: '-660px',
+      height: 1318,
+      width: 1318,
       square: {
         transform: 'rotate(-25deg)',
         bottom: 254,
@@ -23,8 +24,8 @@ function LogoCircle() {
     }
   const mediumCercle = {
     ...circle,
-    width: 450,
-    height: 450,
+    width: 830,
+    height: 830,
     square: {
       transform: 'rotate(33deg)',
       top: 0,
@@ -33,8 +34,8 @@ function LogoCircle() {
   }
   const smallCircle = {
     ...circle,
-    width: 200,
-    height: 200,
+    width: 410,
+    height: 410,
     square: {
       top: 115,
       left: -60,
@@ -42,34 +43,45 @@ function LogoCircle() {
   }
 
   return (
-    <div
-      className="md:flex hidden items-center justify-center"
-      style={largeCircle}
-    >
-      <RoundSquare
-        style={largeCircle.square}
-        icon={
-          <img src="/images/stim.svg" style={{ transform: 'rotate(16deg)' }} />
-        }
+    <>
+      <img
+        className="sm:hidden"
+        style={{ height: 670, width: 340, transform: 'translateX(59px)' }}
+        src="/images/circle-quare.png"
       />
-      <span className="flex items-center justify-center" style={mediumCercle}>
+
+      <div
+        className="hidden md:flex  items-center justify-center"
+        style={largeCircle}
+      >
         <RoundSquare
-          style={mediumCercle.square}
+          style={largeCircle.square}
           icon={
             <img
-              src="/images/matters.svg"
-              style={{ transform: 'rotate(-15deg)' }}
+              src="/images/stim.svg"
+              style={{ transform: 'rotate(16deg)' }}
             />
           }
         />
-        <span style={smallCircle}>
+        <span className="flex items-center justify-center" style={mediumCercle}>
           <RoundSquare
-            style={smallCircle.square}
-            icon={<img src="/images/arrows-icon.svg" />}
+            style={mediumCercle.square}
+            icon={
+              <img
+                src="/images/matters.svg"
+                style={{ transform: 'rotate(-15deg)' }}
+              />
+            }
           />
+          <span style={smallCircle}>
+            <RoundSquare
+              style={smallCircle.square}
+              icon={<img src="/images/arrows-icon.svg" />}
+            />
+          </span>
         </span>
-      </span>
-    </div>
+      </div>
+    </>
   )
 }
 
