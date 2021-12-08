@@ -1,8 +1,7 @@
 import React from 'react'
 import RoundSquare from './RoundSquare'
-// import { useWindowSize } from '../hooks/useWindowSize'
+
 function LogoCircle() {
-  // const windowSize = useWindowSize()
   const circle = {
       background: 'transparent',
       border: '1.39619px solid rgba(255, 255, 255, 0.4)',
@@ -45,8 +44,8 @@ function LogoCircle() {
   return (
     <>
       <img
-        className="sm:hidden"
-        style={{ height: 670, width: 340, transform: 'translateX(59px)' }}
+        className="sm:hidden absolute right-0"
+        style={{ height: 670, width: 340, marginTop: '57rem' }}
         src="/images/circle-quare.png"
       />
 
