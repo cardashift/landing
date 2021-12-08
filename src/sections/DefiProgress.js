@@ -30,7 +30,7 @@ function DefiProgress() {
            />
          </div>
          <div className="rounded-40 my-16 md:p-2px bg-glass-border">
-           <div className="flex flex-col items-center rounded-40 bg-gray-100  backdrop-blur-md w-full md:pt-10 md:px-10">
+           <div className="flex flex-col items-stretch  rounded-40 bg-gray-100  backdrop-blur-md  md:pt-10 md:px-10">
              {window.innerWidth < 400 && (
                <div className="relative">
                  <CardSoon
@@ -40,7 +40,7 @@ function DefiProgress() {
                    SoonDisplay={
                      cardname === 'Launchpad & Acceleration' ? false : true
                    }
-                   classname={classnames('text-gray hover:bg-gray-700')}
+                   classname={classnames('text-gray hover:bg-gray-700 w-full')}
                  />
                  <img
                    src="images/arrow-down.svg"
@@ -50,7 +50,7 @@ function DefiProgress() {
              )}
 
              {isOpen && (
-               <div className="flex flex-col items-center md:flex-row md:gap-5 justify-between">
+               <div className="flex flex-col items-stretch  md:flex-row md:gap-5 justify-between">
                  {navigationItems.map((item, index) => (
                    <CardSoon
                      cardTitle={item.name}
@@ -60,8 +60,8 @@ function DefiProgress() {
                      }
                      classname={classnames(
                        item.name == selected
-                         ? 'text-black  shadow-sm  rounded-20'
-                         : 'text-gray  hover:bg-gray-700'
+                         ? 'text-black  w-full md:w-56  shadow-sm  rounded-20'
+                         : 'text-gray  w-full md:w-56  hover:bg-gray-700'
                      )}
                      key={index}
                      onclick={() => {
