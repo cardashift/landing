@@ -70,6 +70,7 @@ module.exports = {
         160: '160px',
       },
       maxWidth: {
+        288: '288px',
         252: '252px',
         628: '628px',
       },
@@ -108,7 +109,7 @@ module.exports = {
       },
       backgroundImage: {
         'button-orange-gradien':
-          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
+          'linear-gradient(135.37deg, rgba(0, 0, 0,0.8) 4.29%, rgba(255, 255, 255, 0.7) 95.6%)',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         'glass-border':

@@ -36,7 +36,7 @@ function Profile({ urlPicture, fullName, role, social }) {
                     <img src={`/images/${item.icon}`} alt={item.name} />
                   </a>
                 </>
-              ))}{' '}
+              ))}
           </div>
         </div>
       </div>

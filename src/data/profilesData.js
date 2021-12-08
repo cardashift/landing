@@ -259,7 +259,7 @@ export const ProductManagement = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/ericraffin/',
+        link: 'https://www.linkedin.com/in/pierre-trouv%C3%A9-026a1827/',
         icon: 'linkedin.svg',
       },
     ],
@@ -272,7 +272,7 @@ export const ProductManagement = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/pierre-trouv%C3%A9-026a1827/',
+        link: 'https://www.linkedin.com/in/laure-aline-bellenfant-14890a130/',
         icon: 'linkedin.svg',
       },
     ],
@@ -288,7 +288,7 @@ export const pmTeam = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b',
+        link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b010/',
         icon: 'linkedin.svg',
       },
     ],

@@ -46,13 +46,13 @@ function App() {
   ]
   const CardList1 = [
     {
-      img: '../images/fromBlog.svg',
+      img: '../images/fromBlog.png',
       title: 'Cardashift — the launchpad to foster sustainable development',
       description:
         'Impact projects leaders across the world are building the stepping stones for a more sustainable world... Will it be enough?',
     },
     {
-      img: '../images/firstFromBlog.svg',
+      img: '../images/firstFromBlog.png',
       title:
         'The Founding Story: from purpose-oriented CEOs to an impact-creating coalition',
       description:
