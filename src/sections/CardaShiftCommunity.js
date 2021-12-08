@@ -34,8 +34,8 @@ function CardaShiftCommunity() {
             <Button className="shadow font-medium text-base tracking-wide text-gray hover:bg-colorGrayHover">
               <a
                 href="whitepaper.pdf"
-                className="flex justify-between w-full"
                 target="_blank"
+                className="flex justify-between w-full"
               >
                 Discover our whitepaper
                 <ArrowIcon color="gray" className="ml-6" />
