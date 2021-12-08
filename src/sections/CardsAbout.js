@@ -75,7 +75,10 @@ function CardsAbout() {
           style={{ marginTop: 480, width: 250 }}
           className="absolute left-0 -z-1"
         />
-        <div className="flex" style={{ height: 565 }}>
+        <div
+          className="flex"
+          style={{ height: 565, marginBottom: windowSize <= 380 ? -65 : null }}
+        >
           <div className="relative">
             <div>
               <img
@@ -146,7 +149,12 @@ function CardsAbout() {
             className="w-28 h-28 absolute right-0 sm:hidden"
             style={{
               top: windowSize < 768 ? -50 : -40,
-              right: windowSize < 768 ? 46 : 48,
+              right:
+                windowSize > 380 && windowSize < 768
+                  ? 46
+                  : windowSize < 380
+                  ? 37
+                  : 48,
               width: 120,
               height: 120,
               zIndex: -1,
