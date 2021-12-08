@@ -25,7 +25,7 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Founders & executive
           </h3>
-          <div className=" flex gap-3 md:gap-6 justify-start flex-wrap">
+          <div className="flex justify-start md:gap-6 md:justify-start flex-wrap">
             {foundersTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
