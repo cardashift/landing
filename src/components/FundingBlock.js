@@ -1,6 +1,7 @@
 import React from 'react'
 
 function FundingBlock({
+  title,
   firstPrice,
   secondPrice,
   thirdPrice,
@@ -8,72 +9,79 @@ function FundingBlock({
   firstRightTd,
   secondLeftTd,
   secondRighttTd,
+  status,
+  duration,
 }) {
   return (
     <div
       // style={{ width: 411, height: 288 }}
       className="mb-6 sm:mb-0 min-h-72 w-full sm:w-410 p-5 rounded-lg border-white border-opacity-40 border-2 shadow-sm md:bg-button-orange-gradien bg-grayLight blend"
     >
-      <table
-        className="table-auto border-separate"
-        style={{ borderSpacing: 8 }}
-      >
-        <tr>
-          <th className="text-left pr-32 font-Inter font-bold text-xl text-primaire">
-            Private Sale
-          </th>
-        </tr>
-        <tr>
-          <td className="font-Inter  font-normal text-sm text-primaire leading-4">
+      <div className="table-auto border-separate" style={{ borderSpacing: 8 }}>
+        <div className="flex justify-between items-center mb-4">
+          <div className="text-left font-Inter font-bold text-xl text-primaire">
+            {title}
+          </div>
+          <div
+            className={`text-xs font-Inter leading-15 font-bold p-1 capitalize rounded bg-blend-soft-light text-white ${
+              status == 'closed'
+                ? 'bg-red-gradient bg-red'
+                : 'bg-blue-gradient bg-blue'
+            }`}
+          >
+            {status}
+          </div>
+        </div>
+        <div className="flex justify-between mb-2">
+          <div className="font-Inter  font-normal text-sm text-primaire leading-4">
             Token supply
-          </td>
-          <td className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
+          </div>
+          <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
             {firstPrice}
-          </td>
-        </tr>
-        <tr>
-          <td className="font-Inter font-normal text-sm text-primaire leading-4">
+          </div>
+        </div>
+        <div className="flex justify-between mb-2">
+          <div className="font-Inter font-normal text-sm text-primaire leading-4">
             Token price
-          </td>
-          <td className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
+          </div>
+          <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
             {secondPrice}
-          </td>
-        </tr>
-        <tr>
-          <td className="font-Inter font-normal text-sm text-primaire leading-4">
-            Min. purchase
-          </td>
-          <td className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
-            {thirdPrice}
-          </td>
-        </tr>
-      </table>
-      <table
+          </div>
+        </div>
+        <div className="flex justify-between mb-5">
+          <div className="font-Inter font-normal text-sm text-primaire leading-4">
+            {duration ? 'Duration' : 'Min. purchase'}
+          </div>
+          <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
+            {thirdPrice || duration}
+          </div>
+        </div>
+      </div>
+      <div
         className="w-full table-auto border-separate"
         style={{ borderSpacing: 8 }}
       >
-        <tr>
-          <th className="text-left pr-32 font-Inter font-bold text-base text-primaire">
-            Vesting
-          </th>
-        </tr>
-        <tr>
-          <td className="font-Inter font-normal text-sm text-primaire leading-4">
+        <div className="mb-3 text-left font-Inter font-bold text-base text-primaire">
+          Vesting
+        </div>
+
+        <div className="flex justify-between mb-2">
+          <div className="font-Inter font-normal text-sm text-primaire leading-4">
             {firstLeftTd}
-          </td>
-          <td className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
+          </div>
+          <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
             {firstRightTd}
-          </td>
-        </tr>
-        <tr>
-          <td className="font-Inter font-normal text-sm text-primaire leading-4">
+          </div>
+        </div>
+        <div className="flex justify-between mb-2">
+          <div className="font-Inter font-normal text-sm text-primaire leading-4">
             {secondLeftTd}
-          </td>
-          <td className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
+          </div>
+          <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
             {secondRighttTd}
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

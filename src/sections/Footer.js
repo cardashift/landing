@@ -1,12 +1,12 @@
 import React from 'react'
-import CardsFooter from '../components/CardsFooter'
+// import CardsFooter from '../components/CardsFooter'
 import FooterCommunication from '../components/FooterCommunication'
 
 function Footer() {
   return (
-    <div className="md:flex justify-between bg-blueFooter md:p-20 p-11">
+    <div className="md:flex justify-between bg-blueFooter p-11">
       <FooterCommunication />
-      <CardsFooter
+      {/* <CardsFooter
         title="Product"
         firstSubTitle="Landing Page"
         secondSubTitle="Features"
@@ -32,7 +32,7 @@ function Footer() {
         firstSubTitle="Documentation"
         secondSubTitle="License"
         thirdSubTitle="Changelog"
-      />
+      /> */}
     </div>
   )
 }
