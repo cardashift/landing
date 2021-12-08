@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.blend{
+background-blend-mode: soft-light, normal;
+}
 .profileImg {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.8%, rgba(0, 0, 0, 0.7) 100%);
 }

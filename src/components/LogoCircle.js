@@ -19,7 +19,7 @@ function LogoCircle() {
       square: {
         transform: 'rotate(-25deg)',
         bottom: 254,
-        left: 10,
+        left: 100,
       },
     }
   const mediumCercle = {
@@ -46,7 +46,7 @@ function LogoCircle() {
     <>
       <img
         className="sm:hidden"
-        style={{ height: 670, width: 340, transform: 'translateX(59px)' }}
+        style={{ height: 600, width: 300, transform: 'translateX(59px)' }}
         src="/images/circle-quare.png"
       />
 

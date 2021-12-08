@@ -12,7 +12,7 @@ function TimeLineCard({
     <div
       style={style}
       className={`flex relative border-2 rounded-lg border-white shadow-sm  
-      border-opacity-40 bg-blend-soft-light ${className} ${
+      border-opacity-40 blend ${className} ${
         isSquare ? 'w-24 hidden sm:block h-24 py-3 px-3' : null
       }`}
     >
