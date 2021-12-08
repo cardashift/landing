@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import Button from '../components/Button'
 import GlassCard from '../components/GlassCard'
-
+import { useWindowSize } from '../hooks/useWindowSize'
 function CardsAbout() {
+  const windowSize = useWindowSize()
   return (
     <>
       <div className="md:flex hidden md:flex-col gap-14 justify-evenly">
@@ -132,12 +133,24 @@ function CardsAbout() {
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
-            style={{ top: 45, right: -15, width: 50, height: 50, zIndex: -1 }}
+            style={{
+              top: 45,
+              right: windowSize < 768 ? -10 : -15,
+              width: 50,
+              height: 50,
+              zIndex: -1,
+            }}
           />
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
-            style={{ top: -40, right: 48, width: 120, height: 120, zIndex: -1 }}
+            style={{
+              top: windowSize < 768 ? -50 : -40,
+              right: windowSize < 768 ? 46 : 48,
+              width: 120,
+              height: 120,
+              zIndex: -1,
+            }}
           />
           <br />
           <div>

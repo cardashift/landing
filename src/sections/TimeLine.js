@@ -10,6 +10,7 @@ function TimeLine() {
     transform: 'rotate(180deg)',
     textAlign: 'center',
     height: '100%',
+    marginLeft: -7,
   }
   const unions = [
     {
