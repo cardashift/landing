@@ -80,7 +80,10 @@ function TimeLine() {
     ],
     secondCol: [
       {
-        content: 'Launchpad Beta for crypto enthusiasts',
+        content:
+          windowSize < 768
+            ? 'Launchpad'
+            : 'Launchpad Beta for crypto enthusiasts',
         border: 'borderBlue',
         style: {
           height: 160,
@@ -88,24 +91,30 @@ function TimeLine() {
         },
       },
       {
-        content: 'Launchpad V2 for a wider audience',
+        content:
+          windowSize < 768
+            ? 'Launchpad V2 '
+            : 'Launchpad V2 for a wider audience',
         border: 'borderBlue',
         style: {
-          height: 300,
+          height: windowSize < 768 ? 340 : 300,
         },
       },
       {
         content: 'Lending',
         border: 'borderOrange',
         style: {
-          height: 265,
+          height: windowSize < 768 ? 318 : 265,
         },
       },
       {
-        content: 'Decentralized blockhain based carbon market',
+        content:
+          windowSize < 768
+            ? 'Decentralised Carbon Market'
+            : 'Decentralized blockhain based carbon market',
         border: 'borderBlack',
         style: {
-          height: 345,
+          height: windowSize < 768 ? 252 : 345,
         },
       },
     ],
@@ -132,14 +141,14 @@ function TimeLine() {
         content: 'User Friendly Wallet',
         border: 'borderBlue',
         style: {
-          height: 228,
+          height: windowSize < 768 ? 198 : 228,
         },
       },
       {
         content: 'Insurance',
         border: 'borderOrange',
         style: {
-          height: windowSize < 768 ? 652 : 265,
+          height: windowSize < 768 ? 583 : 265,
         },
       },
     ],
@@ -158,8 +167,9 @@ function TimeLine() {
         content: 'STO',
         border: 'borderOrange',
         style: {
-          height: 540,
-          transform: 'translateY(503px)',
+          height: windowSize < 768 ? 455 : 540,
+          transform:
+            windowSize < 768 ? 'translateY(544px)' : 'translateY(503px)',
         },
       },
     ],
@@ -167,7 +177,7 @@ function TimeLine() {
 
   return (
     <div className="relative" style={{ height: '85rem' }}>
-      <div className=" flex items-center pl-32 sm:pl-80 mt-28 left-8 absolute top-0 right-0">
+      <div className=" flex items-center pl-32 sm:pl-64 mt-28 left-8 absolute top-0 right-0">
         <div
           className="flex flex-col  "
           // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
