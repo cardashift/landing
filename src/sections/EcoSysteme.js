@@ -2,9 +2,14 @@ import React from 'react'
 import CompanyCard from '../components/CompanyCard'
 import LogoCircle from '../components/LogoCircle'
 import TitleContainer from '../components/TitleContainer'
+import { useWindowSize } from '../hooks/useWindowSize'
 function EcoSysteme() {
+  const windowSize = useWindowSize()
   return (
-    <div className="flex relative sm:static flex-wrap sm:flex-nowrap items-center md:w-5/12">
+    <div
+      className="flex  sm:static flex-wrap sm:flex-nowrap items-center md:w-5/12"
+      style={{ paddingBottom: windowSize < 768 ? '50rem' : null }}
+    >
       <div className="flex items-center  relative">
         <div className="md:my-72 ">
           <TitleContainer
