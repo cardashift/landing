@@ -405,7 +405,11 @@ export const impactAssTeam = [
     role: 'Impact assessment',
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
-      { name: 'linkedin', link: '', icon: 'linkedin.svg' },
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/v-pensalfini/',
+        icon: 'linkedin.svg',
+      },
     ],
   },
   {
@@ -414,7 +418,11 @@ export const impactAssTeam = [
     role: 'Impact assessment',
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
-      { name: 'linkedin', link: '', icon: 'linkedin.svg' },
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/anne-coroller/',
+        icon: 'linkedin.svg',
+      },
     ],
   },
 ]
@@ -479,7 +487,8 @@ export const marketingTeam = [
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
-        linkedin: 'https://www.linkedin.com/in/marius-campos/',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/marius-campos/',
         icon: 'linkedin.svg',
       },
     ],

@@ -18,7 +18,7 @@ function Profile({ urlPicture, fullName, role, social }) {
           className="profileImg rounded-3xl p-3 flex flex-col justify-end hover:bg-white hover:bg-opacity-40"
           style={{ height: 238 }}
         >
-          <h3 className=" text-white font-Inter font-medium text-xs">
+          <h3 className="text-white font-Inter font-medium text-xs">
             {fullName}
           </h3>
           <h4 className=" text-white font-Inter font-bold text-11 leading-3">
