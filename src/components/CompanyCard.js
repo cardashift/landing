@@ -8,7 +8,7 @@ function CompanyCard({ title, description }) {
           {title}
         </h1>
         <img
-          className="-my-6 w-20"
+          className="-my-6 -mr-5 w-20"
           src="/images/arrow-right-violet.svg"
           alt="arrow-right"
         />
