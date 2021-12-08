@@ -1,5 +1,4 @@
 import React from 'react'
-import ArrowIcon from './ArrowIcon'
 import Button from './Button'
 
 function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
@@ -15,7 +14,7 @@ function ProgressCards({ title, paragraphe, srcImg, btnDisplay }) {
         </p>
         {btnDisplay && (
           <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-normal text-sm mt-6 m-auto">
-            Submit your project <ArrowIcon color="blue" className="ml-2" />
+            Submit your project
           </Button>
         )}
       </div>

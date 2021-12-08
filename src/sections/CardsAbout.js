@@ -124,7 +124,7 @@ function CardsAbout() {
           />
         </div>
 
-        <div className="relative w-full">
+        <div className="relative w-full mt-17 md:mt-0">
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
@@ -139,7 +139,10 @@ function CardsAbout() {
           <div>
             <img src="images/rec-mobile-bg.png" />
             <div
-              style={{ transform: 'translateY(-40rem)', marginBottom: -750 }}
+              style={{
+                transform: 'translateY(-40rem)',
+                marginBottom: -550,
+              }}
             >
               <GlassCard
                 className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
