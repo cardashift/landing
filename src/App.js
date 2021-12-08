@@ -52,7 +52,7 @@ function App() {
         'Impact projects leaders across the world are building the stepping stones for a more sustainable world... Will it be enough?',
     },
     {
-      img: '../images/firstFromBlog.svg',
+      img: '../images/firstFromBlog.png',
       title:
         'The Founding Story: from purpose-oriented CEOs to an impact-creating coalition',
       description:
