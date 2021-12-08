@@ -1,6 +1,7 @@
 import React from 'react'
 
 function FundingBlock({
+  title,
   firstPrice,
   secondPrice,
   thirdPrice,
@@ -9,6 +10,7 @@ function FundingBlock({
   secondLeftTd,
   secondRighttTd,
   status,
+  duration,
 }) {
   return (
     <div
@@ -17,8 +19,8 @@ function FundingBlock({
     >
       <div className="table-auto border-separate" style={{ borderSpacing: 8 }}>
         <div className="flex justify-between items-center mb-4">
-          <div className="text-left pr-32 font-Inter font-bold text-xl text-primaire">
-            Private Sale
+          <div className="text-left font-Inter font-bold text-xl text-primaire">
+            {title}
           </div>
           <div
             className={`text-xs font-Inter leading-15 font-bold p-1 capitalize rounded bg-blend-soft-light text-white ${
@@ -48,10 +50,10 @@ function FundingBlock({
         </div>
         <div className="flex justify-between mb-5">
           <div className="font-Inter font-normal text-sm text-primaire leading-4">
-            Min. purchase
+            {duration ? 'Duration' : 'Min. purchase'}
           </div>
           <div className="font-Inter font-semibold text-right text-sm text-primaire leading-4">
-            {thirdPrice}
+            {thirdPrice || duration}
           </div>
         </div>
       </div>
@@ -59,7 +61,7 @@ function FundingBlock({
         className="w-full table-auto border-separate"
         style={{ borderSpacing: 8 }}
       >
-        <div className="mb-3 text-left pr-32 font-Inter font-bold text-base text-primaire">
+        <div className="mb-3 text-left font-Inter font-bold text-base text-primaire">
           Vesting
         </div>
 
