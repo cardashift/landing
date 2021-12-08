@@ -21,7 +21,9 @@ function Profile({ urlPicture, fullName, role, social }) {
           <h3 className=" text-white font-Inter font-medium text-xs">
             {fullName}
           </h3>
-          <h4 className=" text-white font-Inter font-bold text-11">{role}</h4>
+          <h4 className=" text-white font-Inter font-bold text-11 leading-3">
+            {role}
+          </h4>
           <div className=" flex gap-2 my-1" style={{ width: 72 }}>
             {social &&
               social.map((item) => (
