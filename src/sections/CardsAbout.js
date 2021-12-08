@@ -11,6 +11,7 @@ function CardsAbout() {
         <div className="flex">
           <div className="relative">
             <GlassCard
+              mt={200}
               width={850}
               Background={'images/leftRectangle.svg'}
               topTitle="Impact or profit?"
@@ -33,7 +34,7 @@ function CardsAbout() {
           <img
             src="/images/Bigest bubble 1.png"
             className="w-28 h-28 hidden sm:block"
-            style={{ transform: 'translate(-20px, 500px)' }}
+            style={{ transform: 'translate(-20px, 700px)' }}
           />
         </div>
 
@@ -51,8 +52,8 @@ function CardsAbout() {
 
           <br />
           <GlassCard
+            mt={100}
             width={850}
-            className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
             title="Empowering the visionary ventures that will create a sustainable future"
@@ -148,7 +149,7 @@ function CardsAbout() {
               }}
             >
               <GlassCard
-                className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
+                className="md:w-5/7 px-6 py-8 md:p-16 mb-24 md:mb-52 mt-10"
                 topTitle="About Cardashift"
                 title="Empowering the visionary ventures that will create a sustainable future"
                 description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."

@@ -21,7 +21,7 @@ function DefiProgress() {
   ]
   return (
     <Element name={'Product'}>
-      <div className="my-16">
+      <div className="md:my-16">
         <div className="md:pr-52">
           <TitleContainer
             classnametitle="text-2xl md:text-5xl mt-4 md:pr-8 leading-tight font-black"
