@@ -9,7 +9,7 @@ function RoadMapCard({
   stateList,
 }) {
   return (
-    <div className="relative px-6 pb-6 pt-2 w-1/3 rounded-lg border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-grayLight bg-blend-soft-light">
+    <div className="w-full mb-6 sm:mb-0 relative px-6 pb-6 pt-2 sm:w-1/3 rounded-lg border-white border-opacity-40 border-2 shadow-sm bg-button-orange-gradien bg-grayLight blend">
       <div
         style={{ width: 'calc(100% - 20px' }}
         className={classnames(

@@ -2,7 +2,7 @@ import React from 'react'
 
 function FundingCap({ topTitle, pricing }) {
   return (
-    <div className="w-48 flex flex-col border-2 rounded-lg border-white shadow-sm bg-button-orange-gradien bg-grayLight bg-blend-soft-light py-4 px-6 border-opacity-40 ">
+    <div className="w-160 sm:w-52 sm:ml-6 flex flex-col border-2 rounded-lg border-white shadow-sm bg-button-orange-gradien bg-grayLight blend py-4 px-6 border-opacity-40 ">
       <span className="text-blue uppercase font-Inter font-bold text-xs tracking-wider mb-1">
         {topTitle}
       </span>

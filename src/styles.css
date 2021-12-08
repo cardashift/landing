@@ -188,3 +188,102 @@
     position: relative;
     box-shadow: -16.9183px -16.9183px 33.8366px #FAFBFF, 16.9183px 16.9183px 33.8366px rgba(11, 46, 226, 0.4);
 }
+
+@media only screen and (max-width: 768px) {
+    .circle-md {
+        width: 170px;
+        height: 170px;
+        z-index: -4;
+    }
+
+    .circle-sm {
+        width: 105px;
+        height: 105px;
+    }
+
+    .circle-xs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .progress-circular-chart__content,
+    .progress-bar {
+        width: 170px;
+        height: 170px;
+
+    }
+
+    .progress-circular-chart {
+        width: 197px;
+        height: 197px;
+    }
+
+    .public-sale-indicator {
+        left: -85px;
+        top: -52px;
+    }
+
+    .public-sale-indicator img {
+        height: 50px;
+    }
+
+
+    .private-sale-indicator {
+        left: -152px;
+        top: -10px;
+    }
+
+    .private-sale-indicator img {
+        height: 58px;
+
+    }
+
+    .marketing-indicator {
+        left: -115px;
+        top: 65px;
+    }
+
+    .marketing-indicator img {
+        width: 53px;
+        height: 7px;
+    }
+
+    .ambassadors-indicator {
+        left: -128px;
+        top: 92px;
+    }
+
+    .ambassadors-indicator img {
+        height: 28px;
+    }
+
+    .partnerships-indicator {
+        left: -120px;
+        top: 115px;
+    }
+
+    .partnerships-indicator img {
+        height: 51px;
+    }
+
+    .team-indicator {
+        left: -85px;
+        top: 136px;
+    }
+
+    .team-indicator img {
+        width: 38px;
+        height: 84px;
+    }
+
+    .treasury-indicator {
+        right: -30px;
+        top: 72px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .treasury-indicator img {
+        height: 120px;
+    }
+}

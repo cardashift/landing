@@ -2,31 +2,32 @@ import React from 'react'
 import CompanyCard from '../components/CompanyCard'
 import LogoCircle from '../components/LogoCircle'
 import TitleContainer from '../components/TitleContainer'
-
+import { useWindowSize } from '../hooks/useWindowSize'
 function EcoSysteme() {
+  const windowSize = useWindowSize()
   return (
     <div
-      className="hidden md:flex items-center "
-      style={{ width: 'calc(100% - 700px)' }}
+      className="flex  sm:static flex-wrap sm:flex-nowrap items-center md:w-5/12"
+      style={{ paddingBottom: windowSize < 768 ? '50rem' : null }}
     >
-      <div className="flex items-center">
-        <div className="my-72">
+      <div className="flex items-center  relative">
+        <div className="md:my-72 ">
           <TitleContainer
             topTitle="Ecosystem"
             title="Cardashift Core Companies"
-            classnametitle="font-black text-5xl my-4"
+            classnametitle="font-black text-2xl md:text-5xl my-4 pr-2"
           />
           <CompanyCard
             title="Matters"
-            description="Experts in new digital business, services and products design & development ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+            description="Product and start-up helping new businesses to succeed and scale their idea from inception all the way through to finished product/service. With over 14 years of experience, Matters has assisted over 150 startups with a success rate upwards of 90% and with a cumulative value of +1bn$."
           />
           <CompanyCard
             title="Smart-Chain"
-            description="Blockchain, Technology Specialists ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+            description="Firm focused on Blockchain research and innovation with a specialization in PoS protocols. Passionate about Cardano and his scientific approach, Smartchain has an expertise in scalability of PoS protocols, Payments, ZK-proof, MPC, Cert&Traceability use cases, and governance and incentive systems."
           />
           <CompanyCard
             title="Stim"
-            description="Innovation strategy and new product development specialist ursus accumsan enim, rutrum aenean eget integer. Blandit aenean"
+            description="A spin-off from Mines Paristech, a top-level European engineering university, Stim specialises in radical innovation exploration and acceleration for environmental shift. For the past 7 years Stim has been developing disruptive innovation strategies and products for industry leaders in energy, food, and mobility."
           />
         </div>
       </div>

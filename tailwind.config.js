@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
+      xs: '375px',
       sm: '768px',
       md: '960px',
       lg: '1440px',
@@ -25,9 +26,16 @@ module.exports = {
         lg: '56px',
         xl: '5rem',
         '2xl': '6rem',
+        '5xl': '32rem',
       },
     },
     extend: {
+      inset: {
+        11: '11rem',
+      },
+      translate: {
+        '4/7': '57.1428571%',
+      },
       dropShadow: {
         'first-shadow': '-10px -10px 20px #FAFBFF',
         'second-shadow': '10px 10px 20px #A6ABBD',
@@ -40,6 +48,7 @@ module.exports = {
       },
       spacing: {
         '2px': '2px',
+        14: '14px',
         17: '70px',
         40: '40px',
         91: '91px',
@@ -49,17 +58,29 @@ module.exports = {
       fontFamily: {
         body: ['Nizzoli'],
       },
+      fontSize: {
+        11: '11px',
+        26: '26px',
+      },
       width: {
         50: '50rem',
         519: '519px',
+        '5/7': '70%',
+        410: '410px',
+        160: '160px',
       },
       maxWidth: {
         252: '252px',
+        628: '628px',
       },
       height: {
+        56: '56px',
         80: '80px',
       },
       colors: {
+        colorBlueHover: '#0622B7',
+        colorGrayHover: '#DCDEE8',
+        colorBtnHover: '#D26500',
         paraColor: '#4D515C',
         // Configure your color palette here
         grayPublicICO: '#4D515C',
@@ -69,7 +90,7 @@ module.exports = {
         blue: '#0029FF',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
-        'gray-100': '#F3F4F5',
+        'gray-100': '#EBECF0',
         grayLight: '#EBECF0',
         blueLight: '#647DFE',
         blueCiel: '#7589F7',
@@ -96,9 +117,11 @@ module.exports = {
         20: '20px',
       },
       lineHeight: {
+        34: '34px',
         62: '62px',
       },
     },
+
     fontFamily: {
       NizzoliAlt: 'NizzoliAlt',
       Inter: 'Inter',
@@ -116,8 +139,9 @@ module.exports = {
       2: 2,
     },
   },
+
   variants: {
-    extend: {},
+    extend: { borderWidth: ['hover'] },
   },
   plugins: [],
 }

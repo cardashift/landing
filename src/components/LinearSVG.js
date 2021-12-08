@@ -12,7 +12,6 @@ function LinearSVG() {
         gradientTransform="matrix(1,0,0,1,0,0)"
       >
         <stop offset="0%" stop-color="#EBECF0"></stop>
-
         <stop offset="100%" stop-color="#EBECF0"></stop>
       </linearGradient>
       <linearGradient

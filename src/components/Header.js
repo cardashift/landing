@@ -16,7 +16,7 @@ function Header() {
   return (
     <div className="header container fixed top-5 z-3 left-2/4 transform -translate-x-1/2">
       <nav
-        className="hidden md:flex h-80 sticky top-5 bg-header-gradient gap-10 justify-between items-center rounded-40  bg-blend-soft-light shadow-md  px-8 border-2 border-solid border-white border-opacity-40"
+        className="hidden md:flex h-80 sticky top-5 bg-header-gradient gap-10 justify-between items-center rounded-40  blend shadow-md  px-8 border-2 border-solid border-white border-opacity-40"
         style={{
           zIndex: 10,
           background:
@@ -28,30 +28,24 @@ function Header() {
         </div>
         <ul className="flex items-center flex-row gap-0">
           {navigationItems.map((item, index) => (
-            <Link
-              to={item.name}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-50}
-            >
+            <Link to={item.name}>
               <li
                 className={classnames(
                   item.name == selected
-                    ? 'bg-gray-900 text-black bg-blend-soft-light shadow-sm rounded-20'
+                    ? 'bg-gray-900 text-black blend shadow-sm rounded-20'
                     : 'text-gray hover:bg-gray-700',
-                  'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mr-5 py-3 px-5'
+                  'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center py-3 px-5'
                 )}
                 key={index}
                 onClick={() => setSelected(item.name)}
               >
                 {item.name}
-              </li>{' '}
+              </li>
             </Link>
           ))}
         </ul>
 
-        <Button className="bg-blue text-white font-Inter font-medium text-xs">
+        <Button className="bg-blue h-10 hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
           Pre-register to the ico
           <ArrowIcon className="ml-2" color="blue" />
         </Button>

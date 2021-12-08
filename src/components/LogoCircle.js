@@ -18,7 +18,7 @@ function LogoCircle() {
       square: {
         transform: 'rotate(-25deg)',
         bottom: 254,
-        left: 10,
+        left: 15,
       },
     }
   const mediumCercle = {
@@ -42,31 +42,45 @@ function LogoCircle() {
   }
 
   return (
-    <div className="flex items-center justify-center" style={largeCircle}>
-      <RoundSquare
-        style={largeCircle.square}
-        icon={
-          <img src="/images/stim.svg" style={{ transform: 'rotate(16deg)' }} />
-        }
+    <>
+      <img
+        className="sm:hidden absolute right-0"
+        style={{ height: 670, width: 340, marginTop: '57rem' }}
+        src="/images/circle-quare.png"
       />
-      <span className="flex items-center justify-center" style={mediumCercle}>
+
+      <div
+        className="hidden md:flex  items-center justify-center"
+        style={largeCircle}
+      >
         <RoundSquare
-          style={mediumCercle.square}
+          style={largeCircle.square}
           icon={
             <img
-              src="/images/matters.svg"
-              style={{ transform: 'rotate(-15deg)' }}
+              src="/images/stim.svg"
+              style={{ transform: 'rotate(16deg)' }}
             />
           }
         />
-        <span style={smallCircle}>
+        <span className="flex items-center justify-center" style={mediumCercle}>
           <RoundSquare
-            style={smallCircle.square}
-            icon={<img src="/images/arrows-icon.svg" />}
+            style={mediumCercle.square}
+            icon={
+              <img
+                src="/images/matters.svg"
+                style={{ transform: 'rotate(-15deg)' }}
+              />
+            }
           />
+          <span style={smallCircle}>
+            <RoundSquare
+              style={smallCircle.square}
+              icon={<img src="/images/arrows-icon.svg" />}
+            />
+          </span>
         </span>
-      </span>
-    </div>
+      </div>
+    </>
   )
 }
 

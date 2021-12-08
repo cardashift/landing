@@ -6,63 +6,96 @@ import classnames from 'classnames'
 import { Element } from 'react-scroll'
 
 function DefiProgress() {
-  const [selected, setSelected] = React.useState('Launchpad & Acceleration')
-  const navigationItems = [
-    { name: 'Launchpad & Acceleration', selected: true },
-    { name: 'DeX / AMM', selected: false },
-    { name: 'Universal Wallet', selected: false },
-    { name: 'Tokenization & Governance Frameworks', selected: false },
-    { name: 'Money Management Platform', selected: false },
-  ]
-  return (
-    <Element name={'Product'}>
-      <div className="my-16 hidden md:block">
-        <div className="px-52">
-          <TitleContainer
-            classnametitle="text-5xl mt-4 pr-8 leading-tight font-black"
-            topTitle="DeFi for universal progress "
-            title="Providing technological commons, Built for impact projects & investors"
-          />
-        </div>
-        <div className="flex flex-col rounded-40 border-white border-2  my-16 w-full pt-10 px-10">
-          <div className="flex justify-between">
-            {navigationItems.map((item, index) => (
-              <CardSoon
-                cardTitle={item.name}
-                subTitle="Soon"
-                SoonDisplay={
-                  item.name === 'Launchpad & Acceleration' ? false : true
-                }
-                classname={classnames(
-                  item.name == selected
-                    ? 'text-black  shadow-sm  rounded-20'
-                    : 'text-gray hover:bg-gray-700'
-                )}
-                key={index}
-                onclick={() => {
-                  setSelected(item.name)
-                }}
-              />
-            ))}
-          </div>
-          <div className="my-16">
-            <ProgressCards
-              title="Accelerating change by making real world impact a smart investment"
-              paragraphe="The world is not a zero-sum game, social/environmental progress and profit can and must coexist. Cardashift creates the technologies, tools and relationships to tokenize impact ventures and make them financially viable investments."
-              srcImg="../images/accelerating-change.svg"
-              btnDisplay={false}
-            />
-            <ProgressCards
-              title="Bringing rigor to dreams with dedicated scoring and acceleration frameworks"
-              paragraphe="Addressing 21st century challenges requires innovative thinking and executable solutions along with immense funding. Cardashift creates the environment to meticulously assess, derisk and track impact ventures."
-              srcImg="../images/bringing-rigor.svg"
-              btnDisplay={true}
-            />
-          </div>
-        </div>
-      </div>
-    </Element>
-  )
+   const [isOpen, setIsOpen] = React.useState(false)
+   const [cardname, setCardname] = React.useState('Launchpad & Acceleration')
+   React.useEffect(() => {
+     if (window.innerWidth > 400) setIsOpen(true)
+   }, [])
+   const [selected, setSelected] = React.useState('Launchpad & Acceleration')
+   const navigationItems = [
+     { name: 'Launchpad & Acceleration', selected: true },
+     { name: 'DeX / AMM', selected: false },
+     { name: 'Universal Wallet', selected: false },
+     { name: 'Tokenization & Governance Frameworks', selected: false },
+     { name: 'Money Management Platform', selected: false },
+   ]
+   return (
+     <Element name={'Product'}>
+       <div className="my-16 sm:block  md:block">
+         <div className="md:pr-52">
+           <TitleContainer
+             classnametitle="text-2xl md:text-5xl mt-4 md:pr-8 leading-tight font-black"
+             topTitle="DeFi for universal progress "
+             title="Providing technological commons, Built for impact projects & investors"
+           />
+         </div>
+         <div className="rounded-40 my-16 md:p-2px bg-glass-border">
+           <div className="flex flex-col items-stretch  rounded-40 bg-gray-100  backdrop-blur-md  md:pt-10 md:px-10">
+             {window.innerWidth < 400 && (
+               <div className="relative">
+                 <CardSoon
+                   ondoubleclick={() => setIsOpen(!isOpen)}
+                   cardTitle={cardname}
+                   subTitle="Soon"
+                   SoonDisplay={
+                     cardname === 'Launchpad & Acceleration' ? false : true
+                   }
+                   classname={classnames('text-gray hover:bg-gray-700 w-full')}
+                 />
+                 <img
+                   src="images/arrow-down.svg"
+                   className="absolute right-2 top-7"
+                 />
+               </div>
+             )}
+
+             {isOpen && (
+               <div className="flex flex-col items-stretch  md:flex-row md:gap-5 justify-between">
+                 {navigationItems.map((item, index) => (
+                   <CardSoon
+                     cardTitle={item.name}
+                     subTitle="Soon"
+                     SoonDisplay={
+                       item.name === 'Launchpad & Acceleration' ? false : true
+                     }
+                     classname={classnames(
+                       item.name == selected
+                         ? 'text-black  w-full md:w-56  shadow-sm  rounded-20'
+                         : 'text-gray  w-full md:w-56  hover:bg-gray-700'
+                     )}
+                     key={index}
+                     onclick={() => {
+                       //  item.name === 'Launchpad & Acceleration' &&
+                       setSelected(item.name)
+                       setCardname(item.name)
+                       {
+                         window.innerWidth < 400 && setIsOpen(false)
+                       }
+                     }}
+                   />
+                 ))}
+               </div>
+             )}
+
+             <div className="my-16">
+               <ProgressCards
+                 title="Funding & accelerating the ideas to create a better world for tomorrow"
+                 paragraphe="Cardashift aims to create the first launchpad for impactful projects on blockchain. We offer you to invest in promising ventures, backed by a best-in-class program to transform them into impactful businesses."
+                 srcImg="../images/accelerating-change.svg"
+                 btnDisplay={false}
+               />
+               <ProgressCards
+                 title="Bringing rigor to dreams with dedicated scoring and acceleration frameworks"
+                 paragraphe="Addressing 21st century challenges requires innovative thinking and executable solutions along with immense funding. Cardashift creates the environment to meticulously assess, derisk and track impact ventures."
+                 srcImg="../images/bringing-rigor.svg"
+                 btnDisplay={true}
+               />
+             </div>
+           </div>
+         </div>
+       </div>
+     </Element>
+   )
 }
 
 export default DefiProgress

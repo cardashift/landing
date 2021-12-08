@@ -1,8 +1,16 @@
 import React from 'react'
 import TimeLineCard from '../components/TimeLineCard'
 import Union from '../components/Union'
-
+import { useWindowSize } from '../hooks/useWindowSize'
 function TimeLine() {
+  const windowSize = useWindowSize()
+  const mobileTextStyle = {
+    textOrientation: 'inherit',
+    writingMode: 'vertical-lr',
+    transform: 'rotate(180deg)',
+    textAlign: 'center',
+    height: '100%',
+  }
   const unions = [
     {
       value: '12/2021',
@@ -72,10 +80,11 @@ function TimeLine() {
     ],
     secondCol: [
       {
-        content: 'Launchpad Beta for crypto enthusiasts',
+        content: 'Launchpad',
         border: 'borderBlue',
         style: {
           height: 160,
+          marginTop: 20,
         },
       },
       {
@@ -96,7 +105,7 @@ function TimeLine() {
         content: 'Decentralized blockhain based carbon market',
         border: 'borderBlack',
         style: {
-          height: 450,
+          height: 444,
         },
       },
     ],
@@ -107,6 +116,9 @@ function TimeLine() {
         border: 'borderBlue',
         style: {
           height: 75,
+          paddingLeft: windowSize < 768 ? 20 : null,
+          width: windowSize < 768 ? 52 : null,
+          paddingTop: windowSize < 768 ? 37 : null,
         },
       },
       {
@@ -118,16 +130,16 @@ function TimeLine() {
       },
       {
         content: 'User Friendly Wallet',
-        border: 'borderOrange',
+        border: 'borderBlue',
         style: {
-          height: 175,
+          height: 228,
         },
       },
       {
         content: 'Insurance',
         border: 'borderOrange',
         style: {
-          height: 320,
+          height: windowSize < 768 ? 652 : 265,
         },
       },
     ],
@@ -136,8 +148,8 @@ function TimeLine() {
         content: 'Governance',
         border: 'borderOrange',
         style: {
-          height: 465,
-          transform: 'translateY(750px)',
+          height: 725,
+          transform: 'translateY(503px)',
         },
       },
     ],
@@ -146,16 +158,19 @@ function TimeLine() {
         content: 'STO',
         border: 'borderOrange',
         style: {
-          height: 320,
-          transform: 'translateY(750px)',
+          height: 540,
+          transform: 'translateY(503px)',
         },
       },
     ],
   }
 
   return (
-    <div className="hidden md:flex items-center pl-80 mt-28 ">
-      <div className="flex flex-col  ">
+    <div className=" flex items-center pl-44 sm:pl-80 mt-28 ">
+      <div
+        className="flex flex-col  "
+        // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
+      >
         {unions.map((item, i) => (
           <div className="flex">
             <Union
@@ -175,37 +190,72 @@ function TimeLine() {
         ))}
       </div>
       <div className="flex justify-between flex-grow-2">
-        <div style={{ transform: 'translateY(240px)' }}>
+        <div style={{ transform: 'translateY(260px)' }}>
           {gridCols.firstCol.map((item) => (
-            <TimeLineCard isSquare>{item.content}</TimeLineCard>
+            <TimeLineCard className="mb-4" isSquare>
+              {item.content}
+            </TimeLineCard>
           ))}
         </div>
         <div>
           {gridCols.secondCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4  mb-3 px-6 w-14 sm:w-48 "
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
-        <div>
+        <div
+          style={{
+            transform:
+              windowSize < 768 ? 'translateY(90px)' : 'translateY(20px)',
+          }}
+        >
           {gridCols.thirdCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
 
-        <div>
+        <div className="hidden sm:block">
           {gridCols.fourthCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
         <div>
           {gridCols.fiveCol.map((item) => (
-            <TimeLineCard isDefault border={item.border} style={item.style}>
-              {item.content}
+            <TimeLineCard
+              className="py-4 mb-3 px-6 w-14 sm:w-48"
+              isDefault
+              border={item.border}
+              style={item.style}
+            >
+              <div style={windowSize < 768 ? mobileTextStyle : null}>
+                {item.content}
+              </div>
             </TimeLineCard>
           ))}
         </div>
