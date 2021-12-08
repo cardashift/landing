@@ -25,18 +25,21 @@ function FundingStages() {
           firstRightTd="6 months"
           secondLeftTd="50%"
           secondRighttTd="12 months"
+          status="closed"
         />
         <FundingBlock
           firstPrice="XX,000,000"
           secondPrice="$0.0X"
           thirdPrice="XXX"
           firstLeftTd="100% at TGE"
+          status="Opens, Dec 16th"
         />
         <FundingBlock
           firstPrice="XX,000,000"
           secondPrice="$0.0X"
           thirdPrice="XXX"
           firstLeftTd="100% at TGE"
+          status="Opens, Dec 17th"
         />
       </div>
       <div className="flex justify-center w-full">
