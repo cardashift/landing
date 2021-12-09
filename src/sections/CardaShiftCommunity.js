@@ -27,17 +27,17 @@ function CardaShiftCommunity() {
             paragraphe="Choose your preferred channels to begin your Cardashift journey, learn more about the project, talk to the team and contribute to the ecosystem"
           />
           <div className="flex flex-col md:flex-row gap-5 items-center mt-10">
-            <Button className="shadow bg-gradient-to-br bg-orangeLight hover:bg-colorBtnHover font-medium text-base text-white tracking-wide">
+            {/* <Button className="shadow bg-gradient-to-br bg-orangeLight hover:bg-colorBtnHover font-medium text-base text-white tracking-wide">
               Pre-register to $CLAP ICO
               <ArrowIcon className="ml-2" color="orange" />
-            </Button>
+            </Button> */}
             <Button className="shadow font-medium text-base tracking-wide text-gray hover:bg-colorGrayHover">
               <a
-                href="whitepaper.pdf"
+                href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr"
                 target="_blank"
                 className="flex justify-between w-full"
               >
-                Discover our whitepaper
+                Pre-register to the ICO
                 <ArrowIcon color="gray" className="ml-6" />
               </a>
             </Button>

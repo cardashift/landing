@@ -45,10 +45,12 @@ function Header() {
           ))}
         </ul>
 
-        <Button className="bg-blue h-10 hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
-          Pre-register to the ico
-          <ArrowIcon className="ml-2" color="blue" />
-        </Button>
+        <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
+          <Button className="bg-blue h-10 hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs">
+            Pre-register to the ICO
+            <ArrowIcon className="ml-2" color="blue" />
+          </Button>
+        </a>
       </nav>
     </div>
   )

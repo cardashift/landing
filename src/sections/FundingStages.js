@@ -12,12 +12,13 @@ function FundingStages() {
           Funding Stages
         </p>
         <div className="w-410  flex justify-between">
-          <FundingCap topTitle={'SOFT CAP'} pricing={'$4 100 000'} />
-          <FundingCap topTitle={'HARD CAP'} pricing={'$9 100 000'} />
+          <FundingCap topTitle={'SOFT CAP'} pricing={'$4 500 000'} />
+          <FundingCap topTitle={'HARD CAP'} pricing={'$9 500 000'} />
         </div>
       </div>
-      <div className="flex justify-between flex-wrap  md:flex-nowrap  my-12">
+      <div className="flex justify-between flex-wrap md:flex-nowrap my-12">
         <FundingBlock
+          title="Private Sale"
           firstPrice="55,000,000"
           secondPrice="$0.02"
           thirdPrice="$500"
@@ -27,23 +28,27 @@ function FundingStages() {
           secondRighttTd="12 months"
         />
         <FundingBlock
-          firstPrice="XX,000,000"
-          secondPrice="$0.0X"
-          thirdPrice="XXX"
+          title="Flash Sale"
+          firstPrice="40,000,000"
+          secondPrice="1 ADA = 36 CLAP*"
+          duration="24 hours"
           firstLeftTd="100% at TGE"
         />
         <FundingBlock
-          firstPrice="XX,000,000"
-          secondPrice="$0.0X"
-          thirdPrice="XXX"
+          title="Public Sale"
+          firstPrice="160,000,000"
+          secondPrice="1 ADA = 30 CLAP*"
+          duration="4 days"
           firstLeftTd="100% at TGE"
         />
       </div>
       <div className="flex justify-center w-full">
-        <Button className="shadow bg-gradient-to-br self-center md:mt-8 bg-blue hover:bg-colorBlueHover text-white font-medium text-base tracking-wide">
-          Pre-register to the ico
-          <ArrowIcon className="ml-2" color="blue" />
-        </Button>
+        <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
+          <Button className="shadow bg-gradient-to-br self-center md:mt-8 bg-blue hover:bg-colorBlueHover text-white font-medium text-base tracking-wide">
+            Pre-register to the ICO
+            <ArrowIcon className="ml-2" color="blue" />
+          </Button>
+        </a>
       </div>
     </div>
   )

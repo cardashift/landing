@@ -8,7 +8,7 @@ function PublicICO() {
     } else {
       return (
         <div className="bg-gray-100 backdrop-blur-md h-36 rounded-3xl font-NizzoliAlt font-bold flex flex-col justify-center text-grayPublicICO">
-          <p className="text-center mb-2">Public ICO coming soon</p>
+          <p className="text-center mb-2">Public ICO on January 17th</p>
           <div className="flex justify-center md:gap-2 px-2">
             <span className="flex flex-col items-center w-12 justify-center font-Inter font-normal md:text-5xl text-3xl ">
               {days}
@@ -42,7 +42,7 @@ function PublicICO() {
   }
   return (
     <div className="my-10 rounded-3xl p-2px bg-glass-border">
-      <Countdown date={new Date(2021, 11, 10)} renderer={renderer}></Countdown>
+      <Countdown date={new Date(2022, 0, 17)} renderer={renderer}></Countdown>
     </div>
   )
 }

@@ -423,7 +423,7 @@ export const marketingTeam = [
   {
     urlPicture: '/images/team/SebastienSikorski.png',
     fullName: 'Sebastien Sikorski',
-    role: 'Growth & marketing Director',
+    role: 'Growth Director',
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
       {

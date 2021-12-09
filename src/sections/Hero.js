@@ -1,7 +1,7 @@
 import React from 'react'
 import ArrowIcon from '../components/ArrowIcon'
 import Button from '../components/Button'
-import PublicICO from '../components/PublicICO'
+// import PublicICO from '../components/PublicICO'
 import TitleContainer from '../components/TitleContainer'
 import { Element } from 'react-scroll'
 
@@ -19,18 +19,25 @@ function Hero() {
             width={850}
             classname="mt-6"
           />
-          <PublicICO />
+          {/* <PublicICO /> */}
           <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
-            <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white  tracking-wide whitespace-pre md:whitespace-normal">
-              Pre-register to the ico
-              <ArrowIcon className="ml-2" color="orange" />
-            </Button>
-            <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
-              <a href="whitepaper.pdf" target="_blank">
-                Discover our whitepaper
-              </a>
-              {/* <ArrowIcon color="gray" className="md:mx-2 ml-7" /> */}
-            </Button>
+            <a
+              href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr"
+              target="_blank"
+              className="py-6"
+            >
+              <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white tracking-wide whitespace-pre md:whitespace-normal">
+                Pre-register to the ICO
+                <ArrowIcon className="ml-2" color="orange" />
+              </Button>
+            </a>
+            <div className="px-5 font-Inter font-normal text-base tracking-tight text-paraColor">White paper coming soon</div>
+            {/* <a href="whitepaper.pdf" target="_blank">
+              <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
+                Discover our white paper
+                <ArrowIcon color="gray" className="md:mx-2 ml-7" />
+              </Button>
+            </a> */}
           </div>
           <span className="flex items-center justify-center md:justify-start mt-9 mb-17 text-gray-600 text-xs md:my-24 font-Inter font-bold text-gray ">
             POWERED BY <img className="ml-2" src="../images/powered-by.svg  " />

@@ -16,7 +16,7 @@ function DefiProgress() {
      { name: 'Launchpad & Acceleration', selected: true },
      { name: 'DeX / AMM', selected: false },
      { name: 'Universal Wallet', selected: false },
-     { name: 'Tokenization & Governance Frameworks', selected: false },
+     { name: 'Tokenization & Governance', selected: false },
      { name: 'Money Management Platform', selected: false },
    ]
    return (
@@ -82,13 +82,11 @@ function DefiProgress() {
                  title="Funding & accelerating the ideas to create a better world for tomorrow"
                  paragraphe="Cardashift aims to create the first launchpad for impactful projects on blockchain. We offer you to invest in promising ventures, backed by a best-in-class program to transform them into impactful businesses."
                  srcImg="../images/accelerating-change.svg"
-                 btnDisplay={false}
                />
                <ProgressCards
                  title="Bringing rigor to dreams with dedicated scoring and acceleration frameworks"
                  paragraphe="Addressing 21st century challenges requires innovative thinking and executable solutions along with immense funding. Cardashift creates the environment to meticulously assess, derisk and track impact ventures."
                  srcImg="../images/bringing-rigor.svg"
-                 btnDisplay={true}
                />
              </div>
            </div>

@@ -18,7 +18,7 @@ function Team() {
         <TitleContainer
           classnameContainer="md:ml-28 md:mb-24"
           topTitle="Team"
-          title="+XXX competencies <br /> joining the Cardano Community"
+          title="+35 humans <br /> joining the Cardano Community"
           classnametitle="text-2xl md:text-5xl font-black mt-3"
         />
         <div className="mt-8">
@@ -103,7 +103,7 @@ function Team() {
         </div>
         <div className="my-10">
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
-            Marketing & communication
+            Growth
           </h3>
           <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
             {marketingTeam.map((profile, index) => (

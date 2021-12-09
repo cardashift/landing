@@ -102,7 +102,7 @@ function TimeLine() {
         },
       },
       {
-        content: 'Decentralized blockhain based carbon market',
+        content: 'Decentralized Blockchain based Carbon Market',
         border: 'borderBlack',
         style: {
           height: 444,

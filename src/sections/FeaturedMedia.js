@@ -27,6 +27,7 @@ function FeaturedMedia({ topTittle, title, CardList, href }) {
             urlPicture={item.img}
             tittle={item.title}
             description={item.description}
+            link={item.link}
           />
         ))}
       </div>

@@ -5,6 +5,15 @@ function TokenCard() {
     <div className="md:w-96 rounded-lg bg-button-orange-gradien mt-8 bg-grayLight blend border-white border-opacity-40 border p-6 shadow ">
       <div className="flex justify-between">
         <span className="font-Inter font-normal  text-sm text-primaire opacity-70 leading-4">
+          Ticker
+        </span>
+        <h3 className="font-bold font-Inter  text-sm text-primaire leading-4">
+          CLAP
+        </h3>
+      </div>
+      <hr className="line" />
+      <div className="flex justify-between">
+        <span className="font-Inter font-normal  text-sm text-primaire opacity-70 leading-4">
           Token Standard
         </span>
         <h3 className="font-bold font-Inter  text-sm text-primaire leading-4">

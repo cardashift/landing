@@ -71,10 +71,12 @@ function MobileHeader() {
               </Link>
             ))}
           </ul>
-          <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
-            Pre-register to the ico
-            <ArrowIcon className="ml-2" color="blue" />
-          </Button>
+          <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
+            <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
+              Pre-register to the ICO
+              <ArrowIcon className="ml-2" color="blue" />
+            </Button>
+          </a>
           <span className="flex justify-center text-gray-600 text-xs font-Inter font-bold text-gray mb-5">
             POWERED BY <img className="ml-2" src="/images/powered-by.svg" />
           </span>
