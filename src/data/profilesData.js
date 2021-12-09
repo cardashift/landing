@@ -4,7 +4,7 @@ export const foundersTeam = [
     fullName: 'Eric Raffin',
     role: 'CEO',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
+      // { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/ericraffin/',
@@ -17,7 +17,6 @@ export const foundersTeam = [
     fullName: 'Fred Arnoux, PhD',
     role: 'Operations director',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/fredarnoux/',
@@ -30,7 +29,6 @@ export const foundersTeam = [
     fullName: 'Konstantin Grouzdev',
     role: 'CEO',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/konstantin-grouzdev/',
@@ -43,7 +41,6 @@ export const foundersTeam = [
     fullName: 'Jean-Christophe Bohin',
     role: 'Chief strategy officer',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/jcbohin/',
@@ -56,7 +53,6 @@ export const foundersTeam = [
     fullName: 'Adrien Hubert',
     role: 'Chief financial officer',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/adrien-hubert/',
@@ -69,7 +65,6 @@ export const foundersTeam = [
     fullName: 'Vincent Katchavenda',
     role: 'Adoption director',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/vkatchavenda/',
@@ -82,7 +77,6 @@ export const foundersTeam = [
     fullName: 'Tangui Friant',
     role: 'SpokesPerson',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/tanguifriant/',
@@ -98,7 +92,6 @@ export const devTeam = [
     fullName: 'Nicolas Henin',
     role: 'Director of Cardano architecture',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/nhenin/',
@@ -111,7 +104,6 @@ export const devTeam = [
     fullName: 'Jeremy Nicolas Martin',
     role: 'Blockchain R&D director',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/jeremy-n-martin/',
@@ -124,7 +116,6 @@ export const devTeam = [
     fullName: 'Charles Augu',
     role: 'Blockchain Researcher',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/charles-augu-3148b4141/',
@@ -137,7 +128,6 @@ export const devTeam = [
     fullName: 'Adina Cazalens',
     role: 'Cardano Software engineer',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/adina-cazalens-9b14151b0/',
@@ -150,7 +140,6 @@ export const devTeam = [
     fullName: 'Aymeric Bethencourt',
     role: 'Technical Architect',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/aymeric-bethencourt/',
@@ -163,7 +152,6 @@ export const devTeam = [
     fullName: 'Frank Hillard',
     role: 'Technical BlockChain Engineer',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/frank-hillard-300b6b106/',
@@ -178,7 +166,6 @@ export const ProductManagement = [
     fullName: 'Halord Cunnigham',
     role: 'CPO',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/harold-cunningham/',
@@ -191,7 +178,6 @@ export const ProductManagement = [
     fullName: 'Florentine Cuenot',
     role: 'Product Manager',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/florentine-cuenot-71541b110/',
@@ -204,7 +190,6 @@ export const ProductManagement = [
     fullName: 'Louis Habib',
     role: 'Product Designer',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/louise-habib-079597144/',
@@ -217,7 +202,6 @@ export const ProductManagement = [
     fullName: 'David Level',
     role: 'Product CTO',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/david-level-architecte/',
@@ -230,7 +214,6 @@ export const ProductManagement = [
     fullName: 'Loic Chouharde',
     role: 'Tech Lead',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/lo%C3%AFc-couharde-b60385b3/',
@@ -243,7 +226,6 @@ export const ProductManagement = [
     fullName: 'Bertrand Pangon',
     role: 'Product OPs',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/bertrandpgn',
@@ -256,7 +238,6 @@ export const ProductManagement = [
     fullName: 'Pierre Trouvé',
     role: 'Product Coordinator',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/pierre-trouv%C3%A9-026a1827/',
@@ -269,7 +250,6 @@ export const ProductManagement = [
     fullName: 'Laure-Aline Bellanfant',
     role: 'UX/UI',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/laure-aline-bellenfant-14890a130/',
@@ -285,7 +265,6 @@ export const pmTeam = [
     fullName: 'Sebastien Massart',
     role: 'Lead project manager',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b010/',
@@ -298,7 +277,6 @@ export const pmTeam = [
     fullName: 'Trishala Suresh',
     role: 'Strategic impact leader',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/trishalasuresh/',
@@ -311,7 +289,6 @@ export const pmTeam = [
     fullName: 'Jules Bertrand',
     role: 'Tokenomics consultant',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/jules-bertrand-63b764193/',
@@ -324,7 +301,6 @@ export const pmTeam = [
     fullName: 'Yannis Baala',
     role: 'Project manager',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/yannis-baala-39b912138/',
@@ -337,7 +313,6 @@ export const pmTeam = [
     fullName: 'Simon Martin',
     role: 'Project manager',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/simonmartin2173/',
@@ -350,7 +325,6 @@ export const pmTeam = [
     fullName: 'Anais Bouchet',
     role: 'Project manager',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/ana%C3%AFs-bouchet-39ab28192/',
@@ -365,7 +339,6 @@ export const impactAssTeam = [
     fullName: 'Benjamin Duban',
     role: 'impact assessment Lead',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/benjaminduban/',
@@ -378,7 +351,6 @@ export const impactAssTeam = [
     fullName: 'Colette Menard',
     role: 'StimShift Co-Founder Scientific Impact assessement Expert',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/colettemenard/',
@@ -391,7 +363,6 @@ export const impactAssTeam = [
     fullName: 'Auriane Clostre',
     role: 'StimShift Co-Founder Scientific Impact Expert',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/auriane-clostre/',
@@ -404,7 +375,6 @@ export const impactAssTeam = [
     fullName: 'Valentine Pensalfini',
     role: 'Impact assessment',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/v-pensalfini/',
@@ -417,7 +387,6 @@ export const impactAssTeam = [
     fullName: 'Anne Coroller',
     role: 'Impact assessment',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/anne-coroller/',
@@ -433,7 +402,6 @@ export const marketingTeam = [
     fullName: 'Sebastien Sikorski',
     role: 'Growth Director',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/sebastiensikorski/',
@@ -446,7 +414,6 @@ export const marketingTeam = [
     fullName: 'Nick Peden',
     role: 'Communications & marketing Specialist',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/nicolaspeden/',
@@ -459,7 +426,6 @@ export const marketingTeam = [
     fullName: 'Romain Mesdon',
     role: 'CM Lead',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/romain-mesdon-%F0%9F%8E%88-2373228b/',
@@ -472,7 +438,6 @@ export const marketingTeam = [
     fullName: 'Emma Dastot',
     role: 'CM',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/emma-dastot-736757152/',
@@ -485,7 +450,6 @@ export const marketingTeam = [
     fullName: 'Marius Campos',
     role: 'CM',
     social: [
-      { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/marius-campos/',
