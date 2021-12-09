@@ -12,6 +12,8 @@ import {
 } from '../data/profilesData'
 
 function Team() {
+  const gap =
+    window.innerWidth > 400 && window.innerWidth < 700 ? 'gap-10' : 'gap-3'
   return (
     <Element name={'Team'}>
       <div className="md:block md:my-32 ">
@@ -25,7 +27,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Founders & executive
           </h3>
-          <div className=" flex gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={`flex justify-start ${gap} md:gap-6 md:justify-start flex-wrap`}
+          >
             {foundersTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
@@ -41,7 +45,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Developement
           </h3>
-          <div className="flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={`flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
             {devTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
@@ -57,7 +63,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Product management
           </h3>
-          <div className="flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
             {ProductManagement.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
@@ -73,7 +81,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Project management
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
             {pmTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
@@ -89,7 +99,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Impact assessment
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
             {impactAssTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
@@ -105,7 +117,9 @@ function Team() {
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
             Growth
           </h3>
-          <div className=" flex flex-row gap-3 md:gap-6 justify-start flex-wrap">
+          <div
+            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
             {marketingTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}

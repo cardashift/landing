@@ -5,21 +5,25 @@ function Union({ color, value, customClass, year, isFirstYear }) {
   const style = {
     border: '4px solid rgba(255, 255, 255, 0.4)',
     boxShadow: 'inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD',
+    height: isFirstYear ? 230 : 145,
+    background: 'rgba(255, 255, 255, 0.4)',
   }
   return (
     <>
       <div className="flex items-start relative">
         <div className="flex items-center">
           <div
-            className={`flex absolute items-center  right-1 ${
-              isFirstYear ? 'top-24' : null
-            }`}
+            className="flex absolute items-center  right-1"
+            style={{ top: isFirstYear ? 55 : null }}
           >
             <label
               className={`text-4xl sm:text-5xl mt-9 opacity-20 font-semibold font-Poppins  ${
                 isFirstYear ? '-mt-10' : null
               }`}
-              style={{ transform: 'rotate(-90deg)' }}
+              style={{
+                transform: 'rotate(-90deg)',
+                marginTop: !isFirstYear ? 45 : null,
+              }}
             >
               {year}
             </label>
@@ -49,6 +53,7 @@ function Union({ color, value, customClass, year, isFirstYear }) {
             style={{
               background: color,
               backgroundBlendMode: 'soft-light, normal',
+              height: isFirstYear ? 230 : 145,
             }}
           ></div>
         </div>

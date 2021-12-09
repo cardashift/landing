@@ -133,7 +133,7 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Adina Cazalens',
     role: 'Cardano Software engineer',
     social: [
@@ -159,7 +159,7 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymBoy.png',
     fullName: 'Frank Hillard',
     role: 'Technical BlockChain Engineer',
     social: [
@@ -259,7 +259,7 @@ export const ProductManagement = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/ericraffin/',
+        link: 'https://www.linkedin.com/in/pierre-trouv%C3%A9-026a1827/',
         icon: 'linkedin.svg',
       },
     ],
@@ -272,7 +272,7 @@ export const ProductManagement = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/pierre-trouv%C3%A9-026a1827/',
+        link: 'https://www.linkedin.com/in/laure-aline-bellenfant-14890a130/',
         icon: 'linkedin.svg',
       },
     ],
@@ -288,13 +288,13 @@ export const pmTeam = [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b',
+        link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b010/',
         icon: 'linkedin.svg',
       },
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Trishala Suresh',
     role: 'Strategic impact leader',
     social: [
@@ -374,7 +374,7 @@ export const impactAssTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/Anonym.png',
+    urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Colette Menard',
     role: 'StimShift Co-Founder Scientific Impact assessement Expert',
     social: [
@@ -405,7 +405,11 @@ export const impactAssTeam = [
     role: 'Impact assessment',
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
-      { name: 'linkedin', link: '', icon: 'linkedin.svg' },
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/v-pensalfini/',
+        icon: 'linkedin.svg',
+      },
     ],
   },
   {
@@ -414,7 +418,11 @@ export const impactAssTeam = [
     role: 'Impact assessment',
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
-      { name: 'linkedin', link: '', icon: 'linkedin.svg' },
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/anne-coroller/',
+        icon: 'linkedin.svg',
+      },
     ],
   },
 ]
@@ -479,7 +487,8 @@ export const marketingTeam = [
     social: [
       { name: 'email', link: '', icon: 'mail.svg' },
       {
-        linkedin: 'https://www.linkedin.com/in/marius-campos/',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/marius-campos/',
         icon: 'linkedin.svg',
       },
     ],

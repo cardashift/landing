@@ -26,22 +26,26 @@ function FundingStages() {
           firstRightTd="6 months"
           secondLeftTd="50%"
           secondRighttTd="12 months"
+          status="closed"
         />
         <FundingBlock
           title="Flash Sale"
           firstPrice="40,000,000"
-          secondPrice="1 ADA = 36 CLAP*"
+          secondPrice="1 ADA = 36 CLAP**"
           duration="24 hours"
           firstLeftTd="100% at TGE"
+          status="Coming soon"
         />
         <FundingBlock
           title="Public Sale"
           firstPrice="160,000,000"
-          secondPrice="1 ADA = 30 CLAP*"
+          secondPrice="1 ADA = 30 CLAP**"
           duration="4 days"
           firstLeftTd="100% at TGE"
+          status="Coming soon"
         />
       </div>
+      <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor">** We reserve the right to modify this rate before the sale in the event that ADA volatility alters our forecasts significantly.</div>
       <div className="flex justify-center w-full">
         <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
           <Button className="shadow bg-gradient-to-br self-center md:mt-8 bg-blue hover:bg-colorBlueHover text-white font-medium text-base tracking-wide">

@@ -58,7 +58,20 @@ function App() {
         'The Founding Story: from purpose-oriented CEOs to an impact-creating coalition',
       description:
         'The foundations of the first ever accelerator on blockchain to foster solutions creation and development for climate change and social matters.',
-        link: 'https://cardashift.medium.com/the-founding-story-from-purpose-oriented-ceos-to-an-impact-creating-coalition-a21792b78b71'
+      link: 'https://cardashift.medium.com/the-founding-story-from-purpose-oriented-ceos-to-an-impact-creating-coalition-a21792b78b71',
+    },
+    {
+      img: '../images/cardashit-logo-card.png',
+      title: 'The 3 reasons why we choose Cardano to maximize our impact',
+      description:
+        'The choice of the blockchain used to support our project is no coincidence',
+      link: 'https://cardashift.medium.com/the-3-reasons-why-we-choose-cardano-to-maximize-our-impact-28b2e914e894',
+    },
+    {
+      img: '../images/cardashit-logo-card.png',
+      title: 'More coming soon!',
+      description: 'Stay tunned for more articles from us.',
+      link: 'https://cardashift.medium.com/',
     },
     // {
     //   img: '../images/cardashit-logo-card.png',
@@ -91,6 +104,9 @@ function App() {
         <DefiProgress />
         <ClapToken />
         <InitialToken />
+        <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor">
+          *Locked for 36 months
+        </div>
         <FundingStages />
         <Roadmap />
         <TimeLine />

@@ -24,31 +24,18 @@ function FooterCommunication() {
     },
   ]
   return (
-    <div className="md:flex justify-between">
+    <div className="flex flex-col md:flex-row gap-10 md:justify-between md:items-center md:gap-52">
       <img src="../images/footer-cardashift.svg" className="w-56" />
-      <p
-        className="font-Inter font-normal text-white text-base text-opacity-70"
-        style={{
-          width: '100%',
-          padding: '30px',
-          'text-align': 'center',
-        }}
-      >
+      <p className="font-Inter font-normal text-white text-base text-opacity-70 md:text-center">
         Empower the visionary ventures that will create a sustainable and
         prosperous future.
       </p>
-      <div
-        className="flex flex-row md:gap-2 mb-10"
-        style={{
-          padding: '22px',
-          margin: '0',
-        }}
-      >
+      <div className="flex flex-row">
         {socialNetworks.map(({ icon, link }) => {
           return (
             <span>
               <a href={link} target="_blank">
-                <img src={icon} className="mr-10" />
+                <img src={icon} className="mr-16 md:mr-8 md:pr-2" />
               </a>
             </span>
           )

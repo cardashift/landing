@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import Button from '../components/Button'
 import GlassCard from '../components/GlassCard'
-
+import { useWindowSize } from '../hooks/useWindowSize'
 function CardsAbout() {
+  const windowSize = useWindowSize()
   return (
     <>
       <div className="md:flex hidden md:flex-col gap-14 justify-evenly">
@@ -10,6 +12,7 @@ function CardsAbout() {
         <div className="flex">
           <div className="relative">
             <GlassCard
+              mt={200}
               width={850}
               Background={'images/leftRectangle.svg'}
               topTitle="Impact or profit?"
@@ -32,7 +35,7 @@ function CardsAbout() {
           <img
             src="/images/Bigest bubble 1.png"
             className="w-28 h-28 hidden sm:block"
-            style={{ transform: 'translate(-20px, 500px)' }}
+            style={{ transform: 'translate(-20px, 700px)' }}
           />
         </div>
 
@@ -50,16 +53,18 @@ function CardsAbout() {
 
           <br />
           <GlassCard
+            mt={100}
             width={850}
-            className="md:self-end"
             Background={'images/rightRectangle.svg'}
             topTitle="About Cardashift"
             title="Empowering the visionary ventures that will create a sustainable future"
             description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
             button={
-              <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
-                Discover the products
-              </Button>
+              <Link to="Product">
+                <Button className="shadow bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
+                  Discover the products
+                </Button>
+              </Link>
             }
           />
         </div>
@@ -70,7 +75,10 @@ function CardsAbout() {
           style={{ marginTop: 480, width: 250 }}
           className="absolute left-0 -z-1"
         />
-        <div className="flex" style={{ height: 565 }}>
+        <div
+          className="flex"
+          style={{ height: 565, marginBottom: windowSize <= 380 ? -65 : null }}
+        >
           <div className="relative">
             <div>
               <img
@@ -128,12 +136,29 @@ function CardsAbout() {
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
-            style={{ top: 45, right: -15, width: 50, height: 50, zIndex: -1 }}
+            style={{
+              top: 45,
+              right: windowSize < 768 ? -10 : -15,
+              width: 50,
+              height: 50,
+              zIndex: -1,
+            }}
           />
           <img
             src="/images/Bigest bubble 3.png"
             className="w-28 h-28 absolute right-0 sm:hidden"
-            style={{ top: -40, right: 48, width: 120, height: 120, zIndex: -1 }}
+            style={{
+              top: windowSize < 768 ? -50 : -40,
+              right:
+                windowSize > 380 && windowSize < 768
+                  ? 46
+                  : windowSize < 380
+                  ? 37
+                  : 48,
+              width: 120,
+              height: 120,
+              zIndex: -1,
+            }}
           />
           <br />
           <div>
@@ -145,14 +170,16 @@ function CardsAbout() {
               }}
             >
               <GlassCard
-                className="md:w-5/7 px-6 py-8 md:p-16 mb-52 mt-10"
+                className="md:w-5/7 px-6 py-8 md:p-16 mb-24 md:mb-52 mt-10"
                 topTitle="About Cardashift"
                 title="Empowering the visionary ventures that will create a sustainable future"
                 description="Cardashift funds and works intensively with impact startups that are solving social and environmental issues. Our goal is to build an ecosystem of change makers that will debug the world by harnessing blockchain technology and the decentralised power of many.Everyone is a stakeholder in Cardashift with participation rights and decision making privileges."
                 button={
-                  <Button className="bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
-                    Discover the products
-                  </Button>
+                  <Link to="Product">
+                    <Button className="shadow bg-blue hover:bg-colorBlueHover text-white mt-5 font-Inter font-medium text-sm h-12">
+                      Discover the products
+                    </Button>
+                  </Link>
                 }
               />
             </div>

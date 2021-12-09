@@ -14,13 +14,15 @@ function FeaturedMedia({ topTittle, title, CardList, href }) {
           classnametitle="font-black text-3xl md:text-5xl mt-3"
         />
         <a href={href} target="_blank" className="hidden md:block">
-          <Button className="bg-blue hover:bg-colorBlueHover text-white ">
+          <Button className="bg-blue hover:bg-colorBlueHover text-white shadow">
             View more
             <ArrowIcon color="blue" className="ml-2" />
           </Button>
         </a>
       </div>
-      <div className="flex flex-col items-center gap-6 md:flex-row justify-between my-8">
+      <div
+        className="my-8 media-grid"
+      >
         {CardList.map((item, index) => (
           <CardFeatureMedia
             key={index}

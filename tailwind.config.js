@@ -70,6 +70,7 @@ module.exports = {
         160: '160px',
       },
       maxWidth: {
+        288: '288px',
         252: '252px',
         628: '628px',
       },
@@ -88,6 +89,7 @@ module.exports = {
         orangeBlack: '#e06c00',
         BtnBorderColor: 'rgba(255, 255, 255, 0.4)',
         blue: '#0029FF',
+        red: '#FF0000',
         blueRetro: '#0D0F3F',
         gray: '#4D515C',
         'gray-100': '#EBECF0',
@@ -107,16 +109,21 @@ module.exports = {
       },
       backgroundImage: {
         'button-orange-gradien':
-          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
+          'linear-gradient(135.37deg, rgba(0, 0, 0,0.8) 4.29%, rgba(255, 255, 255, 0.7) 95.6%)',
         'impact-gradient':
           'radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(235, 236, 240, 0.2) 0%, rgba(235, 236, 240, 0.0447917) 77.08%, rgba(235, 236, 240, 0) 100%)',
         'glass-border':
           'linear-gradient(120deg, rgba(255,255,255,1) 0%, rgb(142 143 146 / 27%) 100%)',
+        'red-gradient':
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
+        'blue-gradient':
+          'linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%)',
       },
       backdropBlur: {
         20: '20px',
       },
       lineHeight: {
+        15: '15px',
         34: '34px',
         62: '62px',
       },

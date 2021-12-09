@@ -68,7 +68,7 @@ function CircularChart({
     },
     {
       value: team,
-      title: 'Team (36m lock)',
+      title: 'Team*',
       class: 'team',
       indicator:
         windowSize < 768
@@ -89,39 +89,39 @@ function CircularChart({
     },
   ]
   return (
-    <div className="progress-circular-chart ">
-      <div className="progress-circular-chart__content">
-        <div className=" circle-md  ">
-          <span className="circle-sm">
-            <span className=" circle-xs"></span>
-          </span>
-        </div>
-        {statistics.map((item) => (
-          <>
-            <div className={`flex ${item.class}-indicator`}>
-              <span className="text-right">
-                <label className=" font-Inter font-normal text-sm sm:text-lg text-primaire">
-                  {item.title}
-                </label>
-                <br />
-                <label className="font-Inter font-bold text-sm sm:text-lg text-primaire">
-                  {item.value}%
-                </label>
-              </span>
+      <div className="progress-circular-chart ">
+        <div className="progress-circular-chart__content">
+          <div className=" circle-md  ">
+            <span className="circle-sm">
+              <span className=" circle-xs"></span>
+            </span>
+          </div>
+          {statistics.map((item) => (
+            <>
+              <div className={`flex ${item.class}-indicator`}>
+                <span className="text-right">
+                  <label className=" font-Inter font-normal text-sm sm:text-lg text-primaire">
+                    {item.title}
+                  </label>
+                  <br />
+                  <label className="font-Inter font-bold text-sm sm:text-lg text-primaire">
+                    {item.value}%
+                  </label>
+                </span>
 
-              <img className="mt-5 ml-2 mr-2" src={item.indicator} />
-            </div>
-            <CircularProgressbar
-              value={item.percent}
-              strokeWidth={17}
-              circleRatio={1}
-              className={`progress-bar ${item.class}`}
-            />
-          </>
-        ))}
-        <LinearSVG />
+                <img className="mt-5 ml-2 mr-2" src={item.indicator} />
+              </div>
+              <CircularProgressbar
+                value={item.percent}
+                strokeWidth={17}
+                circleRatio={1}
+                className={`progress-bar ${item.class}`}
+              />
+            </>
+          ))}
+          <LinearSVG />
+        </div>
       </div>
-    </div>
   )
 }
 

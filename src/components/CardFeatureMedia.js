@@ -8,12 +8,12 @@ function CardFeatureMedia({ urlPicture, tittle, description, link }) {
         className="flex flex-col bg-button-orange-gradien bg-grayLight blend rounded-md pb-8 shadow"
       >
         <img
-          className="p-3 rounded-3xl"
-          style={{
-            height: '13rem',
-            width: '20rem',
-            margin: '0 auto',
-          }}
+          className="h-52 p-3 rounded-3xl"
+          // style={{
+          //   height: '13rem',
+          //   width: '20rem',
+          //   margin: '0 auto',
+          // }}
           src={urlPicture ? urlPicture : '../img/default-img.jpg'}
           alt="img-card"
         />

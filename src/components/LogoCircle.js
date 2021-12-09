@@ -58,7 +58,7 @@ function LogoCircle() {
           icon={
             <img
               src="/images/stim.svg"
-              style={{ transform: 'rotate(16deg)' }}
+              style={{ transform: 'rotate(19deg)' }}
             />
           }
         />
