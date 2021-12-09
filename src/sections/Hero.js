@@ -6,6 +6,29 @@ import TitleContainer from '../components/TitleContainer'
 import { Element } from 'react-scroll'
 
 function Hero() {
+  const socialNetworks = [
+    {
+      icon: '../images/icon1-dark.svg',
+      link: 'https://discord.gg/hTSWWButZR',
+    },
+    {
+      icon: '../images/icon2-dark.svg',
+      link: 'https://t.me/+tlucM4-gnpE2Mjhk',
+    },
+    {
+      icon: '../images/icon3-dark.svg',
+      link: 'https://cardashift.medium.com/',
+    },
+    {
+      icon: '../images/icon4-dark.svg',
+      link: 'https://twitter.com/cardashift',
+    },
+    {
+      icon: '../images/icon5-dark.svg',
+      link: 'https://www.linkedin.com/company/cardashift/',
+    },
+  ]
+
   return (
     <Element name={'Home'}>
       <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-171">
@@ -31,7 +54,9 @@ function Hero() {
                 <ArrowIcon className="ml-2" color="orange" />
               </Button>
             </a>
-            <div className="px-5 font-Inter font-normal text-base tracking-tight text-paraColor">White paper coming soon</div>
+            <div className="px-5 font-Inter font-normal text-base tracking-tight text-paraColor">
+              White paper coming soon
+            </div>
             {/* <a href="whitepaper.pdf" target="_blank">
               <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
                 Discover our white paper
@@ -39,7 +64,18 @@ function Hero() {
               </Button>
             </a> */}
           </div>
-          <span className="flex items-center justify-center md:justify-start mt-9 mb-17 text-gray-600 text-xs md:my-24 font-Inter font-bold text-gray ">
+          <div className="flex flex-row mt-2">
+            {socialNetworks.map(({ icon, link }) => {
+              return (
+                <span>
+                  <a href={link} target="_blank">
+                    <img src={icon} className="mr-16 md:mr-8 md:pr-2" />
+                  </a>
+                </span>
+              )
+            })}
+          </div>
+          <span className="flex items-center justify-center md:justify-start mb-17 text-gray-600 text-xs md:my-24 font-Inter font-bold text-gray mt-3">
             POWERED BY <img className="ml-2" src="../images/powered-by.svg  " />
           </span>
         </div>

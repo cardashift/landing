@@ -23,6 +23,7 @@ function FooterCommunication() {
       link: 'https://www.linkedin.com/company/cardashift/',
     },
   ]
+  
   return (
     <div className="flex flex-col md:flex-row gap-10 md:justify-between md:items-center md:gap-52">
       <img src="../images/footer-cardashift.svg" className="w-56" />

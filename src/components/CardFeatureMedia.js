@@ -8,7 +8,7 @@ function CardFeatureMedia({ urlPicture, tittle, description, link }) {
         className="flex flex-col bg-button-orange-gradien bg-grayLight blend rounded-md pb-8 shadow"
       >
         <img
-          className="h-52 p-3 rounded-3xl"
+          className="h-52 p-3 rounded-3xl mx-auto"
           // style={{
           //   height: '13rem',
           //   width: '20rem',

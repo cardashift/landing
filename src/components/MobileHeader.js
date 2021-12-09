@@ -58,7 +58,7 @@ function MobileHeader() {
                     item.name == selected
                       ? 'bg-gray-900 text-black blend shadow-sm rounded-20'
                       : 'text-gray hover:bg-gray-700',
-                    'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 mr-5 py-3 px-5'
+                    'bg-purple-light w-22 cursor-pointer font-Inter font-medium text-sm flex items-start justify-center mb-8 py-3 px-5'
                   )}
                   key={index}
                   onClick={() => {
@@ -71,13 +71,19 @@ function MobileHeader() {
               </Link>
             ))}
           </ul>
-          <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
+          <a
+            href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr"
+            target="_blank"
+          >
             <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">
               Pre-register to the ICO
               <ArrowIcon className="ml-2" color="blue" />
             </Button>
           </a>
-          <span className="flex justify-center text-gray-600 text-xs font-Inter font-bold text-gray mb-5">
+          <span
+            className="flex justify-center text-gray-600 text-xs font-Inter font-bold text-gray mb-5"
+            style={{ 'line-height': '24px' }}
+          >
             POWERED BY <img className="ml-2" src="/images/powered-by.svg" />
           </span>
         </div>
