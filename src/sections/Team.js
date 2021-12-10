@@ -13,14 +13,14 @@ import {
 
 function Team() {
   const gap =
-    window.innerWidth > 400 && window.innerWidth < 700 ? 'gap-10' : 'gap-3'
+    window.innerWidth > 400 && window.innerWidth < 700 ? 'gap-1' : 'gap-3'
   return (
     <Element name={'Team'}>
       <div className="md:block md:my-32 ">
         <TitleContainer
-          classnameContainer="md:ml-28 md:mb-24"
+          classnameContainer="md:mb-24"
           topTitle="Team"
-          title="+35 humans <br /> joining the Cardano Community"
+          title="+35 Humans <br /> Joining the Cardano Community"
           classnametitle="text-2xl md:text-5xl font-black mt-3"
         />
         <div className="mt-8">

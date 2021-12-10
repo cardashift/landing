@@ -10,10 +10,10 @@ function Roadmap() {
         className="absolute sm:transform-none right-0 transform -translate-y-3/4 md:-translate-y-32 md:-right-0 -z-1"
         src="/images/right-semiCloud.svg"
       />
-      <div className=" md:block h-full mt-28 sm:mt-0 md:pt-60 sm:pt-5xl ">
+      <div className="md:block h-full mt-28 sm:mt-0 md:pt-60 sm:pt-5xl ">
         <TitleContainer
           topTitle="Milestones"
-          title="Cardashift roadmap"
+          title="Cardashift Roadmap"
           classnametitle="text-2xl md:text-5xl font-black mt-3"
         />
         <div className="flex justify-between flex-wrap md:flex-nowrap gap-6 mt-8 md:mt-20">
@@ -30,7 +30,7 @@ function Roadmap() {
           />
           <RoadMapCard
             topTitle="Second ErA"
-            title="Go Mainstream and new products & services"
+            title="Go mainstream and new products & services"
             paragraphe="The second era aims to design and develop new products and services for the B2C, while assisting the launchpad projects to start and scale."
             classnametoptitle="text-orange"
             classname="border-orangeLight"

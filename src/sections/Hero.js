@@ -34,7 +34,7 @@ function Hero() {
       <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-171">
         <div>
           <TitleContainer
-            title={'Debug the world'}
+            title={'Debug the World'}
             paragraphe={
               'Cardashift, the launchpad in service of social and environmental impact'
             }
@@ -54,7 +54,7 @@ function Hero() {
                 <ArrowIcon className="ml-2" color="orange" />
               </Button>
             </a>
-            <div className="px-5 font-Inter font-normal text-base tracking-tight text-paraColor">
+            <div className="px-5 font-Inter font-bold text-base tracking-tight text-paraColor">
               White paper coming soon
             </div>
             {/* <a href="whitepaper.pdf" target="_blank">
@@ -64,12 +64,12 @@ function Hero() {
               </Button>
             </a> */}
           </div>
-          <div className="flex flex-row mt-2">
+          <div className="flex flex-row gap-6 mt-2">
             {socialNetworks.map(({ icon, link }) => {
               return (
-                <span>
+                <span className="social-button">
                   <a href={link} target="_blank">
-                    <img src={icon} className="mr-16 md:mr-8 md:pr-2" />
+                    <img src={icon} className="m-auto" />
                   </a>
                 </span>
               )

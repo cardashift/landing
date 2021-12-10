@@ -104,7 +104,7 @@ function App() {
         <DefiProgress />
         <ClapToken />
         <InitialToken />
-        <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor">
+        <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor mx-auto">
           *Locked for 36 months
         </div>
         <FundingStages />
@@ -121,7 +121,7 @@ function App() {
         /> */}
         <FeaturedMedia
           topTittle="Latest articles"
-          title="From the blog"
+          title="From the Blog"
           CardList={CardList1}
           href="https://cardashift.medium.com"
         />

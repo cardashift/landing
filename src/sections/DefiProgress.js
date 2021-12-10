@@ -25,8 +25,8 @@ function DefiProgress() {
         <div className="md:pr-52">
           <TitleContainer
             classnametitle="text-2xl md:text-5xl mt-4 md:pr-8 leading-tight font-black"
-            topTitle="DeFi for universal progress "
-            title="Providing technological commons, Built for impact projects & investors"
+            topTitle="DeFi for Universal Progress "
+            title="Providing Technological Commons, Built for Impact Projects & Investors"
           />
         </div>
         <div className="rounded-40 my-16 md:p-2px bg-glass-border">

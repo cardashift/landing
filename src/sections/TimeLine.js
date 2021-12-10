@@ -55,28 +55,28 @@ function TimeLine() {
   const gridCols = {
     firstCol: [
       {
-        content: '1st call for projects',
+        content: '1st Call for Projects',
       },
       {
-        content: '2nd call for projects',
+        content: '2nd Call for Projects',
       },
       {
-        content: '3rd call for projects',
+        content: '3rd Call for Projects',
       },
       {
-        content: '4th call for projects',
+        content: '4th Call for Projects',
       },
       {
-        content: '5th call for projects',
+        content: '5th Call for Projects',
       },
       {
-        content: '6th call for projects',
+        content: '6th Call for Projects',
       },
       {
-        content: '7th call for projects',
+        content: '7th Call for Projects',
       },
       {
-        content: '8th call for projects',
+        content: '8th Call for Projects',
       },
     ],
     secondCol: [
@@ -84,7 +84,7 @@ function TimeLine() {
         content:
           windowSize < 768
             ? 'Launchpad'
-            : 'Launchpad Beta for crypto enthusiasts',
+            : 'Launchpad Beta for Crypto Enthusiasts',
         border: 'borderBlue',
         style: {
           height: 160,
@@ -95,7 +95,7 @@ function TimeLine() {
         content:
           windowSize < 768
             ? 'Launchpad V2 '
-            : 'Launchpad V2 for a wider audience',
+            : 'Launchpad V2 for a Wider Audience',
         border: 'borderBlue',
         style: {
           height: windowSize < 768 ? 340 : 300,
@@ -112,7 +112,7 @@ function TimeLine() {
         content:
           windowSize < 768
             ? 'Decentralised Carbon Market'
-            : 'Decentralized blockhain based carbon market',
+            : 'Decentralized Blockhain Based Carbon Market',
         border: 'borderBlack',
         style: {
           height: windowSize < 768 ? 252 : 345,

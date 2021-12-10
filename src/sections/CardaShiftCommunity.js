@@ -23,7 +23,7 @@ function CardaShiftCommunity() {
         <div className="pb-36 pt-80 md:py-80 md:text-left max-w-628 mx-auto">
           <TitleContainer
             classnametitle="font-black text-26 md:text-5xl mb-8 md:mb-3 leading-34 md:leading-62"
-            title="Eager to join the Cardashift community?"
+            title="Eager to Join the Cardashift Community?"
             paragraphe="Choose your preferred channels to begin your Cardashift journey, learn more about the project, talk to the team and contribute to the ecosystem"
           />
           <div className="flex flex-col md:flex-row gap-5 items-center mt-10">

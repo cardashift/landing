@@ -1,12 +1,13 @@
 import React from 'react'
-import CircularChart from '../components/CircularChart'
+// import CircularChart from '../components/CircularChart'
 function InitialToken() {
   return (
-    <div className="pt-50 md:flex flex-col" style={{ height: 700 }}>
+    <div className="pt-50 md:flex flex-col">
       <h3 className="text-3xl text-black font-Nizzoli font-black ">
         Initial Token Distribution
       </h3>
-      <div className="mt-24  flex w-full justify-end pr-6 sm:pr-0 sm:justify-center">
+      <img className="mx-auto my-10 distrib" src="/images/distrib.svg" />
+      {/* <div className="mt-24  flex w-full justify-end pr-6 sm:pr-0 sm:justify-center">
         <CircularChart
           publicSale={20}
           privateSale={5.5}
@@ -16,7 +17,7 @@ function InitialToken() {
           team={15}
           treasury={50.9}
         />
-      </div>
+      </div> */}
     </div>
   )
 }

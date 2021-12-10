@@ -26,7 +26,7 @@ function GlassCard({
           : `${className}  `
       }
     >
-      <div className="md:pt-16 md:pb-24  md:px-10" style={{ maxWidth: 815 }}>
+      <div className="md:pt-16 md:pb-24  md:px-10" style={{ maxWidth: 850 }}>
         <span className="text-blue uppercase font-Inter font-black text-xs tracking-wider">
           {topTitle}
         </span>

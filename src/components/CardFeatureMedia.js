@@ -20,7 +20,7 @@ function CardFeatureMedia({ urlPicture, tittle, description, link }) {
         <h3 className="text-lg px-3 my-3 text-blueRetro font-Inter font-bold ">
           {tittle}
         </h3>
-        <p className="text-base px-3 text-blueRetro font-Inter font-normal ">
+        <p className="text-base px-3 text-paraColor font-Inter font-normal ">
           {description}
         </p>
       </div>

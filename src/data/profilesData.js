@@ -15,7 +15,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/FredArnoux.png',
     fullName: 'Fred Arnoux, PhD',
-    role: 'Operations director',
+    role: 'Operations Director',
     social: [
       {
         name: 'linkedin',
@@ -27,7 +27,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/KonstantineGrouzdev.png',
     fullName: 'Konstantin Grouzdev',
-    role: 'CEO',
+    role: 'Chief of Staff',
     social: [
       {
         name: 'linkedin',
@@ -39,7 +39,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/JeanCristophe.png',
     fullName: 'Jean-Christophe Bohin',
-    role: 'Chief strategy officer',
+    role: 'Chief Strategy Officer',
     social: [
       {
         name: 'linkedin',
@@ -51,7 +51,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/AdrienHubert.png',
     fullName: 'Adrien Hubert',
-    role: 'Chief financial officer',
+    role: 'Chief Financial Officer',
     social: [
       {
         name: 'linkedin',
@@ -75,7 +75,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/TangoiFriant.png',
     fullName: 'Tangui Friant',
-    role: 'SpokesPerson',
+    role: 'Spokesperson',
     social: [
       {
         name: 'linkedin',
@@ -90,7 +90,7 @@ export const devTeam = [
   {
     urlPicture: '/images/team/NicolasHenin.png',
     fullName: 'Nicolas Henin',
-    role: 'Director of Cardano architecture',
+    role: 'Director of Cardano Architecture',
     social: [
       {
         name: 'linkedin',
@@ -102,7 +102,7 @@ export const devTeam = [
   {
     urlPicture: '/images/team/JeremyNicolas.png',
     fullName: 'Jeremy Nicolas Martin',
-    role: 'Blockchain R&D director',
+    role: 'Blockchain R&D Director',
     social: [
       {
         name: 'linkedin',
@@ -124,9 +124,9 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/AnonymGirl.png',
+    urlPicture: '/images/team/AdinaCazalens.png',
     fullName: 'Adina Cazalens',
-    role: 'Cardano Software engineer',
+    role: 'Cardano Software Engineer',
     social: [
       {
         name: 'linkedin',
@@ -148,9 +148,9 @@ export const devTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/AnonymBoy.png',
+    urlPicture: '/images/team/FrankHillard.png',
     fullName: 'Frank Hillard',
-    role: 'Technical BlockChain Engineer',
+    role: 'Technical Blockchain Engineer',
     social: [
       {
         name: 'linkedin',
@@ -247,7 +247,7 @@ export const ProductManagement = [
   },
   {
     urlPicture: '/images/team/LaureAlineBellenfant.png',
-    fullName: 'Laure-Aline Bellanfant',
+    fullName: 'Laure-Aline Bellenfant',
     role: 'UX/UI',
     social: [
       {
@@ -263,7 +263,7 @@ export const pmTeam = [
   {
     urlPicture: '/images/team/SebastienMassart.png',
     fullName: 'Sebastien Massart',
-    role: 'Lead project manager',
+    role: 'Lead Project Manager',
     social: [
       {
         name: 'linkedin',
@@ -273,9 +273,9 @@ export const pmTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/AnonymGirl.png',
+    urlPicture: '/images/team/TrishalaSuresh.png',
     fullName: 'Trishala Suresh',
-    role: 'Strategic impact leader',
+    role: 'Strategic Impact Leader',
     social: [
       {
         name: 'linkedin',
@@ -287,7 +287,7 @@ export const pmTeam = [
   {
     urlPicture: '/images/team/JulesBertrand.png',
     fullName: 'Jules Bertrand',
-    role: 'Tokenomics consultant',
+    role: 'Tokenomics Consultant',
     social: [
       {
         name: 'linkedin',
@@ -299,7 +299,7 @@ export const pmTeam = [
   {
     urlPicture: '/images/team/YannisBaala.png',
     fullName: 'Yannis Baala',
-    role: 'Project manager',
+    role: 'Project Manager',
     social: [
       {
         name: 'linkedin',
@@ -311,7 +311,7 @@ export const pmTeam = [
   {
     urlPicture: '/images/team/SimonMartin.png',
     fullName: 'Simon Martin',
-    role: 'Project manager',
+    role: 'Project Manager',
     social: [
       {
         name: 'linkedin',
@@ -323,7 +323,7 @@ export const pmTeam = [
   {
     urlPicture: '/images/team/AnaisBouchet.png',
     fullName: 'Anais Bouchet',
-    role: 'Project manager',
+    role: 'Project Manager',
     social: [
       {
         name: 'linkedin',
@@ -333,11 +333,12 @@ export const pmTeam = [
     ],
   },
 ]
+
 export const impactAssTeam = [
   {
     urlPicture: '/images/team/BenjaminDuban.png',
     fullName: 'Benjamin Duban',
-    role: 'impact assessment Lead',
+    role: 'Impact Assessment Lead',
     social: [
       {
         name: 'linkedin',
@@ -349,7 +350,7 @@ export const impactAssTeam = [
   {
     urlPicture: '/images/team/AnonymGirl.png',
     fullName: 'Colette Menard',
-    role: 'StimShift Co-Founder Scientific Impact assessement Expert',
+    role: 'StimShift Co-Founder, Scientific Impact Assessement Expert',
     social: [
       {
         name: 'linkedin',
@@ -361,7 +362,7 @@ export const impactAssTeam = [
   {
     urlPicture: '/images/team/AurianeClostre.png',
     fullName: 'Auriane Clostre',
-    role: 'StimShift Co-Founder Scientific Impact Expert',
+    role: 'StimShift Co-Founder, Scientific Impact Expert',
     social: [
       {
         name: 'linkedin',
@@ -373,7 +374,7 @@ export const impactAssTeam = [
   {
     urlPicture: '/images/team/ValentinePansalfini.png',
     fullName: 'Valentine Pensalfini',
-    role: 'Impact assessment',
+    role: 'Impact Assessment',
     social: [
       {
         name: 'linkedin',
@@ -385,7 +386,7 @@ export const impactAssTeam = [
   {
     urlPicture: '/images/team/AnneCoroller.png',
     fullName: 'Anne Coroller',
-    role: 'Impact assessment',
+    role: 'Impact Assessment',
     social: [
       {
         name: 'linkedin',
@@ -412,7 +413,7 @@ export const marketingTeam = [
   {
     urlPicture: '/images/team/NickPedan.png',
     fullName: 'Nick Peden',
-    role: 'Communications & marketing Specialist',
+    role: 'Communications & Marketing Specialist',
     social: [
       {
         name: 'linkedin',
@@ -434,7 +435,7 @@ export const marketingTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/EmmaDastos.png',
+    urlPicture: '/images/team/EmmaDastot.png',
     fullName: 'Emma Dastot',
     role: 'CM',
     social: [

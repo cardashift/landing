@@ -2,7 +2,6 @@ import React from 'react'
 import classnames from 'classnames'
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
-import Logo from './Logo'
 import { Link } from 'react-scroll'
 
 function MobileHeader() {
@@ -26,25 +25,26 @@ function MobileHeader() {
         className="mx-auto w-full absolute top-0 left-0 right-0 -z-1 block md:hidden  "
       />
       <div className="flex items-start mt-8">
-        <Logo className="mx-auto" />
-        <div onClick={() => setOverlayOpened(true)}>
-          <img src="/images/hamburger-icon.svg" width="66px" height="66px" />
+        <img className="mx-auto" src="/images/logo-white.svg" />
+        <div className="mobile-burger" onClick={() => setOverlayOpened(true)}>
+          <img src="/images/hamburger-icon.svg" width="100px" height="100px" />
         </div>
       </div>
       <div
         className={`${
           overlayOpened ? 'block' : 'hidden'
         } fixed bg-grayLight top-0 left-0 w-full h-full overflow-x-hidden`}
-        style={{ zIndex: 5 }}
+        style={{ zIndex: 11 }}
       >
-        <div className="flex md:hidden items-center mb-3 mt-5">
-          <div onClick={() => setOverlayOpened(false)} className="ml-auto">
-            <img src="/images/close-icon.svg" width="66px" height="66px" />
-          </div>
+        <div
+          className="mobile-close ml-auto"
+          onClick={() => setOverlayOpened(false)}
+        >
+          <img src="/images/close-icon.svg" width="100px" height="100px" />
         </div>
         <img
-          src="/images/logo.svg"
-          className="mx-auto mb-14"
+          src="/images/logo.png"
+          className="mx-auto mb-14 mt-8"
           width="224px"
           height="40px"
         />

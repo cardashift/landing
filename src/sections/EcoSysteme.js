@@ -20,7 +20,7 @@ function EcoSysteme() {
           <CompanyCard
             title="Matters"
             link="https://matters.tech/"
-            description="Product and start-up helping new businesses to succeed and scale their idea from inception all the way through to finished product/service. With over 14 years of experience, Matters has assisted over 150 startups with a success rate upwards of 90% and with a cumulative value of +1bn$."
+            description="Product and start-up helping new businesses to succeed and scale their idea from inception all the way through to the finished product/service. With over 14 years of experience, Matters has assisted over 150 startups with a success rate upwards of 90% and with a cumulative value of +1bn$."
           />
           <CompanyCard
             title="Smart-Chain"

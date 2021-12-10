@@ -11,7 +11,7 @@ function ClapToken() {
           classname="mt-9 md:w-50 md:pr-48 text-lg"
           classnametitle="md:w-50 md:text-5xl text-2xl  my-3 font-black md:py-2"
           topTitle="$CLAP token"
-          title="Giving the Cardashift ecosystem the fuel to thrive "
+          title="Giving the Cardashift Ecosystem the Fuel to Thrive "
           paragraphe="$CLAP token is at the core of the Cardashift product ecosystem. Its utilities are designed to evolve as the ecosystem does, making it progressively useful and ultimately valuable."
         />
         <TokenCard />

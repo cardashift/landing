@@ -24,7 +24,7 @@ function Header() {
         }}
       >
         <div>
-          <img src="/images/logo.svg" width="224px" alt="logo" />
+          <img src="/images/logo.png" width="224px" alt="logo" />
         </div>
         <ul className="flex items-center flex-row gap-0">
           {navigationItems.map((item, index) => (
