@@ -31,10 +31,10 @@ function Hero() {
 
   return (
     <Element name={'Home'}>
-      <div className="w-full text-center md:w-519 md:text-left mt-250 md:mt-171">
+      <div className="w-full text-center md:w-549 md:text-left mt-250 md:mt-171">
         <div>
           <TitleContainer
-            title={'Debug the World'}
+            title={'Debug<br />the World'}
             paragraphe={
               'Cardashift, the launchpad in service of social and environmental impact'
             }
@@ -45,26 +45,23 @@ function Hero() {
           {/* <PublicICO /> */}
           <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
             <a
-              href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr"
+              href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA"
               target="_blank"
-              className="py-6"
+              className="pt-6"
             >
               <Button className="md:mb-auto shadow bg-gradient-to-br bg-orange hover:bg-colorBtnHover font-medium text-base text-white tracking-wide whitespace-pre md:whitespace-normal">
                 Pre-register to the ICO
                 <ArrowIcon className="ml-2" color="orange" />
               </Button>
             </a>
-            <div className="px-5 font-Inter font-bold text-base tracking-tight text-paraColor">
-              White paper coming soon
-            </div>
-            {/* <a href="whitepaper.pdf" target="_blank">
+            <a href="whitepaper.pdf" target="_blank" className="pt-6">
               <Button className="shadow font-medium text-base hover:bg-colorGrayHover tracking-wide text-gray ">
                 Discover our white paper
                 <ArrowIcon color="gray" className="md:mx-2 ml-7" />
               </Button>
-            </a> */}
+            </a>
           </div>
-          <div className="flex flex-row gap-6 mt-2">
+          <div className="flex flex-row gap-6 mt-10">
             {socialNetworks.map(({ icon, link }) => {
               return (
                 <span className="social-button">

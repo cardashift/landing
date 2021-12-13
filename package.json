@@ -15,11 +15,12 @@
     "react-circular-progressbar": "^2.0.4",
     "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-helmet": "^6.1.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
-    "web-vitals": "^1.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "craco start",
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-ga": "^2.3.0",
     "autoprefixer": "^9",
     "eslint": "^7.32.0",
     "eslint-loader": "^4.0.2",

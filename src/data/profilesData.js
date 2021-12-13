@@ -2,7 +2,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/EricRaffin.png',
     fullName: 'Eric Raffin',
-    role: 'CEO',
+    role: 'Chief Executive Officer',
     social: [
       // { name: 'email', link: '', icon: 'mail.svg' },
       {
@@ -15,7 +15,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/FredArnoux.png',
     fullName: 'Fred Arnoux, PhD',
-    role: 'Operations Director',
+    role: 'Chief Operations Officer',
     social: [
       {
         name: 'linkedin',
@@ -25,9 +25,9 @@ export const foundersTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/KonstantineGrouzdev.png',
+    urlPicture: '/images/team/KonstantinGrouzdev.png',
     fullName: 'Konstantin Grouzdev',
-    role: 'Chief of Staff',
+    role: 'Chief Staff Officer',
     social: [
       {
         name: 'linkedin',
@@ -63,7 +63,7 @@ export const foundersTeam = [
   {
     urlPicture: '/images/team/VincentKatchavenda.png',
     fullName: 'Vincent Katchavenda',
-    role: 'Adoption director',
+    role: 'Chief Community Officer',
     social: [
       {
         name: 'linkedin',
@@ -73,9 +73,9 @@ export const foundersTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/TangoiFriant.png',
+    urlPicture: '/images/team/TanguiFriant.png',
     fullName: 'Tangui Friant',
-    role: 'Spokesperson',
+    role: 'Chief Partnerships Officer',
     social: [
       {
         name: 'linkedin',
@@ -159,12 +159,24 @@ export const devTeam = [
       },
     ],
   },
+  {
+    urlPicture: '/images/team/JulesBertrand.png',
+    fullName: 'Jules Bertrand',
+    role: 'Tokenomics Expert & Product Owner',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/jules-bertrand-63b764193/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
 ]
-export const ProductManagement = [
+export const productTeam = [
   {
     urlPicture: '/images/team/HaroldCunnigham.png',
     fullName: 'Halord Cunnigham',
-    role: 'CPO',
+    role: 'Chief Product Officer',
     social: [
       {
         name: 'linkedin',
@@ -176,7 +188,7 @@ export const ProductManagement = [
   {
     urlPicture: '/images/team/FlorentineCuenot.png',
     fullName: 'Florentine Cuenot',
-    role: 'Product Manager',
+    role: 'Product Designer',
     social: [
       {
         name: 'linkedin',
@@ -188,7 +200,7 @@ export const ProductManagement = [
   {
     urlPicture: '/images/team/LouiseHabib.png',
     fullName: 'Louis Habib',
-    role: 'Product Designer',
+    role: 'Product Manager',
     social: [
       {
         name: 'linkedin',
@@ -224,7 +236,7 @@ export const ProductManagement = [
   {
     urlPicture: '/images/team/BertrandPangon.png',
     fullName: 'Bertrand Pangon',
-    role: 'Product OPs',
+    role: 'Product Ops',
     social: [
       {
         name: 'linkedin',
@@ -257,25 +269,25 @@ export const ProductManagement = [
       },
     ],
   },
-]
-
-export const pmTeam = [
   {
-    urlPicture: '/images/team/SebastienMassart.png',
-    fullName: 'Sebastien Massart',
-    role: 'Lead Project Manager',
+    urlPicture: '/images/team/JieTu.jpeg',
+    fullName: 'Jie Tu',
+    role: 'Artistic Director',
     social: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/s%C3%A9bastien-massart-28b4b010/',
+        link: 'https://www.linkedin.com/in/jietu-designer/',
         icon: 'linkedin.svg',
       },
     ],
   },
+]
+
+export const impactTeam = [
   {
     urlPicture: '/images/team/TrishalaSuresh.png',
     fullName: 'Trishala Suresh',
-    role: 'Strategic Impact Leader',
+    role: 'Lead Impact Assessment',
     social: [
       {
         name: 'linkedin',
@@ -285,33 +297,33 @@ export const pmTeam = [
     ],
   },
   {
-    urlPicture: '/images/team/JulesBertrand.png',
-    fullName: 'Jules Bertrand',
-    role: 'Tokenomics Consultant',
+    urlPicture: '/images/team/ColetteMenard.png',
+    fullName: 'Colette Menard',
+    role: 'Lead Scientific Impact Assessment Expert',
     social: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/jules-bertrand-63b764193/',
+        link: 'https://www.linkedin.com/in/colettemenard/',
         icon: 'linkedin.svg',
       },
     ],
   },
   {
-    urlPicture: '/images/team/YannisBaala.png',
-    fullName: 'Yannis Baala',
-    role: 'Project Manager',
+    urlPicture: '/images/team/AurianeClostre.jpeg',
+    fullName: 'Auriane Clostre',
+    role: 'Impact Assessment Expert',
     social: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/yannis-baala-39b912138/',
+        link: 'https://www.linkedin.com/in/auriane-clostre/',
         icon: 'linkedin.svg',
       },
     ],
   },
   {
-    urlPicture: '/images/team/SimonMartin.png',
+    urlPicture: '/images/team/SimonMartin.jpeg',
     fullName: 'Simon Martin',
-    role: 'Project Manager',
+    role: 'Impact Assessment',
     social: [
       {
         name: 'linkedin',
@@ -321,9 +333,21 @@ export const pmTeam = [
     ],
   },
   {
+    urlPicture: '/images/team/YannisBaala.png',
+    fullName: 'Yannis Baala',
+    role: 'Impact Assessment',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/yannis-baala-39b912138/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
+  {
     urlPicture: '/images/team/AnaisBouchet.png',
     fullName: 'Anais Bouchet',
-    role: 'Project Manager',
+    role: 'Impact Assessment',
     social: [
       {
         name: 'linkedin',
@@ -334,7 +358,7 @@ export const pmTeam = [
   },
 ]
 
-export const impactAssTeam = [
+export const tempTeam = [
   {
     urlPicture: '/images/team/BenjaminDuban.png',
     fullName: 'Benjamin Duban',
@@ -343,30 +367,6 @@ export const impactAssTeam = [
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/benjaminduban/',
-        icon: 'linkedin.svg',
-      },
-    ],
-  },
-  {
-    urlPicture: '/images/team/AnonymGirl.png',
-    fullName: 'Colette Menard',
-    role: 'StimShift Co-Founder, Scientific Impact Assessement Expert',
-    social: [
-      {
-        name: 'linkedin',
-        link: 'https://www.linkedin.com/in/colettemenard/',
-        icon: 'linkedin.svg',
-      },
-    ],
-  },
-  {
-    urlPicture: '/images/team/AurianeClostre.png',
-    fullName: 'Auriane Clostre',
-    role: 'StimShift Co-Founder, Scientific Impact Expert',
-    social: [
-      {
-        name: 'linkedin',
-        link: 'https://www.linkedin.com/in/auriane-clostre/',
         icon: 'linkedin.svg',
       },
     ],
@@ -395,21 +395,6 @@ export const impactAssTeam = [
       },
     ],
   },
-]
-
-export const marketingTeam = [
-  {
-    urlPicture: '/images/team/SebastienSikorski.png',
-    fullName: 'Sebastien Sikorski',
-    role: 'Growth Director',
-    social: [
-      {
-        name: 'linkedin',
-        link: 'https://www.linkedin.com/in/sebastiensikorski/',
-        icon: 'linkedin.svg',
-      },
-    ],
-  },
   {
     urlPicture: '/images/team/NickPedan.png',
     fullName: 'Nick Peden',
@@ -422,10 +407,37 @@ export const marketingTeam = [
       },
     ],
   },
+]
+
+export const marketingTeam = [
   {
-    urlPicture: '/images/team/RomainMesdon.png',
+    urlPicture: '/images/team/SebastienSikorski.png',
+    fullName: 'Sebastien Sikorski',
+    role: 'Head of Growth',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/sebastiensikorski/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
+  {
+    urlPicture: '/images/team/JulieMartin.jpeg',
+    fullName: 'Julie Martin',
+    role: 'Public Relations',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/julie-martin0/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
+  {
+    urlPicture: '/images/team/RomainMesdon.jpeg',
     fullName: 'Romain Mesdon',
-    role: 'CM Lead',
+    role: 'Lead Community Manager',
     social: [
       {
         name: 'linkedin',
@@ -437,7 +449,7 @@ export const marketingTeam = [
   {
     urlPicture: '/images/team/EmmaDastot.png',
     fullName: 'Emma Dastot',
-    role: 'CM',
+    role: 'Community Manager',
     social: [
       {
         name: 'linkedin',
@@ -449,7 +461,7 @@ export const marketingTeam = [
   {
     urlPicture: '/images/team/MariusCampos.png',
     fullName: 'Marius Campos',
-    role: 'CM',
+    role: 'Community Manager',
     social: [
       {
         name: 'linkedin',
@@ -458,4 +470,31 @@ export const marketingTeam = [
       },
     ],
   },
+  {
+    urlPicture: '/images/team/MebeMouyiche.jpeg',
+    fullName: 'Mébé Mouyiche',
+    role: 'Community Manager',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/m%C3%A9b%C3%A9-mouyiche/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
+  {
+    urlPicture: '/images/team/AlexandreDutarde.jpeg',
+    fullName: 'Alexandre Dutarde',
+    role: 'Community Manager',
+    social: [
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/marius-campos/',
+        icon: 'linkedin.svg',
+      },
+    ],
+  },
+]
+
+export const advisorTeam = [
 ]

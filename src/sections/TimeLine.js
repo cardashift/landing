@@ -226,7 +226,7 @@ function TimeLine() {
           <div
             style={{
               transform:
-                windowSize < 768 ? 'translateY(90px)' : 'translateY(20px)',
+                windowSize < 768 ? 'translateY(90px)' : 'translateY(103px)',
             }}
           >
             {gridCols.thirdCol.map((item) => (

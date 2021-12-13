@@ -47,7 +47,7 @@ function FundingStages() {
       </div>
       <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor mx-auto">** We reserve the right to modify this rate before the sale in the event that ADA volatility alters our forecasts significantly.</div>
       <div className="flex justify-center w-full">
-        <a href="https://xwexvplj6lo.typeform.com/to/xHPIDHzr" target="_blank">
+        <a href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA" target="_blank">
           <Button className="shadow bg-gradient-to-br self-center md:mt-8 bg-blue hover:bg-colorBlueHover text-white font-medium text-base tracking-wide">
             Pre-register to the ICO
             <ArrowIcon className="ml-2" color="blue" />

@@ -5,10 +5,9 @@ import { Element } from 'react-scroll'
 import {
   foundersTeam,
   devTeam,
-  pmTeam,
+  impactTeam,
   marketingTeam,
-  impactAssTeam,
-  ProductManagement,
+  productTeam,
 } from '../data/profilesData'
 
 function Team() {
@@ -43,7 +42,7 @@ function Team() {
         </div>
         <div className="my-10">
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
-            Developement
+            Blockchain
           </h3>
           <div
             className={`flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
@@ -61,30 +60,12 @@ function Team() {
         </div>
         <div className="my-10">
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
-            Product management
+            Product
           </h3>
           <div
             className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
           >
-            {ProductManagement.map((profile, index) => (
-              <Profile
-                urlPicture={profile.urlPicture}
-                fullName={profile.fullName}
-                role={profile.role}
-                key={index}
-                social={profile.social}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="my-10">
-          <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
-            Project management
-          </h3>
-          <div
-            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
-          >
-            {pmTeam.map((profile, index) => (
+            {productTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
@@ -102,7 +83,7 @@ function Team() {
           <div
             className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
           >
-            {impactAssTeam.map((profile, index) => (
+            {impactTeam.map((profile, index) => (
               <Profile
                 urlPicture={profile.urlPicture}
                 fullName={profile.fullName}
@@ -115,7 +96,7 @@ function Team() {
         </div>
         <div className="my-10">
           <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
-            Growth
+            Growth, Marketing and Communication
           </h3>
           <div
             className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
@@ -131,6 +112,24 @@ function Team() {
             ))}
           </div>
         </div>
+        {/* <div className="my-10">
+          <h3 className="font-Nizzoli font-black md:text-2xl text-lg text-black mb-6">
+            Advisors
+          </h3>
+          <div
+            className={` flex flex-row ${gap} md:gap-6 justify-start flex-wrap`}
+          >
+            {advisorTeam.map((profile, index) => (
+              <Profile
+                urlPicture={profile.urlPicture}
+                fullName={profile.fullName}
+                role={profile.role}
+                key={index}
+                social={profile.social}
+              />
+            ))}
+          </div>
+        </div> */}
       </div>
     </Element>
   )

@@ -8,7 +8,7 @@ import ClapToken from './sections/ClapToken'
 import FundingStages from './sections/FundingStages'
 import Roadmap from './sections/Roadmap'
 import InitialToken from './sections/InititalToken'
-import Partners from './sections/Partners'
+// import Partners from './sections/Partners'
 import FeaturedMedia from './sections/FeaturedMedia'
 import { Helmet } from 'react-helmet'
 import EcoSysteme from './sections/EcoSysteme'
@@ -17,6 +17,11 @@ import Team from './sections/Team'
 import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
 import TimeLine from './sections/TimeLine'
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-83BJMYNL1C');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
   // const CardList = [
   //   {
@@ -112,7 +117,7 @@ function App() {
         <TimeLine />
         <Team />
         <EcoSysteme />
-        <Partners />
+        {/* <Partners /> */}
         {/* <FeaturedMedia
           topTittle="PRESS"
           title="Featured media"
