@@ -128,7 +128,7 @@ function TimeLine() {
           height: 75,
           paddingLeft: windowSize < 768 ? 20 : null,
           width: windowSize < 768 ? 52 : null,
-          paddingTop: windowSize < 768 ? 37 : null,
+          paddingTop: windowSize < 768 ? 44 : null,
         },
       },
       {
@@ -142,7 +142,7 @@ function TimeLine() {
         content: 'User Friendly Wallet',
         border: 'borderBlue',
         style: {
-          height: windowSize < 768 ? 198 : 228,
+          height: windowSize < 768 ? 198 : 145,
         },
       },
       {

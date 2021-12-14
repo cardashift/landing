@@ -65,7 +65,7 @@ function CardaShiftCommunity() {
               </a>
             </Button>
           </div>
-          <div className="flex flex-row gap-6 mt-10">
+          <div className="flex flex-row gap-6 mt-10 mx-10 md:mx-0">
             {socialNetworks.map(({ icon, link }) => {
               return (
                 <span className="social-button">

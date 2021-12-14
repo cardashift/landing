@@ -12,6 +12,7 @@ function Profile({ urlPicture, fullName, role, social }) {
           backgroundImage: `url(${urlPicture})`,
           height: 238,
           width: 163,
+          backgroundSize: 'cover'
         }}
       >
         <div
