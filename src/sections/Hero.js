@@ -1,9 +1,10 @@
 import React from 'react'
+import { Element } from 'react-scroll'
+
 import ArrowIcon from '../components/ArrowIcon'
 import Button from '../components/Button'
 // import PublicICO from '../components/PublicICO'
 import TitleContainer from '../components/TitleContainer'
-import { Element } from 'react-scroll'
 
 function Hero() {
   const socialNetworks = [
@@ -61,7 +62,7 @@ function Hero() {
               </Button>
             </a>
           </div>
-          <div className="flex flex-row gap-6 mt-10">
+          <div className="social-buttons">
             {socialNetworks.map(({ icon, link }) => {
               return (
                 <span className="social-button">

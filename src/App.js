@@ -110,7 +110,7 @@ function App() {
         <ClapToken />
         <InitialToken />
         <div className="mb-6 font-Inter font-normal text-base tracking-tight text-paraColor mx-auto">
-          *Locked for 36 months
+          *Locked for 24 months
         </div>
         <FundingStages />
         <Roadmap />

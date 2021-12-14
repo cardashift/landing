@@ -1,8 +1,9 @@
-import React from 'react'
 import classnames from 'classnames'
+import React from 'react'
+import { Link } from 'react-scroll'
+
 import ArrowIcon from './ArrowIcon'
 import Button from './Button'
-import { Link } from 'react-scroll'
 
 function MobileHeader() {
   const [selected, setSelected] = React.useState('Home')
@@ -25,7 +26,7 @@ function MobileHeader() {
         className="mx-auto w-full absolute top-0 left-0 right-0 -z-1 block md:hidden  "
       />
       <div className="flex items-start mt-8">
-        <img className="mx-auto" style={{ width: 226 }} src="/images/logo-white.png" />
+        <img className="mx-auto pr-6" style={{ width: 226 }} src="/images/logo-white.png" />
         <div className="mobile-burger" onClick={() => setOverlayOpened(true)}>
           <img src="/images/hamburger-icon.svg" width="100px" height="100px" />
         </div>
@@ -44,7 +45,7 @@ function MobileHeader() {
         </div>
         <img
           src="/images/logo.png"
-          className="mx-auto mb-14 mt-8"
+          className="mx-auto mb-14 mt-8 pr-6"
           width="224px"
           height="40px"
         />
