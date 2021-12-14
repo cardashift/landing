@@ -18,9 +18,9 @@ import Footer from './sections/Footer'
 import MobileHeader from './components/MobileHeader'
 import TimeLine from './sections/TimeLine'
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-83BJMYNL1C');
-ReactGA.pageview(window.location.pathname + window.location.search);
+import ReactGA from 'react-ga4'
+ReactGA.initialize('G-83BJMYNL1C')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 function App() {
   // const CardList = [
