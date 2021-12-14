@@ -177,103 +177,112 @@ function TimeLine() {
   }
 
   return (
-    <div className="relative" style={{ height: '85rem' }}>
-      <div className=" flex items-center pl-32 sm:pl-64 mt-28 left-8 absolute top-0 right-0">
-        <div
-          className="flex flex-col  "
-          // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
-        >
-          {unions.map((item, i) => (
-            <div className="flex">
-              <Union
-                value={item.value}
-                color={item.color}
-                year={item.year}
-                isFirstYear={i === 0 ? true : false}
-                customClass={
-                  i === 0
-                    ? 'rounded-md rounded-b-none'
-                    : i > unions.length - 2
-                    ? 'rounded-md rounded-t-none'
-                    : null
-                }
-              />
+    <>
+      {windowSize >= 768 ? (
+        <img src="/images/roadmap.svg" style={{
+          margin: '100px auto 0 auto',
+          width: '100%',
+        }}/>
+      ) : (
+        <div className="relative" style={{ height: '85rem' }}>
+          <div className=" flex items-center pl-32 sm:pl-64 mt-28 left-8 absolute top-0 right-0">
+            <div
+              className="flex flex-col  "
+              // style={{ transform: windowSize < 768 ? 'translateY(-110px)' : null }}
+            >
+              {unions.map((item, i) => (
+                <div className="flex">
+                  <Union
+                    value={item.value}
+                    color={item.color}
+                    year={item.year}
+                    isFirstYear={i === 0 ? true : false}
+                    customClass={
+                      i === 0
+                        ? 'rounded-md rounded-b-none'
+                        : i > unions.length - 2
+                        ? 'rounded-md rounded-t-none'
+                        : null
+                    }
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div className="flex justify-between flex-grow-2">
-          <div style={{ transform: 'translateY(217px)' }}>
-            {gridCols.firstCol.map((item) => (
-              <TimeLineCard className="mb-4" isSquare>
-                {item.content}
-              </TimeLineCard>
-            ))}
-          </div>
-          <div>
-            {gridCols.secondCol.map((item) => (
-              <TimeLineCard
-                className="py-4  mb-3 px-6 w-14 sm:w-48 "
-                isDefault
-                border={item.border}
-                style={item.style}
+            <div className="flex justify-between flex-grow-2">
+              <div style={{ transform: 'translateY(217px)' }}>
+                {gridCols.firstCol.map((item) => (
+                  <TimeLineCard className="mb-4" isSquare>
+                    {item.content}
+                  </TimeLineCard>
+                ))}
+              </div>
+              <div>
+                {gridCols.secondCol.map((item) => (
+                  <TimeLineCard
+                    className="py-4  mb-3 px-6 w-14 sm:w-48 "
+                    isDefault
+                    border={item.border}
+                    style={item.style}
+                  >
+                    <div style={windowSize < 768 ? mobileTextStyle : null}>
+                      {item.content}
+                    </div>
+                  </TimeLineCard>
+                ))}
+              </div>
+              <div
+                style={{
+                  transform:
+                    windowSize < 768 ? 'translateY(90px)' : 'translateY(103px)',
+                }}
               >
-                <div style={windowSize < 768 ? mobileTextStyle : null}>
-                  {item.content}
-                </div>
-              </TimeLineCard>
-            ))}
-          </div>
-          <div
-            style={{
-              transform:
-                windowSize < 768 ? 'translateY(90px)' : 'translateY(103px)',
-            }}
-          >
-            {gridCols.thirdCol.map((item) => (
-              <TimeLineCard
-                className="py-4 mb-3 px-6 w-14 sm:w-48"
-                isDefault
-                border={item.border}
-                style={item.style}
-              >
-                <div style={windowSize < 768 ? mobileTextStyle : null}>
-                  {item.content}
-                </div>
-              </TimeLineCard>
-            ))}
-          </div>
+                {gridCols.thirdCol.map((item) => (
+                  <TimeLineCard
+                    className="py-4 mb-3 px-6 w-14 sm:w-48"
+                    isDefault
+                    border={item.border}
+                    style={item.style}
+                  >
+                    <div style={windowSize < 768 ? mobileTextStyle : null}>
+                      {item.content}
+                    </div>
+                  </TimeLineCard>
+                ))}
+              </div>
 
-          <div className="hidden sm:block">
-            {gridCols.fourthCol.map((item) => (
-              <TimeLineCard
-                className="py-4 mb-3 px-6 w-14 sm:w-48"
-                isDefault
-                border={item.border}
-                style={item.style}
-              >
-                <div style={windowSize < 768 ? mobileTextStyle : null}>
-                  {item.content}
-                </div>
-              </TimeLineCard>
-            ))}
-          </div>
-          <div>
-            {gridCols.fiveCol.map((item) => (
-              <TimeLineCard
-                className="py-4 mb-3 px-6 w-14 sm:w-48"
-                isDefault
-                border={item.border}
-                style={item.style}
-              >
-                <div style={windowSize < 768 ? mobileTextStyle : null}>
-                  {item.content}
-                </div>
-              </TimeLineCard>
-            ))}
+              <div className="hidden sm:block">
+                {gridCols.fourthCol.map((item) => (
+                  <TimeLineCard
+                    className="py-4 mb-3 px-6 w-14 sm:w-48"
+                    isDefault
+                    border={item.border}
+                    style={item.style}
+                  >
+                    <div style={windowSize < 768 ? mobileTextStyle : null}>
+                      {item.content}
+                    </div>
+                  </TimeLineCard>
+                ))}
+              </div>
+              <div>
+                {gridCols.fiveCol.map((item) => (
+                  <TimeLineCard
+                    className="py-4 mb-3 px-6 w-14 sm:w-48"
+                    isDefault
+                    border={item.border}
+                    style={item.style}
+                  >
+                    <div style={windowSize < 768 ? mobileTextStyle : null}>
+                      {item.content}
+                    </div>
+                  </TimeLineCard>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   )
 }
 
