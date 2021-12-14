@@ -5,6 +5,29 @@ import TitleContainer from '../components/TitleContainer'
 import { Element } from 'react-scroll'
 
 function CardaShiftCommunity() {
+  const socialNetworks = [
+    {
+      icon: '../images/icon1-dark.svg',
+      link: 'https://discord.gg/hTSWWButZR',
+    },
+    {
+      icon: '../images/icon2-dark.svg',
+      link: 'https://t.me/+tlucM4-gnpE2Mjhk',
+    },
+    {
+      icon: '../images/icon3-dark.svg',
+      link: 'https://cardashift.medium.com/',
+    },
+    {
+      icon: '../images/icon4-dark.svg',
+      link: 'https://twitter.com/cardashift',
+    },
+    {
+      icon: '../images/icon5-dark.svg',
+      link: 'https://www.linkedin.com/company/cardashift/',
+    },
+  ]
+
   return (
     <Element name={'Community'}>
       <div className="md:mt-36 text-center md:flex relative">
@@ -41,6 +64,17 @@ function CardaShiftCommunity() {
                 <ArrowIcon color="gray" className="ml-6" />
               </a>
             </Button>
+          </div>
+          <div className="flex flex-row gap-6 mt-10">
+            {socialNetworks.map(({ icon, link }) => {
+              return (
+                <span className="social-button">
+                  <a href={link} target="_blank">
+                    <img src={icon} className="m-auto" />
+                  </a>
+                </span>
+              )
+            })}
           </div>
         </div>
       </div>

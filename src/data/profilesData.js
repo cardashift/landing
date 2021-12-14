@@ -489,7 +489,7 @@ export const marketingTeam = [
     social: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/marius-campos/',
+        link: 'https://www.linkedin.com/in/alexandredutarde/',
         icon: 'linkedin.svg',
       },
     ],
