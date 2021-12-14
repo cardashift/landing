@@ -25,7 +25,7 @@ function MobileHeader() {
         className="mx-auto w-full absolute top-0 left-0 right-0 -z-1 block md:hidden  "
       />
       <div className="flex items-start mt-8">
-        <img className="mx-auto" src="/images/logo-white.svg" />
+        <img className="mx-auto" style={{ width: 226 }} src="/images/logo-white.png" />
         <div className="mobile-burger" onClick={() => setOverlayOpened(true)}>
           <img src="/images/hamburger-icon.svg" width="100px" height="100px" />
         </div>
