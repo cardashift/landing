@@ -30,6 +30,11 @@ function FooterCommunication() {
       <p className="font-Inter font-normal text-white text-base text-opacity-70 md:text-center">
         Empower the visionary ventures that will create a sustainable and
         prosperous future.
+
+        <br/>
+        <br />
+        <a href="/whitepaper.pdf">White Paper</a>&nbsp;&nbsp;&nbsp;
+        <a href="/terms.pdf">Terms and Conditions</a>
       </p>
       <div className="flex flex-row">
         {socialNetworks.map(({ icon, link }) => {
