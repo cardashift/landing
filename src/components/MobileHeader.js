@@ -73,7 +73,7 @@ function MobileHeader() {
             ))}
           </ul>
           <a
-            href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA"
+            href="https://cardashift.typeform.com/to/JF4VZZjA "
             target="_blank"
           >
             <Button className="bg-blue hover:bg-colorBlueHover text-white font-Inter font-medium text-xs mx-auto mt-8 mb-8">

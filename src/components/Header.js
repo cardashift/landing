@@ -45,7 +45,7 @@ function Header() {
           ))}
         </ul>
 
-        <a href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA" target="_blank">
+        <a href="https://cardashift.typeform.com/to/JF4VZZjA " target="_blank">
           <Button className="bg-blue h-10 hover:bg-colorBlueHover  text-white font-Inter font-medium text-xs shadow">
             Pre-register to the ICO
             <ArrowIcon className="ml-2" color="blue" />

@@ -56,7 +56,7 @@ function CardaShiftCommunity() {
             </Button> */}
             <Button className="shadow font-medium text-base tracking-wide text-gray hover:bg-colorGrayHover">
               <a
-                href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA"
+                href="https://cardashift.typeform.com/to/JF4VZZjA "
                 target="_blank"
                 className="flex justify-between w-full"
               >

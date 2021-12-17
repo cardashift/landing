@@ -46,7 +46,7 @@ function Hero() {
           {/* <PublicICO /> */}
           <div className="flex gap-3 mx-auto items-center md:max-w-none md:flex-row flex-col">
             <a
-              href="https://xwexvplj6lo.typeform.com/to/JF4VZZjA"
+              href="https://cardashift.typeform.com/to/JF4VZZjA "
               target="_blank"
               className="pt-6"
             >
