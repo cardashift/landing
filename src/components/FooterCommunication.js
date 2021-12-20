@@ -33,7 +33,9 @@ function FooterCommunication() {
 
         <br/>
         <br />
-        <a href="/whitepaper.pdf">White Paper</a>&nbsp;&nbsp;&nbsp;
+        <a href="/cardashift_whitepaper.pdf">White Paper</a>&nbsp;&nbsp;&nbsp;
+        <a href="/cardashift_overview.pdf">Overview</a>&nbsp;&nbsp;&nbsp;
+        <a href="/cardashift_deck.pdf">Slide Deck</a>&nbsp;&nbsp;&nbsp;
         <a href="/terms.pdf">Terms and Conditions</a>
       </p>
       <div className="flex flex-row">

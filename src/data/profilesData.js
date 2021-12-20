@@ -90,7 +90,7 @@ export const devTeam = [
   {
     urlPicture: '/images/team/NicolasHenin.png',
     fullName: 'Nicolas Henin',
-    role: 'Director of Cardano Architecture',
+    role: 'Director, Cardano Solutions Architecture',
     social: [
       {
         name: 'linkedin',
